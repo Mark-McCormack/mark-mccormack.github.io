@@ -1,0 +1,79 @@
+.aboutContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "Menu Menu Menu Menu"
+    "aboutHeader aboutHeader aboutHeader aboutHeader"
+    "blog-1 blog-2 blog-3 blog-4"
+    "blog-5 blog-6 blog-7 blog-8"
+    "blog-9 blog-10 blog-11 blog-12"
+    "blog-13 blog-14 blog-15 blog-16"
+    "Footer Footer Footer Footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 20vh 20vh 20vh 20vh 20vh;
+}
+.aboutContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.aboutHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.Menu {
+  grid-area: Menu;
+}
+.aboutHeader {
+  grid-area: aboutHeader;
+}
+.a-Z8pg7-3 {
+  grid-area: a-Z8pg7-3;
+}
+.a-r2XpA-0 {
+  grid-area: a-r2XpA-0;
+}
+.a-r2XpA-1 {
+  grid-area: a-r2XpA-1;
+}
+.a-r2XpA-2 {
+  grid-area: a-r2XpA-2;
+}
+.a-r2XpA-3 {
+  grid-area: a-r2XpA-3;
+}
+.Portfolio-0 {
+  grid-area: Portfolio-0;
+}
+.Portfolio-1 {
+  grid-area: Portfolio-1;
+}
+.Portfolio-2 {
+  grid-area: Portfolio-2;
+}
+.Portfolio-3 {
+  grid-area: Portfolio-3;
+}
+.a-BrQv3-3 {
+  grid-area: a-BrQv3-3;
+}
+.a-vQDwG-1 {
+  grid-area: a-vQDwG-1;
+}
+.a-vQDwG-3 {
+  grid-area: a-vQDwG-3;
+}
+.a-99Oj0 {
+  grid-area: a-99Oj0;
+}
+.Footer {
+  grid-area: Footer;
+}

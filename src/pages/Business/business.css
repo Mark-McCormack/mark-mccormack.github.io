@@ -1,0 +1,85 @@
+.businessContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "businessMenu businessMenu businessMenu businessMenu businessMenu businessMenu"
+    "businessHeader businessHeader businessHeader businessHeader businessHeader businessHeader"
+    "article-0 article-1 article-8 article-2 article-3 article-9"
+    "article-4 article-5 article-10 article-6 article-7 article-11"
+    "businessFooter businessFooter businessFooter businessFooter businessFooter businessFooter";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh auto 44vh 44vh 20vh;
+}
+.businessContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.businessMenu {
+  grid-area: businessMenu;
+}
+.businessHeader {
+  grid-area: businessHeader;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  height: 50vh;
+}
+.article-0 {
+  grid-area: article-0;
+}
+.article-1 {
+  grid-area: article-1;
+}
+.article-8 {
+  grid-area: article-8;
+}
+.article-2 {
+  grid-area: article-2;
+}
+.article-3 {
+  grid-area: article-3;
+}
+.article-9 {
+  grid-area: article-9;
+}
+.article-4 {
+  grid-area: article-4;
+}
+.article-5 {
+  grid-area: article-5;
+}
+.article-10 {
+  grid-area: article-10;
+}
+.article-6 {
+  grid-area: article-6;
+}
+.article-7 {
+  grid-area: article-7;
+}
+.article-11 {
+  grid-area: article-11;
+}
+.businessFooter {
+  grid-area: businessFooter;
+}
+
+.businessProjectCard {
+  transition: transform 0.2s ease;
+  display: flex;
+}
+
+.businessProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+
+.businessHeader {
+  align-items: center; /* Vertically center align items */
+}

@@ -1,0 +1,146 @@
+.researchProjectsContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "researchMenu researchMenu researchMenu researchMenu researchMenu"
+    "researchHeader researchHeader researchHeader researchHeader researchHeader"
+    "researchProject-1 researchProject-2 researchProject-3 researchProject-4 researchProject-5"
+    "researchProject-6 researchProject-7 researchProject-8 researchProject-9 researchProject-10"
+    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "researchProject-11 researchProject-12 researchProject-13 researchProject-14 researchProject-15"
+    "researchProject-16 researchProject-17 researchProject-18 researchProject-19 researchProject-20"
+    "divider2 divider2 divider2 divider2 divider2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+}
+
+.researchProjectsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.researchHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.researchMenu {
+  grid-area: researchMenu;
+}
+
+.researchHeader {
+  grid-area: researchHeader;
+}
+
+.researchProject-1 {
+  grid-area: researchProject-1;
+}
+
+.researchProject-2 {
+  grid-area: researchProject-2;
+}
+
+.researchProject-3 {
+  grid-area: researchProject-3;
+}
+
+.researchProject-4 {
+  grid-area: researchProject-4;
+}
+
+.researchProject-5 {
+  grid-area: researchProject-5;
+}
+
+.researchProject-6 {
+  grid-area: researchProject-6;
+}
+
+.researchProject-7 {
+  grid-area: researchProject-7;
+}
+
+.researchProject-8 {
+  grid-area: researchProject-8;
+}
+
+.researchProject-9 {
+  grid-area: researchProject-9;
+}
+
+.researchProject-10 {
+  grid-area: researchProject-10;
+}
+
+.dividerOne {
+  grid-area: dividerOne;
+}
+
+.researchProject-11 {
+  grid-area: researchProject-11;
+}
+
+.researchProject-12 {
+  grid-area: researchProject-12;
+}
+
+.researchProject-13 {
+  grid-area: researchProject-13;
+}
+
+.researchProject-14 {
+  grid-area: researchProject-14;
+}
+
+.researchProject-15 {
+  grid-area: researchProject-15;
+}
+
+.researchProject-16 {
+  grid-area: researchProject-16;
+}
+
+.researchProject-17 {
+  grid-area: researchProject-17;
+}
+
+.researchProject-18 {
+  grid-area: researchProject-18;
+}
+
+.researchProject-19 {
+  grid-area: researchProject-19;
+}
+
+.researchProject-20 {
+  grid-area: researchProject-20;
+}
+
+.divider2 {
+  grid-area: divider2;
+}
+
+#researchHeaderImage img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.researchProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.researchProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+
+.researchHeader {
+  align-items: center; /* Vertically center align items */
+}

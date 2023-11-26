@@ -1,0 +1,114 @@
+.projectsContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "portfolioMenu portfolioMenu portfolioMenu portfolioMenu portfolioMenu"
+    "portfolioHeader portfolioHeader portfolioHeader portfolioHeader portfolioHeader"
+    "project-1 project-2 project-3 project-4 project-5"
+    "project-6 project-7 project-8 project-9 project-10"
+    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "project-11 project-12 project-13 project-14 project-15"
+    "project-16 project-17 project-18 project-19 project-20"
+    "divider2 divider2 divider2 divider2 divider2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+}
+
+.projectsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.portfolioHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.portfolioMenu {
+  grid-area: portfolioMenu;
+}
+.portfolioHeader {
+  grid-area: portfolioHeader;
+}
+.project-1 {
+  grid-area: project-1;
+}
+.project-2 {
+  grid-area: project-2;
+}
+.project-3 {
+  grid-area: project-3;
+}
+.project-4 {
+  grid-area: project-4;
+}
+.project-5 {
+  grid-area: project-5;
+}
+.project-6 {
+  grid-area: project-6;
+}
+.project-7 {
+  grid-area: project-7;
+}
+.project-8 {
+  grid-area: project-8;
+}
+.project-9 {
+  grid-area: project-9;
+}
+.project-10 {
+  grid-area: project-10;
+}
+.dividerOne {
+  grid-area: dividerOne;
+}
+.project-11 {
+  grid-area: project-11;
+}
+.project-12 {
+  grid-area: project-12;
+}
+.project-13 {
+  grid-area: project-13;
+}
+.project-14 {
+  grid-area: project-14;
+}
+.project-15 {
+  grid-area: project-15;
+}
+.project-16 {
+  grid-area: project-16;
+}
+.project-17 {
+  grid-area: project-17;
+}
+.project-18 {
+  grid-area: project-18;
+}
+.project-19 {
+  grid-area: project-19;
+}
+.project-20 {
+  grid-area: project-20;
+}
+.divider2 {
+  grid-area: divider2;
+}
+.projectCard {
+  transition: transform 0.2s ease;
+}
+.projectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+.portfolioHeader {
+  align-items: center; /* Vertically center align items */
+}

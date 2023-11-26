@@ -1,0 +1,120 @@
+.studentsContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu"
+    "studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader"
+    "studentProject-1 studentProject-2 studentProject-3 studentProject-4 studentProject-5"
+    "studentProject-6 studentProject-7 studentProject-8 studentProject-9 studentProject-10"
+    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "studentProject-11 studentProject-12 studentProject-13 studentProject-14 studentProject-15"
+    "studentProject-16 studentProject-17 studentProject-18 studentProject-19 studentProject-20"
+    "divider2 divider2 divider2 divider2 divider2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+}
+.studentsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.studentPortfolioHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.studentPortfolioMenu {
+  grid-area: studentPortfolioMenu;
+}
+
+.studentPortfolioHeader {
+  grid-area: studentPortfolioHeader;
+}
+.studentPortfolioHeader {
+  grid-area: studentPortfolioHeader;
+}
+.studentProject-1 {
+  grid-area: studentProject-1;
+}
+.studentProject-2 {
+  grid-area: studentProject-2;
+}
+.studentProject-3 {
+  grid-area: studentProject-3;
+}
+.studentProject-4 {
+  grid-area: studentProject-4;
+}
+.studentProject-5 {
+  grid-area: studentProject-5;
+}
+.studentProject-6 {
+  grid-area: studentProject-6;
+}
+.studentProject-7 {
+  grid-area: studentProject-7;
+}
+.studentProject-8 {
+  grid-area: studentProject-8;
+}
+.studentProject-9 {
+  grid-area: studentProject-9;
+}
+.studentProject-10 {
+  grid-area: studentProject-10;
+}
+.dividerOne {
+  grid-area: dividerOne;
+}
+.studentProject-11 {
+  grid-area: studentProject-11;
+}
+.studentProject-12 {
+  grid-area: studentProject-12;
+}
+.studentProject-13 {
+  grid-area: studentProject-13;
+}
+.studentProject-14 {
+  grid-area: studentProject-14;
+}
+.studentProject-15 {
+  grid-area: studentProject-15;
+}
+.studentProject-16 {
+  grid-area: studentProject-16;
+}
+.studentProject-17 {
+  grid-area: studentProject-17;
+}
+.studentProject-18 {
+  grid-area: studentProject-18;
+}
+.studentProject-19 {
+  grid-area: studentProject-19;
+}
+.studentProject-20 {
+  grid-area: studentProject-20;
+}
+.divider2 {
+  grid-area: divider2;
+}
+
+.studentProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.studentProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+
+.studentPortfolioHeader {
+  align-items: center; /* Vertically center align items */
+}

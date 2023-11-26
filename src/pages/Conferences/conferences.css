@@ -1,0 +1,133 @@
+.conferencesProjectsContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "conferencesMenu conferencesMenu conferencesMenu conferencesMenu conferencesMenu"
+    "conferencesHeader conferencesHeader conferencesHeader conferencesHeader conferencesHeader"
+    "conferencesProject-1 conferencesProject-2 conferencesProject-3 conferencesProject-4 conferencesProject-5"
+    "conferencesProject-6 conferencesProject-7 conferencesProject-8 conferencesProject-9 conferencesProject-10"
+    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "conferencesProject-11 conferencesProject-12 conferencesProject-13 conferencesProject-14 conferencesProject-15"
+    "conferencesProject-16 conferencesProject-17 conferencesProject-18 conferencesProject-19 conferencesProject-20"
+    "divider2 divider2 divider2 divider2 divider2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+}
+
+.conferencesProjectsContainer > div {
+  border: 1px dashed #888;
+  background-color: lightgray;
+  margin: 10px;
+}
+
+.conferencesHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.conferencesMenu {
+  grid-area: conferencesMenu;
+}
+
+.conferencesHeader {
+  grid-area: conferencesHeader;
+}
+
+.conferencesProject-1 {
+  grid-area: conferencesProject-1;
+}
+
+.conferencesProject-2 {
+  grid-area: conferencesProject-2;
+}
+
+.conferencesProject-3 {
+  grid-area: conferencesProject-3;
+}
+
+.conferencesProject-4 {
+  grid-area: conferencesProject-4;
+}
+
+.conferencesProject-5 {
+  grid-area: conferencesProject-5;
+}
+
+.conferencesProject-6 {
+  grid-area: conferencesProject-6;
+}
+
+.conferencesProject-7 {
+  grid-area: conferencesProject-7;
+}
+
+.conferencesProject-8 {
+  grid-area: conferencesProject-8;
+}
+
+.conferencesProject-9 {
+  grid-area: conferencesProject-9;
+}
+
+.conferencesProject-10 {
+  grid-area: conferencesProject-10;
+}
+
+.dividerOne {
+  grid-area: dividerOne;
+}
+
+.conferencesProject-11 {
+  grid-area: conferencesProject-11;
+}
+
+.conferencesProject-12 {
+  grid-area: conferencesProject-12;
+}
+
+.conferencesProject-13 {
+  grid-area: conferencesProject-13;
+}
+
+.conferencesProject-14 {
+  grid-area: conferencesProject-14;
+}
+
+.conferencesProject-15 {
+  grid-area: conferencesProject-15;
+}
+
+.conferencesProject-16 {
+  grid-area: conferencesProject-16;
+}
+
+.conferencesProject-17 {
+  grid-area: conferencesProject-17;
+}
+
+.conferencesProject-18 {
+  grid-area: conferencesProject-18;
+}
+
+.conferencesProject-19 {
+  grid-area: conferencesProject-19;
+}
+
+.conferencesProject-20 {
+  grid-area: conferencesProject-20;
+}
+
+.divider2 {
+  grid-area: divider2;
+}
+
+#conferencesHeaderImage img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.conferencesHeader {
+  align-items: center; /* Vertically center align items */
+}
