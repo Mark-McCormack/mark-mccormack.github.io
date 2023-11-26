@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
 import About from "./pages/About-Me/about-me";
 import Contact from "./pages/Contact/contact";
@@ -15,7 +15,7 @@ import Conferences from "./pages/Conferences/conferences";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="blogs" element={<About />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path="business" element={<Business />} />
           <Route path="academia" element={<Conferences />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
