@@ -12,8 +12,9 @@
     "teachingProject-16 teachingProject-17 teachingProject-18 teachingProject-19 teachingProject-20"
     "divider2 divider2 divider2 divider2 divider2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+  grid-template-rows: 10vh 60vh 49vh 49vh 15vh 49vh 49vh 20vh;
 }
+
 .teachingContainer > div {
   margin: 0.5rem;
   background: #fff;
@@ -25,9 +26,32 @@
   color: black;
 }
 
+.imgTeaching {
+  border-radius: 1rem;
+}
+
+#teachingPortfolioHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#teachingPortfolioHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
 .teachingPortfolioHeader {
   grid-template-columns: 1fr 1fr;
   display: grid;
+  align-items: center; /* Vertically center align items */
 }
 
 .teachingPortfolioMenu {
@@ -37,74 +61,94 @@
 .teachingPortfolioHeader {
   grid-area: teachingPortfolioHeader;
 }
-.teachingPortfolioHeader {
-  grid-area: teachingPortfolioHeader;
-}
+
 .teachingProject-1 {
   grid-area: teachingProject-1;
 }
+
 .teachingProject-2 {
   grid-area: teachingProject-2;
 }
+
 .teachingProject-3 {
   grid-area: teachingProject-3;
 }
+
 .teachingProject-4 {
   grid-area: teachingProject-4;
 }
+
 .teachingProject-5 {
   grid-area: teachingProject-5;
 }
+
 .teachingProject-6 {
   grid-area: teachingProject-6;
 }
+
 .teachingProject-7 {
   grid-area: teachingProject-7;
 }
+
 .teachingProject-8 {
   grid-area: teachingProject-8;
 }
+
 .teachingProject-9 {
   grid-area: teachingProject-9;
 }
+
 .teachingProject-10 {
   grid-area: teachingProject-10;
 }
+
 .dividerOne {
   grid-area: dividerOne;
 }
+
 .teachingProject-11 {
   grid-area: teachingProject-11;
 }
+
 .teachingProject-12 {
   grid-area: teachingProject-12;
 }
+
 .teachingProject-13 {
   grid-area: teachingProject-13;
 }
+
 .teachingProject-14 {
   grid-area: teachingProject-14;
 }
+
 .teachingProject-15 {
   grid-area: teachingProject-15;
 }
+
 .teachingProject-16 {
   grid-area: teachingProject-16;
 }
+
 .teachingProject-17 {
   grid-area: teachingProject-17;
 }
+
 .teachingProject-18 {
   grid-area: teachingProject-18;
 }
+
 .teachingProject-19 {
   grid-area: teachingProject-19;
 }
+
 .teachingProject-20 {
   grid-area: teachingProject-20;
 }
+
 .divider2 {
   grid-area: divider2;
+  background-color: #48c78e;
 }
 
 .teachingProjectCard {
@@ -112,9 +156,5 @@
 }
 
 .teachingProjectCard:hover {
-  transform: scale(1.02); /* Enlarge the item by 10% on hover */
-}
-
-.teachingPortfolioHeader {
-  align-items: center; /* Vertically center align items */
+  transform: scale(1.02); /* Enlarge the item by 2% on hover */
 }

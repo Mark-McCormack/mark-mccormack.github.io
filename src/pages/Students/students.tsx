@@ -31,34 +31,55 @@ const Students: React.FC = () => {
   return (
     <div>
       <div className="studentsContainer">
-        <div className="studentPortfolioMenu">
+        <div className="studentPortfolioMenu" style={{ overflow: "visible" }}>
           <Navbar />
         </div>
 
         <div className="studentPortfolioHeader">
           <div id="studentPortfolioHeaderText">
             <div id="studentPortfolioHeaderCard">
-              <p className="title is-1">Student Projects</p>
-              <div className="subtitle is-3">Lorem Ipsum</div>
-              <p className="subtitle" style={{ padding: "5rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor vulputate quam. Maecenas in nulla
-                efficitur, venenatis dolor vel, interdum sem. Cras nec luctus dolor. Morbi leo lacus, suscipit nec nibh
-                vitae, commodo semper quam. Sed hendrerit, urna et placerat ultrices, ante sapien venenatis ante, non
-                bibendum nisl libero quis nunc.
+              <p className="title is-1" style={{ color: "white" }}>
+                Student Projects
+              </p>
+              <div className="subtitle is-3" style={{ color: "white" }}>
+                Amazing Projects from Past Students!
+              </div>
+              <p
+                className="subtitle"
+                style={{
+                  padding: "5rem",
+                  paddingTop: "2rem",
+                  paddingBottom: "2rem",
+                  color: "white",
+                  textAlign: "justify",
+                }}
+              >
+                As a teacher, it's been incredible watching my students explore the world of computer science and AI,
+                taking on projects that really push their creativity and problem-solving skills. This page is a showcase
+                of their work—each project is unique and reflects the individual talents, ideas, and dedication they've
+                put into learning these challenging concepts.
                 <br />
                 <br />
-                Aenean volutpat consectetur rutrum. Praesent tempor sodales leo, ut pulvinar lacus pellentesque sit
-                amet. Mauris vel nisl nec nisl vestibulum consequat nec vel nunc. Phasellus augue massa, vulputate nec
-                pulvinar eget, convallis eu ipsum. Maecenas hendrerit rhoncus urna, eu venenatis nisi lobortis sed.
+                Some have built fun AI experiments, while others have come up with creative coding solutions to
+                real-world problems. It's inspiring to see how they’ve grown not only in their technical skills but also
+                in their ability to think critically and work collaboratively.
                 <br />
                 <br />
-                Cras tempus turpis a turpis cursus, suscipit vulputate neque condimentum. Nam non nisl sed nulla dapibus
-                lacinia eu sit amet tellus. Sed sagittis ligula a tellus iaculis, nec facilisis ante feugiat.
+                These projects aren't just about writing code; they're about solving problems, experimenting with new
+                technologies, and imagining the future. I’m so proud of what they’ve accomplished, and I’m excited to
+                share their work with you.
               </p>
             </div>
           </div>
-          <div id="studentPortfolioHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
-            <img id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
+          <div id="studentPortfolioHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
+            <img
+              alt=""
+              id="image"
+              src={
+                "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=4152&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </div>
         </div>
 
@@ -70,7 +91,7 @@ const Students: React.FC = () => {
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/256/2995/2995620.png?semt=ais_hybrid"}
             />
           </div>
         ))}
@@ -87,7 +108,7 @@ const Students: React.FC = () => {
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/256/2995/2995620.png?semt=ais_hybrid"}
             />
           </div>
         ))}

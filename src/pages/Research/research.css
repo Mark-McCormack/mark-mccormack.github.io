@@ -10,9 +10,12 @@
     "dividerOne dividerOne dividerOne dividerOne dividerOne"
     "researchProject-11 researchProject-12 researchProject-13 researchProject-14 researchProject-15"
     "researchProject-16 researchProject-17 researchProject-18 researchProject-19 researchProject-20"
-    "divider2 divider2 divider2 divider2 divider2";
+    "divider2 divider2 divider2 divider2 divider2"
+    "researchProject-21 researchProject-22 researchProject-23 researchProject-24 researchProject-25"
+    "researchProject-26 researchProject-27 researchProject-28 researchProject-29 researchProject-30"
+    "divider3 divider3 divider3 divider3 divider3";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+  grid-template-rows: 10vh 60vh 46.5vh 46.5vh 15vh 46.5vh 46.5vh 15vh 46.5vh 46vh;
 }
 
 .researchProjectsContainer > div {
@@ -24,6 +27,24 @@
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
   color: black;
+}
+
+#researchHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#researchHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
 }
 
 .researchHeader {
@@ -125,6 +146,50 @@
 
 .divider2 {
   grid-area: divider2;
+}
+
+.divider3 {
+  grid-area: divider3;
+}
+
+.researchProject-21 {
+  grid-area: researchProject-21;
+}
+
+.researchProject-22 {
+  grid-area: researchProject-22;
+}
+
+.researchProject-23 {
+  grid-area: researchProject-23;
+}
+
+.researchProject-24 {
+  grid-area: researchProject-24;
+}
+
+.researchProject-25 {
+  grid-area: researchProject-25;
+}
+
+.researchProject-26 {
+  grid-area: researchProject-26;
+}
+
+.researchProject-27 {
+  grid-area: researchProject-27;
+}
+
+.researchProject-28 {
+  grid-area: researchProject-28;
+}
+
+.researchProject-29 {
+  grid-area: researchProject-29;
+}
+
+.researchProject-30 {
+  grid-area: researchProject-30;
 }
 
 #researchHeaderImage img {

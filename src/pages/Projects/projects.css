@@ -12,7 +12,7 @@
     "project-16 project-17 project-18 project-19 project-20"
     "divider2 divider2 divider2 divider2 divider2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+  grid-template-rows: 10vh 60vh 47vh 47vh 15vh 47vh 47vh 20vh;
 }
 
 .projectsContainer > div {
@@ -24,6 +24,24 @@
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
   color: black;
+}
+
+#portfolioHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#portfolioHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
 }
 
 .portfolioHeader {

@@ -7,7 +7,7 @@ const Conferences: React.FC = () => {
   return (
     <div>
       <div className="contactContainer">
-        <div className="contactMenu">
+        <div className="contactMenu" style={{ overflow: "visible" }}>
           <Navbar />
         </div>
         <div className="contactImage" style={{ backgroundColor: "#fff", paddingTop: "3rem" }}>
@@ -19,7 +19,7 @@ const Conferences: React.FC = () => {
             </div>
           </div>
           <div id="portfolioHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
-            <img id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
+            <img alt="" id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
           </div>
         </div>
 

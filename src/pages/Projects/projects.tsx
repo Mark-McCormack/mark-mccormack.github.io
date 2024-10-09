@@ -31,34 +31,53 @@ const Projects: React.FC = () => {
   return (
     <div>
       <div className="projectsContainer">
-        <div className="portfolioMenu">
+        <div className="portfolioMenu" style={{ overflow: "visible" }}>
           <Navbar />
         </div>
         <div className="portfolioHeader">
           <div id="portfolioHeaderText">
             {" "}
             <div id="portfolioHeaderCard">
-              <p className="title is-1">Personal Projects</p>
-              <div className="subtitle is-3">Lorem Ipsum</div>
-              <p className="subtitle" style={{ padding: "5rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor vulputate quam. Maecenas in nulla
-                efficitur, venenatis dolor vel, interdum sem. Cras nec luctus dolor. Morbi leo lacus, suscipit nec nibh
-                vitae, commodo semper quam. Sed hendrerit, urna et placerat ultrices, ante sapien venenatis ante, non
-                bibendum nisl libero quis nunc.
+              <p className="title is-1" style={{ color: "white" }}>
+                Personal Projects
+              </p>
+              <div className="subtitle is-3" style={{ color: "white" }}>
+                Some Fun Comp. Sci. Projects!
+              </div>
+              <p
+                className="subtitle"
+                style={{
+                  padding: "5rem",
+                  paddingTop: "2rem",
+                  paddingBottom: "2rem",
+                  color: "white",
+                  textAlign: "justify",
+                }}
+              >
+                This page showcases a variety of my personal computer science projects, where I’ve applied my skills and
+                creativity to tackle interesting challenges. From building AI-driven tools to developing software
+                solutions, each project reflects my curiosity and passion for problem-solving.
                 <br />
                 <br />
-                Aenean volutpat consectetur rutrum. Praesent tempor sodales leo, ut pulvinar lacus pellentesque sit
-                amet. Mauris vel nisl nec nisl vestibulum consequat nec vel nunc. Phasellus augue massa, vulputate nec
-                pulvinar eget, convallis eu ipsum. Maecenas hendrerit rhoncus urna, eu venenatis nisi lobortis sed.
+                Whether I’m experimenting with new algorithms, creating applications to address real-world needs, or
+                exploring the latest advancements in technology, these projects are a way for me to put theory into
+                practice.
                 <br />
                 <br />
-                Cras tempus turpis a turpis cursus, suscipit vulputate neque condimentum. Nam non nisl sed nulla dapibus
-                lacinia eu sit amet tellus. Sed sagittis ligula a tellus iaculis, nec facilisis ante feugiat.
+                I’m always looking for new ways to grow as a developer, and these projects are a testament to that
+                journey. I hope you enjoy checking them out as much as I enjoyed building them!
               </p>
             </div>
           </div>
-          <div id="portfolioHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
-            <img id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
+          <div id="portfolioHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
+            <img
+              alt=""
+              id="image"
+              src={
+                "https://images.unsplash.com/photo-1455894127589-22f75500213a?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </div>
         </div>
 
@@ -70,7 +89,7 @@ const Projects: React.FC = () => {
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/256/14146/14146592.png?semt=ais_hybrid"}
             />
           </div>
         ))}
@@ -85,7 +104,7 @@ const Projects: React.FC = () => {
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/256/14146/14146592.png?semt=ais_hybrid"}
             />
           </div>
         ))}

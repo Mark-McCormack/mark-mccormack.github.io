@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./conferences.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface ProjectData {
@@ -19,9 +18,6 @@ const Conferences: React.FC = () => {
   const [projects, setProjects] = useState<ProjectData[]>([]);
 
   useEffect(() => {
-    // Fetch or import your JSON data here and set it in the state
-    // You can use fetch or import statements to load your JSON data
-    // For example, if using fetch:
     fetch("/assets/json/conferences.json")
       .then((response) => response.json())
       .then((data: ProjectData[]) => setProjects(data))
@@ -30,47 +26,70 @@ const Conferences: React.FC = () => {
 
   return (
     <div>
-      <div className="projectsContainer">
-        <div className="portfolioMenu">
+      <div className="conferencesProjectsContainer">
+        <div className="conferencesMenu" style={{ overflow: "visible" }}>
           <Navbar />
         </div>
-        <div className="portfolioHeader" style={{ backgroundColor: "#fff" }}>
-          <div id="portfolioHeaderText">
-            {" "}
-            <div id="portfolioHeaderCard">
-              <p className="title is-1">Academia</p>
-              <div className="subtitle is-3">Lorem Ipsum</div>
-              <p className="subtitle" style={{ padding: "5rem" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor vulputate quam. Maecenas in nulla
-                efficitur, venenatis dolor vel, interdum sem. Cras nec luctus dolor. Morbi leo lacus, suscipit nec nibh
-                vitae, commodo semper quam. Sed hendrerit, urna et placerat ultrices, ante sapien venenatis ante, non
-                bibendum nisl libero quis nunc.
+        <div className="conferencesHeader" style={{ backgroundColor: "#fff" }}>
+          <div id="conferencesHeaderText">
+            <div id="conferencesHeaderCard">
+              <p className="title is-1" style={{ color: "white" }}>
+                Academia
+              </p>
+              <div className="subtitle is-3" style={{ color: "white" }}>
+                Conferences, Journals, Funding and More!
+              </div>
+              <p
+                className="subtitle"
+                style={{
+                  padding: "5rem",
+                  paddingTop: "2rem",
+                  paddingBottom: "2rem",
+                  color: "white",
+                  textAlign: "justify",
+                }}
+              >
+                Within my doctoral studies, I have presented, attended and chaired several noteworthy conferences across
+                the globe. My contributions range from papers to research sessions to keynotes and doctoral consortiums.
+                With these conferences, I always look to connect with others in the field to produce new and novel ideas
+                and increase my undesratnding of the field.
                 <br />
                 <br />
-                Aenean volutpat consectetur rutrum. Praesent tempor sodales leo, ut pulvinar lacus pellentesque sit
-                amet. Mauris vel nisl nec nisl vestibulum consequat nec vel nunc. Phasellus augue massa, vulputate nec
-                pulvinar eget, convallis eu ipsum. Maecenas hendrerit rhoncus urna, eu venenatis nisi lobortis sed.
+                These conferences and journals range in topic, from pure education to Computer Science focused,
+                Collaborative Learning and many falling somewhere in the middle given the interdisciplinary nature of my
+                research,
                 <br />
                 <br />
-                Cras tempus turpis a turpis cursus, suscipit vulputate neque condimentum. Nam non nisl sed nulla dapibus
-                lacinia eu sit amet tellus. Sed sagittis ligula a tellus iaculis, nec facilisis ante feugiat.
+                For further information regarding publications and events, please find links to several profiles (Google
+                SCholar, ACM, ORCiD etc.) on the "Research" section of my portfolio.
               </p>
             </div>
           </div>
-          <div id="portfolioHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
-            <img id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
+          <div id="conferencesHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
+            <img
+              alt=""
+              id="imageAcademia"
+              src={
+                "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </div>
         </div>
 
         {projects.slice(0, 10).map((project, index) => (
-          <div className={`project-${index + 1} projectCard`} key={index} style={{ backgroundColor: "#fff" }}>
+          <div
+            className={`conferencesProject-${index + 1} projectCard`}
+            key={index}
+            style={{ backgroundColor: "#fff" }}
+          >
             <Project
               title={project.title}
               subtitle={project.subtitle}
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/512/1321/1321029.png"}
               color={"#fff"}
             />
           </div>
@@ -78,21 +97,45 @@ const Conferences: React.FC = () => {
 
         <div className="dividerOne"></div>
 
-        {projects.slice(9, 20).map((project, index) => (
-          <div className={`project-${index + 10} projectCard`} key={index} style={{ backgroundColor: "#fff" }}>
+        {projects.slice(10, 20).map((project, index) => (
+          <div
+            className={`conferencesProject-${index + 11} projectCard`}
+            key={index}
+            style={{ backgroundColor: "#fff" }}
+          >
             <Project
               title={project.title}
               subtitle={project.subtitle}
               body={project.body}
               img={project.img}
               tags={project.tags}
-              language={project.language}
+              language={"https://cdn-icons-png.freepik.com/512/1321/1321029.png"}
               color={"#fff"}
             />
           </div>
         ))}
 
-        <div className="divider2" style={{ backgroundColor: "#48c78e" }}>
+        <div className="dividerTwo"></div>
+
+        {projects.slice(20, 30).map((project, index) => (
+          <div
+            className={`conferencesProject-${index + 21} projectCard`}
+            key={index}
+            style={{ backgroundColor: "#fff" }}
+          >
+            <Project
+              title={project.title}
+              subtitle={project.subtitle}
+              body={project.body}
+              img={project.img}
+              tags={project.tags}
+              language={"https://cdn-icons-png.freepik.com/512/1321/1321029.png"}
+              color={"#fff"}
+            />
+          </div>
+        ))}
+
+        <div className="divider3" style={{ backgroundColor: "#48c78e" }}>
           <Footer />
         </div>
       </div>

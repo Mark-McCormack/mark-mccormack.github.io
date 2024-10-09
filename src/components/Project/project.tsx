@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./project.css";
 import "../Modal/modal";
 import Modal from "../Modal/modal";
+import ReactDOM from "react-dom"; // Import ReactDOM for creating a portal
 
 type Props = {
   title?: string;
@@ -12,6 +13,7 @@ type Props = {
   language?: string;
   color?: string;
   updateState?: any;
+  url?: string;
 };
 
 const Card: React.FC<Props> = ({
@@ -22,35 +24,40 @@ const Card: React.FC<Props> = ({
   tags = "Default Tags",
   language = "https://static-00.iconduck.com/assets.00/js-icon-2048x2048-kbwt89q3.png",
   color = "#fff",
+  url = "https://google.com",
   updateState,
 }) => {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const showModal = () => {
-    updateState(true);
+    setModalVisible(true);
   };
 
   const hideModal = () => {
-    updateState(false);
+    setModalVisible(false);
   };
 
+  const modalRoot = document.getElementById("modal-root") || document.body;
+
   return (
-    <div style={{ maxHeight: "100%", display: "flex", flexDirection: "column" }}>
+    <div style={{ maxHeight: "100%", display: "flex", flexDirection: "column", overflow: "hidden" }}>
       <div className="card" style={{ backgroundColor: color, flex: 1 }}>
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src={img} alt="Placeholder image" />
+            <img alt="" src={img} />
           </figure>
         </div>
         <div className="card-content" style={{ padding: "0px", paddingTop: "1rem", flex: 1 }}>
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
-                <img src={language} alt="Placeholder image" />
+                <img alt="" src={language} />
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">{title}</p>
+              <p className="title is-4" style={{ overflow: "hidden", textOverflow: "ellipsis" }}>
+                {title}
+              </p>
               <p className="subtitle is-6">{subtitle}</p>
             </div>
           </div>
@@ -68,14 +75,14 @@ const Card: React.FC<Props> = ({
           </div>
         </div>
       </div>
-      <button
-        className="button is-danger"
-        onClick={showModal}
-        style={{ flex: "none", width: "100%", alignSelf: "center" }}
-      >
-        Primary
-      </button>
-      {isModalVisible && <Modal title={title} body={body} onClose={hideModal} />}
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <button
+          className="button is-danger projectButton"
+          style={{ flex: "none", width: "100%", alignSelf: "center", backgroundColor: "#35B2FC" }}
+        >
+          Open for Info!
+        </button>
+      </a>
     </div>
   );
 };

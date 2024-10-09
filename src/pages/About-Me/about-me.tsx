@@ -10,10 +10,36 @@ const About: React.FC = () => {
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae imperdiet erat, ut tempor nisi.`,
   }));
 
+  const progressBars = [
+    { id: "Agreeableness", progress: 83 },
+    { id: "Openness to Experience", progress: 87.5 },
+    { id: "Neuroticism", progress: 40 },
+    { id: "Conscientiousness", progress: 69 },
+    { id: "Extraversion", progress: 67 },
+  ];
+
+  const progressBarContainerStyle: React.CSSProperties = {};
+
+  const progressBarStyle: React.CSSProperties = {
+    width: "200px",
+    height: "20px",
+    border: "1px solid #000",
+    position: "relative",
+    marginBottom: "2px",
+  };
+
+  const filledBarStyle: React.CSSProperties = {
+    height: "100%",
+    backgroundColor: "#00ff00",
+    position: "absolute",
+    top: 0,
+    left: 0,
+  };
+
   return (
     <div>
       <div className="aboutContainer">
-        <div className="Menu">
+        <div className="Menu" style={{ overflow: "visible" }}>
           <Navbar />
         </div>
         <div className="aboutHeader">
@@ -29,18 +55,24 @@ const About: React.FC = () => {
                 bibendum nisl libero quis nunc.
                 <br />
                 <br />
-                Aenean volutpat consectetur rutrum. Praesent tempor sodales leo, ut pulvinar lacus pellentesque sit
-                amet. Mauris vel nisl nec nisl vestibulum consequat nec vel nunc. Phasellus augue massa, vulputate nec
-                pulvinar eget, convallis eu ipsum. Maecenas hendrerit rhoncus urna, eu venenatis nisi lobortis sed.
+                Myers-Brigss: Mediator
                 <br />
                 <br />
-                Cras tempus turpis a turpis cursus, suscipit vulputate neque condimentum. Nam non nisl sed nulla dapibus
-                lacinia eu sit amet tellus. Sed sagittis ligula a tellus iaculis, nec facilisis ante feugiat.
+                {progressBars.map((bar) => (
+                  <div key={bar.id} style={progressBarContainerStyle}>
+                    <p>
+                      {bar.id}: {bar.progress}%
+                    </p>
+                    <div style={progressBarStyle}>
+                      <div style={{ ...filledBarStyle, width: `${bar.progress}%` }}></div>
+                    </div>
+                  </div>
+                ))}
               </p>
             </div>
           </div>
           <div id="aboutHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
-            <img id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
+            <img alt="" id="image" src={photo} style={{ maxWidth: "100%", height: "auto" }} />
           </div>
         </div>
 

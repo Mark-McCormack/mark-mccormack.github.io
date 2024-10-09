@@ -3,24 +3,16 @@
   width: 100%;
   height: 100%;
   grid-template-areas:
-    "blogMenu blogMenu blogMenu blogMenu"
-    "blogHeader blogHeader blogHeader blogHeader"
-    "blogHeader blogHeader blogHeader blogHeader"
-    "blogHeader blogHeader blogHeader blogHeader"
-    "blogSearchBar blogSearchBar blogSearchBar blogSearchBar"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost1 blogPost1"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost2 blogPost2"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost3 blogPost3"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost4 blogPost4"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost5 blogPost5"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost6 blogPost6"
-    "a-BrQv3-3-1-0-1 a-BrQv3-3-1-0-1 blogPost7 blogPost7"
-    "blogCardDivider blogCardDivider blogCardDivider blogCardDivider"
-    "blogItem1 blogItem2 blogItem3 blogItem4"
-    "blogLinks blogLinks blogLinks blogLinks"
-    "blogFooter blogFooter blogFooter blogFooter";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 20vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 15vh 20vh 15vh 20vh;
+    "blogMenu blogMenu blogMenu blogMenu blogMenu"
+    "blogHeader blogHeader blogHeader blogHeader blogHeader"
+    "blog-0 blog-1 blog-2 blog-3 blog-4"
+    "blog-5 blog-6 blog-7 blog-8 blog-9"
+    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "blog-10 blog-11 blog-12 blog-13 blog-14"
+    "blog-15 blog-16 blog-17 blog-18 blog-19"
+    "blogFooter blogFooter blogFooter blogFooter blogFooter";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 60vh 47vh 47vh 15vh 47vh 47vh 20vh;
 }
 .blogContainer > div {
   margin: 0.5rem;
@@ -33,57 +25,81 @@
   color: black;
 }
 
+#blogHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#blogHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
 .blogMenu {
   grid-area: blogMenu;
 }
 .blogHeader {
   grid-area: blogHeader;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
 }
-.blogSearchBar {
-  grid-area: blogSearchBar;
+.blog-0 {
+  grid-area: blog-0;
 }
-.a-BrQv3-3-1-0-1 {
-  grid-area: a-BrQv3-3-1-0-1;
+.blog-1 {
+  grid-area: blog-1;
 }
-.blogPost1 {
-  grid-area: blogPost1;
+.blog-8 {
+  grid-area: blog-8;
 }
-.blogPost2 {
-  grid-area: blogPost2;
+.blog-2 {
+  grid-area: blog-2;
 }
-.blogPost3 {
-  grid-area: blogPost3;
+.blog-3 {
+  grid-area: blog-3;
 }
-.blogPost4 {
-  grid-area: blogPost4;
+.blog-9 {
+  grid-area: blog-9;
 }
-.blogPost5 {
-  grid-area: blogPost5;
+.blog-4 {
+  grid-area: blog-4;
 }
-.blogPost6 {
-  grid-area: blogPost6;
+.blog-5 {
+  grid-area: blog-5;
 }
-.blogPost7 {
-  grid-area: blogPost7;
+.blog-10 {
+  grid-area: blog-10;
 }
-.blogCardDivider {
-  grid-area: blogCardDivider;
+.blog-6 {
+  grid-area: blog-6;
 }
-.blogItem1 {
-  grid-area: blogItem1;
+.blog-7 {
+  grid-area: blog-7;
 }
-.blogItem2 {
-  grid-area: blogItem2;
-}
-.blogItem3 {
-  grid-area: blogItem3;
-}
-.blogItem4 {
-  grid-area: blogItem4;
-}
-.blogLinks {
-  grid-area: blogLinks;
+.blog-11 {
+  grid-area: blog-11;
 }
 .blogFooter {
   grid-area: blogFooter;
+}
+
+.blogProjectCard {
+  transition: transform 0.2s ease;
+  display: flex;
+}
+
+.blogProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+
+.blogHeader {
+  align-items: center; /* Vertically center align items */
 }

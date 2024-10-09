@@ -10,20 +10,51 @@
     "dividerOne dividerOne dividerOne dividerOne dividerOne"
     "conferencesProject-11 conferencesProject-12 conferencesProject-13 conferencesProject-14 conferencesProject-15"
     "conferencesProject-16 conferencesProject-17 conferencesProject-18 conferencesProject-19 conferencesProject-20"
-    "divider2 divider2 divider2 divider2 divider2";
+    "dividerTwo dividerTwo dividerTwo dividerTwo dividerTwo"
+    "conferencesProject-21 conferencesProject-22 conferencesProject-23 conferencesProject-24 conferencesProject-25"
+    "conferencesProject-26 conferencesProject-27 conferencesProject-28 conferencesProject-29 conferencesProject-30"
+    "divider3 divider3 divider3 divider3 divider3";
+
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 46vh 46vh 15vh 46vh 46vh 20vh;
+  grid-template-rows: 10vh 60vh 47vh 47vh 15vh 47vh 47vh 15vh 49vh 49vh 20vh;
 }
 
 .conferencesProjectsContainer > div {
-  border: 1px dashed #888;
-  background-color: lightgray;
-  margin: 10px;
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+#conferencesHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#conferencesHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
 }
 
 .conferencesHeader {
   grid-template-columns: 1fr 1fr;
   display: grid;
+}
+
+.imgAcademia {
+  -webkit-border-radius: 10px;
 }
 
 .conferencesMenu {
@@ -76,6 +107,7 @@
 
 .dividerOne {
   grid-area: dividerOne;
+  background-color: #3f6998 !important;
 }
 
 .conferencesProject-11 {
@@ -118,8 +150,54 @@
   grid-area: conferencesProject-20;
 }
 
-.divider2 {
-  grid-area: divider2;
+.dividerTwo {
+  grid-area: dividerTwo;
+  background-color: #3f6998 !important;
+}
+
+.conferencesProject-21 {
+  grid-area: conferencesProject-21;
+}
+
+.conferencesProject-22 {
+  grid-area: conferencesProject-22;
+}
+
+.conferencesProject-23 {
+  grid-area: conferencesProject-23;
+}
+
+.conferencesProject-24 {
+  grid-area: conferencesProject-24;
+}
+
+.conferencesProject-25 {
+  grid-area: conferencesProject-25;
+}
+
+.conferencesProject-26 {
+  grid-area: conferencesProject-26;
+}
+
+.conferencesProject-27 {
+  grid-area: conferencesProject-27;
+}
+
+.conferencesProject-28 {
+  grid-area: conferencesProject-28;
+}
+
+.conferencesProject-29 {
+  grid-area: conferencesProject-29;
+}
+
+.conferencesProject-30 {
+  grid-area: conferencesProject-30;
+}
+
+.divider3 {
+  grid-area: divider3;
+  background-color: #3f6998 !important;
 }
 
 #conferencesHeaderImage img {

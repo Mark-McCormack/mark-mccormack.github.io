@@ -1,6 +1,7 @@
 .card {
   box-shadow: none;
   max-height: 100%;
+  text-align: left;
 }
 
 .card-content {
