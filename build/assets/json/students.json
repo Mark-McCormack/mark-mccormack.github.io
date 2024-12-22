@@ -1,142 +1,142 @@
 [
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "FRACC (2022-2023)",
+    "subtitle": "Feedback Rater and Assessment for College Classrooms",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=3800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "CELTIC (2023-2024)",
+    "subtitle": "Collaborative Environment for Learning and Teaching with Integrated Coding",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3Nyb29tJTIwY29sbGFib3JhdGlvbiUyMGNsYXNzcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "PACTS (2023-2024)",
+    "subtitle": "Pedagogical AI Copilot for Teachers and Students",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "SEPTOR (2023-2024)",
+    "subtitle": "Student Exam Practice Tool with Organised Resources",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "RAMP (2024-2025)",
+    "subtitle": "Retrieval Augmented Memory Palace for HCI in Learning",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1588580000645-4562a6d2c839?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcnl8ZW58MHx8MHx8fDA%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "STAMPEDE (2024-2025)",
+    "subtitle": "Stable Diffusion Tracked to Memory Palaces for Easy and Direct Education",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpbnRpbmdzfGVufDB8fDB8fHww",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "CELTIC II (2024-2025)",
+    "subtitle": "Collaborative Environment for Learning and Teaching with Integrated Coding",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3Nyb29tJTIwY29sbGFib3JhdGlvbiUyMGNsYXNzcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "BRAIN DMP (2024-2025)",
+    "subtitle": "Generate Visualisation of Brains for Large Language Models",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "BRAIN DNC (2024-2025)",
+    "subtitle": "Incorporate 3D Gaussian Splatting for SPARSE Project",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHBvaW50c3xlbnwwfHwwfHx8MA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "LLM-NOTE (2024-2025)",
+    "subtitle": "Transcribe and Note YouTube Videos with Local LLM",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1599299009482-3b5326fc52e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxlY3R1cmUlMjBub3Rlc3xlbnwwfHwwfHx8MA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "CLUSTER (2024-2025)",
+    "subtitle": "Classroom Simulator for Undergrad. Teaching and Education Students",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "SPOTILLM (2024-2025)",
+    "subtitle": "Organise and Create Playlists with Large Language and Clusters",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1489641493513-ba4ee84ccea9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBwbGF5bGlzdHN8ZW58MHx8MHx8fDA%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "DOCTALK (2024-2025)",
+    "subtitle": "Discuss Research Papers Locally with LLM and RAG",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1610385983496-d9bb0fe6a852?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
-    "subtitle": "Online shopping platform",
+    "title": "CYCL-CAM (2024-2025)",
+    "subtitle": "View Photos with Several Filters without Modification",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://images.unsplash.com/photo-1460134846237-51c777df6111?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   },
   {
-    "title": "E-commerce Website",
+    "title": "What Project is Next?",
     "subtitle": "Online shopping platform",
     "body": "An e-commerce website built using MERN stack (MongoDB, Express.js, React, Node.js). Allows users to browse and purchase products.",
-    "img": "https://picsum.photos/1160/720",
+    "img": "https://placeholder.com/1160x720",
     "tags": "MERN, E-commerce, Online Shopping"
   }
 ]
