@@ -15,3 +15,18 @@
 .boxFive {
   transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .boxOne,
+  .boxTwo,
+  .boxThree,
+  .boxFour,
+  .boxFive {
+    display: none;
+  }
+
+  .navbar-end{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

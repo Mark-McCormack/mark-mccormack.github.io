@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./research.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface ResearchData {
@@ -100,7 +99,6 @@ const Research: React.FC = () => {
             />
           </div>
         </div>
-
         {research.slice(0, 10).map((project, index) => (
           <div className={`researchProject-${index + 1} researchProjectCard`} key={index}>
             <Project
@@ -114,9 +112,7 @@ const Research: React.FC = () => {
             />
           </div>
         ))}
-
-        <div className="dividerOne"></div>
-
+        <div className="divider1-research"></div>
         {research.slice(9, 20).map((project, index) => (
           <div className={`researchProject-${index + 10} researchProjectCard`} key={index}>
             <Project
@@ -129,8 +125,7 @@ const Research: React.FC = () => {
             />
           </div>
         ))}
-
-        <div className="divider2" style={{ backgroundColor: "#48c78e" }}></div>
+        <div className="divider2-research"></div>
 
         {research.slice(9, 20).map((project, index) => (
           <div className={`researchProject-${index + 20} researchProjectCard`} key={index}>
@@ -144,8 +139,7 @@ const Research: React.FC = () => {
             />
           </div>
         ))}
-
-        <div className="divider3" style={{ backgroundColor: "#48c78e" }}>
+        <div className="divider3-research">
           <Footer />
         </div>
       </div>

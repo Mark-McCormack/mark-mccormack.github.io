@@ -27,13 +27,13 @@ const Teaching: React.FC = () => {
 
   return (
     <div className="teachingContainer">
-      <div className="teachingPortfolioMenu" style={{ overflow: "visible" }}>
+      <div className="teachingPortfolio-Menu" style={{ overflow: "visible" }}>
         <Navbar />
       </div>
 
-      <div className="teachingPortfolioHeader">
-        <div id="teachingPortfolioHeaderText">
-          <div id="teachingPortfolioHeaderCard">
+      <div className="teachingPortfolio-Header">
+        <div id="teachingPortfolio-HeaderText">
+          <div id="teachingPortfolio-HeaderCard">
             <p className="title is-1" style={{ color: "white" }}>
               Teaching Projects
             </p>
@@ -91,7 +91,7 @@ const Teaching: React.FC = () => {
           </div>
         </div>
         <div
-          id="teachingPortfolioHeaderImage"
+          id="teachingPortfolio-HeaderImage"
           style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}
           className="imgTeaching"
         >
@@ -118,7 +118,7 @@ const Teaching: React.FC = () => {
         </div>
       ))}
 
-      <div className="dividerOne"></div>
+      <div className="divider1"></div>
 
       {teaching.slice(10, 20).map((project, index) => (
         <div className={`teachingProject-${index + 11} teachingProjectCard`} key={index}>

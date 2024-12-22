@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./project.css";
 import "../Modal/modal";
-import Modal from "../Modal/modal";
-import ReactDOM from "react-dom"; // Import ReactDOM for creating a portal
 
 type Props = {
   title?: string;
@@ -27,17 +25,7 @@ const Card: React.FC<Props> = ({
   url = "https://google.com",
   updateState,
 }) => {
-  const [isModalVisible, setModalVisible] = useState(false);
 
-  const showModal = () => {
-    setModalVisible(true);
-  };
-
-  const hideModal = () => {
-    setModalVisible(false);
-  };
-
-  const modalRoot = document.getElementById("modal-root") || document.body;
 
   return (
     <div style={{ maxHeight: "100%", display: "flex", flexDirection: "column", overflow: "hidden" }}>

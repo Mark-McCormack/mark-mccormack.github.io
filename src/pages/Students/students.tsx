@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./students.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface StudentData {
@@ -96,7 +95,7 @@ const Students: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerOne">
+        <div className="divider1">
           <div id="particles-js"></div>
         </div>
 

@@ -1,16 +1,23 @@
+/* Main container for the teaching grid layout */
 .teachingContainer {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-areas:
-    "teachingPortfolioMenu teachingPortfolioMenu teachingPortfolioMenu teachingPortfolioMenu teachingPortfolioMenu"
-    "teachingPortfolioHeader teachingPortfolioHeader teachingPortfolioHeader teachingPortfolioHeader teachingPortfolioHeader"
+    "teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu"
+
+    "teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header"
+
     "teachingProject-1 teachingProject-2 teachingProject-3 teachingProject-4 teachingProject-5"
     "teachingProject-6 teachingProject-7 teachingProject-8 teachingProject-9 teachingProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+
+    "divider1 divider1 divider1 divider1 divider1"
+
     "teachingProject-11 teachingProject-12 teachingProject-13 teachingProject-14 teachingProject-15"
     "teachingProject-16 teachingProject-17 teachingProject-18 teachingProject-19 teachingProject-20"
+
     "divider2 divider2 divider2 divider2 divider2";
+    
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10vh 60vh 49vh 49vh 15vh 49vh 49vh 20vh;
 }
@@ -30,7 +37,7 @@
   border-radius: 1rem;
 }
 
-#teachingPortfolioHeaderCard {
+#teachingPortfolio-HeaderCard {
   margin: 1.5rem;
   background: #009fff;
   padding: 1rem;
@@ -41,25 +48,25 @@
   color: white;
 }
 
-#teachingPortfolioHeaderImage {
+#teachingPortfolio-HeaderImage {
   border-radius: 1rem;
   border: 0.5vmin solid #05060f;
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
 }
 
-.teachingPortfolioHeader {
+.teachingPortfolio-Header {
   grid-template-columns: 1fr 1fr;
   display: grid;
   align-items: center; /* Vertically center align items */
 }
 
-.teachingPortfolioMenu {
-  grid-area: teachingPortfolioMenu;
+.teachingPortfolio-Menu {
+  grid-area: teachingPortfolio-Menu;
 }
 
-.teachingPortfolioHeader {
-  grid-area: teachingPortfolioHeader;
+.teachingPortfolio-Header {
+  grid-area: teachingPortfolio-Header;
 }
 
 .teachingProject-1 {
@@ -102,8 +109,14 @@
   grid-area: teachingProject-10;
 }
 
-.dividerOne {
-  grid-area: dividerOne;
+.divider1 {
+  grid-area: divider1;
+  background-color: #3f6998 !important;
+}
+
+.divider2 {
+  grid-area: divider2;
+  background-color: #48c78e !important;
 }
 
 .teachingProject-11 {
@@ -146,15 +159,73 @@
   grid-area: teachingProject-20;
 }
 
-.divider2 {
-  grid-area: divider2;
-  background-color: #48c78e;
-}
-
 .teachingProjectCard {
   transition: transform 0.2s ease;
 }
 
 .teachingProjectCard:hover {
   transform: scale(1.02); /* Enlarge the item by 2% on hover */
+}
+
+@media (max-width: 768px) {
+  .teachingContainer {
+    grid-template-areas:
+      "teachingPortfolio-Menu"
+      "teachingPortfolio-Header"
+      "teachingProject-1"
+      "teachingProject-2"
+      "teachingProject-3"
+      "teachingProject-4"
+      "teachingProject-5"
+      "teachingProject-6"
+      "teachingProject-7"
+      "teachingProject-8"
+      "teachingProject-9"
+      "teachingProject-10"
+      "divider1"
+      "teachingProject-11"
+      "teachingProject-12"
+      "teachingProject-13"
+      "teachingProject-14"
+      "teachingProject-15"
+      "teachingProject-16"
+      "teachingProject-17"
+      "teachingProject-18"
+      "teachingProject-19"
+      "teachingProject-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .teachingContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #teachingPortfolio-HeaderCard {
+    margin: 1rem; /* Reduce margin for better spacing on smaller devices */
+    padding: 0.8rem;
+  }
+
+  .teachingProjectCard {
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+
+  .divider1, .divider2 {
+    height: 2rem; /* Adjust divider height for smaller screens */
+  }
+
+  #teachingPortfolio-HeaderImage {
+    display: none;
+  }
+
+  .teachingPortfolio-Header {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

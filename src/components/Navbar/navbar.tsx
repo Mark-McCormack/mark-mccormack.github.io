@@ -3,19 +3,19 @@ import "./navbar.css";
 import photo from "../../assets/images/graduation-hat.png";
 
 const Navbar: React.FC = () => {
-  const aspectRatio = 25 / 37.5; // Specify the desired aspect ratio
-  const defaultWidth = 25;
-  const defaultHeight = 37.5;
-  const [isHovered, setHovered] = useState(false);
+  // Correct state name
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  // Toggle function for the menu
+  const toggleMenu = () => {
+    setIsMenuActive(!isMenuActive); // Toggle the isMenuActive state
+  };
 
   const [isActive, setIsActive] = useState(false);
 
   const toggleDropdown = () => {
     setIsActive(!isActive);
   };
-
-  const width = isHovered ? defaultWidth * 1.2 : defaultWidth; // Adjust multiplier as needed
-  const height = isHovered ? width / aspectRatio : defaultHeight;
 
   return (
     <nav
@@ -29,20 +29,19 @@ const Navbar: React.FC = () => {
           <img alt="" src={photo} style={{ height: "50px", width: "50px", maxHeight: "50px" }} />
         </a>
 
-        <a
-          role="button"
-          className="navbar-burger"
+        <button
+          className={`navbar-burger ${isMenuActive ? "is-active" : ""}`} // Correct class toggle
           aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
+          aria-expanded={isMenuActive ? "true" : "false"}
+          onClick={toggleMenu} // Correct onClick event handler
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </button>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div id="navbarBasicExample" className={`navbar-menu ${isMenuActive ? "is-active" : ""}`}>
         <div className="navbar-start">
           <a className="navbar-item" href="/">
             Home
@@ -50,38 +49,30 @@ const Navbar: React.FC = () => {
           <a className="navbar-item" href="/aboutme">
             About Me
           </a>
-
           <a className="navbar-item" href="/#/teaching-statement">
             Teaching Statement
           </a>
-
           <a className="navbar-item" href="/#/blogs">
             Blogs
           </a>
           <a className="navbar-item" href="/#/business">
             Business
           </a>
-
           <a className="navbar-item" href="/#/projects">
             Projects
           </a>
-
           <a className="navbar-item" href="/#/research">
             Research
           </a>
-
           <a className="navbar-item" href="/#/students">
             Students
           </a>
-
           <a className="navbar-item" href="/#/teaching">
             Teaching
           </a>
-
           <a className="navbar-item" href="/#/academia">
             Academia
           </a>
-
           <a className="navbar-item" href="/#/skills">
             Skills
           </a>

@@ -95,7 +95,7 @@ const Conferences: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerOne"></div>
+        <div className="divider1-conference"></div>
 
         {projects.slice(10, 20).map((project, index) => (
           <div
@@ -115,7 +115,7 @@ const Conferences: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerTwo"></div>
+        <div className="divider2-conference"></div>
 
         {projects.slice(20, 30).map((project, index) => (
           <div
@@ -135,7 +135,7 @@ const Conferences: React.FC = () => {
           </div>
         ))}
 
-        <div className="divider3" style={{ backgroundColor: "#48c78e" }}>
+        <div className="divider3-conference">
           <Footer />
         </div>
       </div>

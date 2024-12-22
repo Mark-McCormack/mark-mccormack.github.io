@@ -7,7 +7,7 @@
     "portfolioHeader portfolioHeader portfolioHeader portfolioHeader portfolioHeader"
     "project-1 project-2 project-3 project-4 project-5"
     "project-6 project-7 project-8 project-9 project-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "project-11 project-12 project-13 project-14 project-15"
     "project-16 project-17 project-18 project-19 project-20"
     "divider2 divider2 divider2 divider2 divider2";
@@ -85,8 +85,8 @@
 .project-10 {
   grid-area: project-10;
 }
-.dividerOne {
-  grid-area: dividerOne;
+.divider1 {
+  grid-area: divider1;
 }
 .project-11 {
   grid-area: project-11;
@@ -129,4 +129,67 @@
 }
 .portfolioHeader {
   align-items: center; /* Vertically center align items */
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    grid-template-areas:
+      "portfolioMenu"
+      "portfolioHeader"
+      "project-1"
+      "project-2"
+      "project-3"
+      "project-4"
+      "project-5"
+      "project-6"
+      "project-7"
+      "project-8"
+      "project-9"
+      "project-10"
+      "divider1"
+      "project-11"
+      "project-12"
+      "project-13"
+      "project-14"
+      "project-15"
+      "project-16"
+      "project-17"
+      "project-18"
+      "project-19"
+      "project-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .projectsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #portfolioHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+  }
+
+  .projectCard {
+    font-size: 0.9rem; /* Slightly reduce font size for readability */
+  }
+
+  .divider1, .divider2 {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  #portfolioHeaderImage {
+    display: none;
+  }
+
+  .portfolioHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

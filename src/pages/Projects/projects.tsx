@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./projects.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface ProjectData {
@@ -94,7 +93,7 @@ const Projects: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerOne"></div>
+        <div className="divider1"></div>
 
         {projects.slice(9, 20).map((project, index) => (
           <div className={`project-${index + 10} projectCard`} key={index}>

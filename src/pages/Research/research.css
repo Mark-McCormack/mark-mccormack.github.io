@@ -7,7 +7,7 @@
     "researchHeader researchHeader researchHeader researchHeader researchHeader"
     "researchProject-1 researchProject-2 researchProject-3 researchProject-4 researchProject-5"
     "researchProject-6 researchProject-7 researchProject-8 researchProject-9 researchProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "researchProject-11 researchProject-12 researchProject-13 researchProject-14 researchProject-15"
     "researchProject-16 researchProject-17 researchProject-18 researchProject-19 researchProject-20"
     "divider2 divider2 divider2 divider2 divider2"
@@ -15,7 +15,7 @@
     "researchProject-26 researchProject-27 researchProject-28 researchProject-29 researchProject-30"
     "divider3 divider3 divider3 divider3 divider3";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 46.5vh 46.5vh 15vh 46.5vh 46.5vh 15vh 46.5vh 46vh;
+  grid-template-rows: 10vh 60vh 46.5vh 46.5vh 15vh 46.5vh 46.5vh 15vh 46.5vh 46vh 20vh;
 }
 
 .researchProjectsContainer > div {
@@ -100,10 +100,6 @@
   grid-area: researchProject-10;
 }
 
-.dividerOne {
-  grid-area: dividerOne;
-}
-
 .researchProject-11 {
   grid-area: researchProject-11;
 }
@@ -144,12 +140,20 @@
   grid-area: researchProject-20;
 }
 
-.divider2 {
-  grid-area: divider2;
+.divider1-research {
+  grid-area: divider1;
+  background-color: #3f6998 !important;
 }
 
-.divider3 {
+.divider2-research {
+  grid-area: divider2;
+  background-color: #3f6998 !important;
+}
+
+.divider3-research {
   grid-area: divider3;
+  background-color: #48c78e !important;
+
 }
 
 .researchProject-21 {
@@ -208,4 +212,70 @@
 
 .researchHeader {
   align-items: center; /* Vertically center align items */
+}
+
+@media (max-width: 768px) {
+  .researchProjectsContainer {
+    grid-template-areas:
+      "researchMenu"
+      "researchHeader"
+      "researchProject-1"
+      "researchProject-2"
+      "researchProject-3"
+      "researchProject-4"
+      "researchProject-5"
+      "researchProject-6"
+      "researchProject-7"
+      "researchProject-8"
+      "researchProject-9"
+      "researchProject-10"
+      "divider1"
+      "researchProject-11"
+      "researchProject-12"
+      "researchProject-13"
+      "researchProject-14"
+      "researchProject-15"
+      "researchProject-16"
+      "researchProject-17"
+      "researchProject-18"
+      "researchProject-19"
+      "researchProject-20"
+      "divider2"
+      "researchProject-21"
+      "researchProject-22"
+      "researchProject-23"
+      "researchProject-24"
+      "researchProject-25"
+      "researchProject-26"
+      "researchProject-27"
+      "researchProject-28"
+      "researchProject-29"
+      "researchProject-30"
+      "divider3";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; /* Allow rows to adjust based on content height */
+  }
+
+  .researchProjectsContainer > div {
+    margin: 0.5rem;
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  #researchHeaderCard {
+    margin: 1rem; /* Reduce margin for better fit */
+    padding: 0.5rem;
+  }
+
+  #researchHeaderImage {
+    display: none;
+  }
+
+  .researchHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

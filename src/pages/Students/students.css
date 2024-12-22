@@ -7,7 +7,7 @@
     "studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader"
     "studentProject-1 studentProject-2 studentProject-3 studentProject-4 studentProject-5"
     "studentProject-6 studentProject-7 studentProject-8 studentProject-9 studentProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "studentProject-11 studentProject-12 studentProject-13 studentProject-14 studentProject-15"
     "studentProject-16 studentProject-17 studentProject-18 studentProject-19 studentProject-20"
     "divider2 divider2 divider2 divider2 divider2";
@@ -88,8 +88,8 @@
 .studentProject-10 {
   grid-area: studentProject-10;
 }
-.dividerOne {
-  grid-area: dividerOne;
+.divider1 {
+  grid-area: divider1;
 }
 .studentProject-11 {
   grid-area: studentProject-11;
@@ -135,4 +135,67 @@
 
 .studentPortfolioHeader {
   align-items: center; /* Vertically center align items */
+}
+
+@media (max-width: 768px) {
+  .studentsContainer {
+    grid-template-areas:
+      "studentPortfolioMenu"
+      "studentPortfolioHeader"
+      "studentProject-1"
+      "studentProject-2"
+      "studentProject-3"
+      "studentProject-4"
+      "studentProject-5"
+      "studentProject-6"
+      "studentProject-7"
+      "studentProject-8"
+      "studentProject-9"
+      "studentProject-10"
+      "divider1"
+      "studentProject-11"
+      "studentProject-12"
+      "studentProject-13"
+      "studentProject-14"
+      "studentProject-15"
+      "studentProject-16"
+      "studentProject-17"
+      "studentProject-18"
+      "studentProject-19"
+      "studentProject-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .studentsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #studentPortfolioHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding */
+  }
+
+  .studentProjectCard {
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+
+  .divider1, .divider2 {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  #studentPortfolioHeaderImage {
+    display: none;
+  }
+
+  .studentPortfolioHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

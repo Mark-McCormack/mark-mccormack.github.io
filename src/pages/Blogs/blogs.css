@@ -7,7 +7,7 @@
     "blogHeader blogHeader blogHeader blogHeader blogHeader"
     "blog-0 blog-1 blog-2 blog-3 blog-4"
     "blog-5 blog-6 blog-7 blog-8 blog-9"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "blog-10 blog-11 blog-12 blog-13 blog-14"
     "blog-15 blog-16 blog-17 blog-18 blog-19"
     "blogFooter blogFooter blogFooter blogFooter blogFooter";
@@ -102,4 +102,61 @@
 
 .blogHeader {
   align-items: center; /* Vertically center align items */
+}
+
+@media (max-width: 768px) {
+  .blogContainer {
+    grid-template-areas:
+      "blogMenu"
+      "blogHeader"
+      "blog-0"
+      "blog-1"
+      "blog-2"
+      "blog-3"
+      "blog-4"
+      "divider1"
+      "blog-5"
+      "blog-6"
+      "blog-7"
+      "blog-8"
+      "blog-9"
+      "divider2"
+      "blog-10"
+      "blog-11"
+      "blogFooter";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .blogContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Reduce padding for better fitting */
+  }
+
+  #blogHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem;
+  }
+
+  .divider1, .divider2 {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  .blogProjectCard {
+    font-size: 0.9rem; /* Adjust font size for readability */
+    flex-direction: column; /* Stack elements vertically in project cards */
+  }
+
+  #blogHeaderImage {
+    display: none;
+  }
+
+  .blogHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

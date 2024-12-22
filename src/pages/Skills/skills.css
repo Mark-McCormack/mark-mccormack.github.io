@@ -7,7 +7,7 @@
     "SkillsPortfolioHeader SkillsPortfolioHeader SkillsPortfolioHeader SkillsPortfolioHeader SkillsPortfolioHeader"
     "SkillsProject-1 SkillsProject-2 SkillsProject-3 SkillsProject-4 SkillsProject-5"
     "SkillsProject-6 SkillsProject-7 SkillsProject-8 SkillsProject-9 SkillsProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "SkillsProject-11 SkillsProject-12 SkillsProject-13 SkillsProject-14 SkillsProject-15"
     "SkillsProject-16 SkillsProject-17 SkillsProject-18 SkillsProject-19 SkillsProject-20"
     "divider2 divider2 divider2 divider2 divider2";
@@ -75,8 +75,8 @@
 .SkillsProject-10 {
   grid-area: SkillsProject-10;
 }
-.dividerOne {
-  grid-area: dividerOne;
+.divider1 {
+  grid-area: divider1;
 }
 .SkillsProject-11 {
   grid-area: SkillsProject-11;
@@ -140,4 +140,67 @@
   border: 0.5vmin solid #05060f;
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .SkillsContainer {
+    grid-template-areas:
+      "SkillsPortfolioMenu"
+      "SkillsPortfolioHeader"
+      "SkillsProject-1"
+      "SkillsProject-2"
+      "SkillsProject-3"
+      "SkillsProject-4"
+      "SkillsProject-5"
+      "SkillsProject-6"
+      "SkillsProject-7"
+      "SkillsProject-8"
+      "SkillsProject-9"
+      "SkillsProject-10"
+      "divider1"
+      "SkillsProject-11"
+      "SkillsProject-12"
+      "SkillsProject-13"
+      "SkillsProject-14"
+      "SkillsProject-15"
+      "SkillsProject-16"
+      "SkillsProject-17"
+      "SkillsProject-18"
+      "SkillsProject-19"
+      "SkillsProject-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .SkillsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #SkillsPortfolioHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding */
+  }
+
+  .SkillsProjectCard {
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+
+  .divider1, .divider2 {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  #SkillsPortfolioHeaderImage {
+    display: none;
+  }
+
+  .SkillsPortfolioHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

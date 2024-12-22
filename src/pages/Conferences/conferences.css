@@ -7,7 +7,7 @@
     "conferencesHeader conferencesHeader conferencesHeader conferencesHeader conferencesHeader"
     "conferencesProject-1 conferencesProject-2 conferencesProject-3 conferencesProject-4 conferencesProject-5"
     "conferencesProject-6 conferencesProject-7 conferencesProject-8 conferencesProject-9 conferencesProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "conferencesProject-11 conferencesProject-12 conferencesProject-13 conferencesProject-14 conferencesProject-15"
     "conferencesProject-16 conferencesProject-17 conferencesProject-18 conferencesProject-19 conferencesProject-20"
     "dividerTwo dividerTwo dividerTwo dividerTwo dividerTwo"
@@ -105,11 +105,6 @@
   grid-area: conferencesProject-10;
 }
 
-.dividerOne {
-  grid-area: dividerOne;
-  background-color: #3f6998 !important;
-}
-
 .conferencesProject-11 {
   grid-area: conferencesProject-11;
 }
@@ -150,9 +145,20 @@
   grid-area: conferencesProject-20;
 }
 
-.dividerTwo {
+.divider1-conference {
+  grid-area: divider1;
+  background-color: #3f6998 !important;
+}
+
+.divider2-conference {
   grid-area: dividerTwo;
   background-color: #3f6998 !important;
+}
+
+.divider3-conference {
+  grid-area: divider3;
+  background-color: #48c78e !important;
+
 }
 
 .conferencesProject-21 {
@@ -195,11 +201,6 @@
   grid-area: conferencesProject-30;
 }
 
-.divider3 {
-  grid-area: divider3;
-  background-color: #3f6998 !important;
-}
-
 #conferencesHeaderImage img {
   width: 100%;
   height: 100%;
@@ -208,4 +209,78 @@
 
 .conferencesHeader {
   align-items: center; /* Vertically center align items */
+}
+
+@media (max-width: 768px) {
+  .conferencesProjectsContainer {
+    grid-template-areas:
+      "conferencesMenu"
+      "conferencesHeader"
+      "conferencesProject-1"
+      "conferencesProject-2"
+      "conferencesProject-3"
+      "conferencesProject-4"
+      "conferencesProject-5"
+      "conferencesProject-6"
+      "conferencesProject-7"
+      "conferencesProject-8"
+      "conferencesProject-9"
+      "conferencesProject-10"
+      "divider1"
+      "conferencesProject-11"
+      "conferencesProject-12"
+      "conferencesProject-13"
+      "conferencesProject-14"
+      "conferencesProject-15"
+      "conferencesProject-16"
+      "conferencesProject-17"
+      "conferencesProject-18"
+      "conferencesProject-19"
+      "conferencesProject-20"
+      "dividerTwo"
+      "conferencesProject-21"
+      "conferencesProject-22"
+      "conferencesProject-23"
+      "conferencesProject-24"
+      "conferencesProject-25"
+      "conferencesProject-26"
+      "conferencesProject-27"
+      "conferencesProject-28"
+      "conferencesProject-29"
+      "conferencesProject-30"
+      "divider3";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .conferencesProjectsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #conferencesHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+  }
+
+  .divider1-conference, .divider2-conference, .divider3-conference {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  .conferencesProjectCard {
+    font-size: 0.9rem; /* Slightly reduce font size for readability */
+  }
+
+  #conferencesHeaderImage {
+    display: none;
+  }
+
+  .conferencesHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

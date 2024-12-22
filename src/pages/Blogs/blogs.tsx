@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./blogs.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface blogData {
@@ -92,7 +91,7 @@ const Blogs: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerOne"></div>
+        <div className="divider1"></div>
 
         {blog.slice(10, 20).map((project, index) => (
           <div className={`blog-${index + 10} blogProjectCard`} key={index + 10}>

@@ -7,7 +7,7 @@
     "businessHeader businessHeader businessHeader businessHeader businessHeader"
     "article-0 article-1 article-2 article-3 article-4"
     "article-5 article-6 article-7 article-8 article-9"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
+    "divider1 divider1 divider1 divider1 divider1"
     "article-10 article-11 article-12 article-13 article-14"
     "article-15 article-16 article-17 article-18 article-19"
     "dividerTwo dividerTwo dividerTwo dividerTwo dividerTwo"
@@ -178,16 +178,20 @@
   grid-area: article-29;
 }
 
-.dividerOne {
-  grid-area: dividerOne;
+.divider1-business {
+  grid-area: divider1;
+  background-color: #3f6998 !important;
 }
 
-.dividerTwo {
+.divider2-business {
   grid-area: dividerTwo;
+  background-color: #3f6998 !important;
 }
 
 .businessFooter {
   grid-area: businessFooter;
+  background-color: #48c78e !important;
+
 }
 
 .businessProjectCard {
@@ -197,4 +201,79 @@
 
 .businessProjectCard:hover {
   transform: scale(1.02); /* Enlarge the item by 10% on hover */
+}
+
+@media (max-width: 768px) {
+  .businessContainer {
+    grid-template-areas:
+      "businessMenu"
+      "businessHeader"
+      "article-0"
+      "article-1"
+      "article-2"
+      "article-3"
+      "article-4"
+      "article-5"
+      "article-6"
+      "article-7"
+      "article-8"
+      "article-9"
+      "divider1"
+      "article-10"
+      "article-11"
+      "article-12"
+      "article-13"
+      "article-14"
+      "article-15"
+      "article-16"
+      "article-17"
+      "article-18"
+      "article-19"
+      "dividerTwo"
+      "article-20"
+      "article-21"
+      "article-22"
+      "article-23"
+      "article-24"
+      "article-25"
+      "article-26"
+      "article-27"
+      "article-28"
+      "article-29"
+      "businessFooter";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .businessContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #businessHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+  }
+
+  .divider1-business, .divider2-business {
+    height: 2rem; /* Adjust divider height */
+  }
+
+  .businessProjectCard {
+    font-size: 0.9rem; /* Slightly reduce font size for readability */
+    flex-direction: column; /* Stack elements vertically in project cards */
+  }
+
+  #businessHeaderImage {
+    display: none;
+  }
+
+  .businessHeader {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

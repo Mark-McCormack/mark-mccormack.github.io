@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./business.css";
 import Navbar from "../../components/Navbar/navbar";
 import Project from "../../components/Project/project";
-import photo from "../../assets/images/projects.jpg";
 import Footer from "../../components/Footer/footer";
 
 interface BusinessData {
@@ -93,7 +92,7 @@ const Business: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerOne"></div>
+        <div className="divider1-business"></div>
 
         {business.slice(10, 20).map((project, index) => (
           <div className={`article-${index + 10}`} key={index + 10}>
@@ -109,7 +108,7 @@ const Business: React.FC = () => {
           </div>
         ))}
 
-        <div className="dividerTwo"></div>
+        <div className="divider2-business"></div>
 
         {business.slice(20, 30).map((project, index) => (
           <div className={`article-${index + 20}`} key={index + 20}>

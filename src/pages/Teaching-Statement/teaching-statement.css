@@ -1,22 +1,28 @@
-.teachingStatementContainer {
+/* Main container for the teaching grid layout */
+.teachingContainer {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-areas:
-    "teachingStatementPortfolioMenu teachingStatementPortfolioMenu teachingStatementPortfolioMenu teachingStatementPortfolioMenu teachingStatementPortfolioMenu"
-    "teachingStatementPortfolioHeader teachingStatementPortfolioHeader teachingStatementPortfolioHeader teachingStatementPortfolioHeader teachingStatementPortfolioHeader"
-    "teachingStatementPortfolioHeader2 teachingStatementPortfolioHeader3 teachingStatementPortfolioHeader4 teachingStatementPortfolioHeader5 teachingStatementPortfolioHeader5"
-    "teachingStatementProject-1 teachingStatementProject-2 teachingStatementProject-3 teachingStatementProject-4 teachingStatementProject-5"
-    "teachingStatementProject-6 teachingStatementProject-7 teachingStatementProject-8 teachingStatementProject-9 teachingStatementProject-10"
-    "dividerOne dividerOne dividerOne dividerOne dividerOne"
-    "teachingStatementProject-11 teachingStatementProject-12 teachingStatementProject-13 teachingStatementProject-14 teachingStatementProject-15"
-    "teachingStatementProject-16 teachingStatementProject-17 teachingStatementProject-18 teachingStatementProject-19 teachingStatementProject-20"
+    "teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu teachingPortfolio-Menu"
+
+    "teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header teachingPortfolio-Header"
+
+    "teachingProject-1 teachingProject-2 teachingProject-3 teachingProject-4 teachingProject-5"
+    "teachingProject-6 teachingProject-7 teachingProject-8 teachingProject-9 teachingProject-10"
+
+    "divider1 divider1 divider1 divider1 divider1"
+
+    "teachingProject-11 teachingProject-12 teachingProject-13 teachingProject-14 teachingProject-15"
+    "teachingProject-16 teachingProject-17 teachingProject-18 teachingProject-19 teachingProject-20"
+
     "divider2 divider2 divider2 divider2 divider2";
+    
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10vh 60vh 60vh 48vh 48vh 15vh 48vh 48vh 20vh;
+  grid-template-rows: 10vh 60vh 49vh 49vh 15vh 49vh 49vh 20vh;
 }
 
-.teachingStatementContainer > div {
+.teachingContainer > div {
   margin: 0.5rem;
   background: #fff;
   padding: 1rem;
@@ -27,113 +33,194 @@
   color: black;
 }
 
-.imgteachingStatement {
+.imgTeaching {
   border-radius: 1rem;
-  -webkit-border-radius: 1rem;
 }
 
-.teachingStatementPortfolioHeader {
+#teachingPortfolio-HeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#teachingPortfolio-HeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+.teachingPortfolio-Header {
   grid-template-columns: 1fr 1fr;
   display: grid;
   align-items: center; /* Vertically center align items */
 }
 
-.teachingStatementPortfolioMenu {
-  grid-area: teachingStatementPortfolioMenu;
+.teachingPortfolio-Menu {
+  grid-area: teachingPortfolio-Menu;
 }
 
-.teachingStatementPortfolioHeader {
-  grid-area: teachingStatementPortfolioHeader;
+.teachingPortfolio-Header {
+  grid-area: teachingPortfolio-Header;
 }
 
-.teachingStatementPortfolioHeader2 {
-  grid-area: teachingStatementPortfolioHeader2;
+.teachingProject-1 {
+  grid-area: teachingProject-1;
 }
 
-.teachingStatementPortfolioHeader3 {
-  grid-area: teachingStatementPortfolioHeader3;
+.teachingProject-2 {
+  grid-area: teachingProject-2;
 }
 
-.teachingStatementPortfolioHeader4 {
-  grid-area: teachingStatementPortfolioHeader4;
+.teachingProject-3 {
+  grid-area: teachingProject-3;
 }
 
-.teachingStatementPortfolioHeader5 {
-  grid-area: teachingStatementPortfolioHeader5;
+.teachingProject-4 {
+  grid-area: teachingProject-4;
 }
 
-.teachingStatementProject-1 {
-  grid-area: teachingStatementProject-1;
-}
-.teachingStatementProject-2 {
-  grid-area: teachingStatementProject-2;
-}
-.teachingStatementProject-3 {
-  grid-area: teachingStatementProject-3;
-}
-.teachingStatementProject-4 {
-  grid-area: teachingStatementProject-4;
-}
-.teachingStatementProject-5 {
-  grid-area: teachingStatementProject-5;
-}
-.teachingStatementProject-6 {
-  grid-area: teachingStatementProject-6;
-}
-.teachingStatementProject-7 {
-  grid-area: teachingStatementProject-7;
-}
-.teachingStatementProject-8 {
-  grid-area: teachingStatementProject-8;
-}
-.teachingStatementProject-9 {
-  grid-area: teachingStatementProject-9;
-}
-.teachingStatementProject-10 {
-  grid-area: teachingStatementProject-10;
-}
-.teachingStatementProject-11 {
-  grid-area: teachingStatementProject-11;
-}
-.teachingStatementProject-12 {
-  grid-area: teachingStatementProject-12;
-}
-.teachingStatementProject-13 {
-  grid-area: teachingStatementProject-13;
-}
-.teachingStatementProject-14 {
-  grid-area: teachingStatementProject-14;
-}
-.teachingStatementProject-15 {
-  grid-area: teachingStatementProject-15;
-}
-.teachingStatementProject-16 {
-  grid-area: teachingStatementProject-16;
-}
-.teachingStatementProject-17 {
-  grid-area: teachingStatementProject-17;
-}
-.teachingStatementProject-18 {
-  grid-area: teachingStatementProject-18;
-}
-.teachingStatementProject-19 {
-  grid-area: teachingStatementProject-19;
-}
-.teachingStatementProject-20 {
-  grid-area: teachingStatementProject-20;
+.teachingProject-5 {
+  grid-area: teachingProject-5;
 }
 
-.dividerOne {
-  grid-area: dividerOne;
+.teachingProject-6 {
+  grid-area: teachingProject-6;
 }
+
+.teachingProject-7 {
+  grid-area: teachingProject-7;
+}
+
+.teachingProject-8 {
+  grid-area: teachingProject-8;
+}
+
+.teachingProject-9 {
+  grid-area: teachingProject-9;
+}
+
+.teachingProject-10 {
+  grid-area: teachingProject-10;
+}
+
+.divider1 {
+  grid-area: divider1;
+}
+
+.teachingProject-11 {
+  grid-area: teachingProject-11;
+}
+
+.teachingProject-12 {
+  grid-area: teachingProject-12;
+}
+
+.teachingProject-13 {
+  grid-area: teachingProject-13;
+}
+
+.teachingProject-14 {
+  grid-area: teachingProject-14;
+}
+
+.teachingProject-15 {
+  grid-area: teachingProject-15;
+}
+
+.teachingProject-16 {
+  grid-area: teachingProject-16;
+}
+
+.teachingProject-17 {
+  grid-area: teachingProject-17;
+}
+
+.teachingProject-18 {
+  grid-area: teachingProject-18;
+}
+
+.teachingProject-19 {
+  grid-area: teachingProject-19;
+}
+
+.teachingProject-20 {
+  grid-area: teachingProject-20;
+}
+
 .divider2 {
   grid-area: divider2;
+  background-color: #48c78e;
 }
 
-.teachingStatementProjectCard {
+.teachingProjectCard {
   transition: transform 0.2s ease;
 }
 
-.teachingStatementProjectCard:hover {
+.teachingProjectCard:hover {
   transform: scale(1.02); /* Enlarge the item by 2% on hover */
+}
+
+@media (max-width: 768px) {
+  .teachingContainer {
+    grid-template-areas:
+      "teachingPortfolio-Menu"
+      "teachingPortfolio-Header"
+      "teachingProject-1"
+      "teachingProject-2"
+      "teachingProject-3"
+      "teachingProject-4"
+      "teachingProject-5"
+      "teachingProject-6"
+      "teachingProject-7"
+      "teachingProject-8"
+      "teachingProject-9"
+      "teachingProject-10"
+      "divider1"
+      "teachingProject-11"
+      "teachingProject-12"
+      "teachingProject-13"
+      "teachingProject-14"
+      "teachingProject-15"
+      "teachingProject-16"
+      "teachingProject-17"
+      "teachingProject-18"
+      "teachingProject-19"
+      "teachingProject-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; /* Adjust row height to fit content */
+  }
+
+  .teachingContainer > div {
+    margin: 0.5rem;
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  #teachingPortfolio-HeaderCard {
+    margin: 1rem; /* Reduce header margin for smaller screens */
+    padding: 0.5rem;
+  }
+
+  .teachingProjectCard {
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+
+  #teachingPortfolio-HeaderImage {
+    display: none;
+  }
+
+  .teachingPortfolio-Header {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle{
+    display: none
+  }
 }

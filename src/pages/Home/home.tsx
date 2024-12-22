@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           <div
             id="headerText"
             className="project-showcase"
-            style={{ backgroundColor: "rgba(0,0,0,0.0);", zIndex: "1" }}
+            style={{ backgroundColor: "rgba(0,0,0,0.0)", zIndex: "1" }}
           >
             <div id="headerCard">
               <p className="title is-1">
