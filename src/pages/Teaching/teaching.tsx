@@ -65,7 +65,7 @@ const Teaching: React.FC = () => {
                 <b style={{ color: "yellow" }}>Dublin City University</b>
               </a>{" "}
               at both undergraduate and postgraduate courses. Below are some shorthand acronyms for institutions I've
-              been fortune to teach alongside.
+              been fortunate to teach alongside.
               <br />
               <br />
               <b>MU</b> -{" "}

@@ -56,13 +56,6 @@
     "tags": "Student Project, Research, Computer Science"
   },
   {
-    "title": "BRAIN DNC (2024-2025)",
-    "subtitle": "Incorporate 3D Gaussian Splatting for SPARSE Project",
-    "body": "Incorporate 3D Gaussian Splatting for SPARSE Project",
-    "img": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHBvaW50c3xlbnwwfHwwfHx8MA%3D%3D",
-    "tags": "Student Project, Research, Computer Science"
-  },
-  {
     "title": "LLM-NOTE (2024-2025)",
     "subtitle": "Transcribe and Note YouTube Videos with Local LLM",
     "body": "Transcribe and Note YouTube Videos with Local LLM",
@@ -91,52 +84,59 @@
     "tags": "Student Project, Research, Computer Science"
   },
   {
-    "title": "CYCL-CAM (2024-2025)",
+    "title": "CYCL-CAM (2025-2026)",
     "subtitle": "View Photos with Several Filters without Modification",
     "body": "View Photos with Several Filters without Modification",
     "img": "https://images.unsplash.com/photo-1460134846237-51c777df6111?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science"
   },
   {
-    "title": "What Project is Next?",
-    "subtitle": "What Project is Next?",
-    "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "title": "BRAIN DNC (2025-2026)",
+    "subtitle": "Incorporate 3D Gaussian Splatting for SPARSE Project",
+    "body": "Incorporate 3D Gaussian Splatting for SPARSE Project",
+    "img": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHBvaW50c3xlbnwwfHwwfHx8MA%3D%3D",
     "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "What Project is Next?",
     "subtitle": "What Project is Next?",
     "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "img": "https://placehold.co/600x400",
     "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "What Project is Next?",
     "subtitle": "What Project is Next?",
     "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "img": "https://placehold.co/600x400",
     "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "What Project is Next?",
     "subtitle": "What Project is Next?",
     "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "img": "https://placehold.co/600x400",
     "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "What Project is Next?",
     "subtitle": "What Project is Next?",
     "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "img": "https://placehold.co/600x400",
     "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "What Project is Next?",
     "subtitle": "What Project is Next?",
     "body": "What Project is Next?",
-    "img": "https://placeholder.com/1160x720",
+    "img": "https://placehold.co/600x400",
+    "tags": "Student Project, Research, Computer Science"
+  },
+  {
+    "title": "What Project is Next?",
+    "subtitle": "What Project is Next?",
+    "body": "What Project is Next?",
+    "img": "https://placehold.co/600x400",
     "tags": "Student Project, Research, Computer Science"
   }
 ]

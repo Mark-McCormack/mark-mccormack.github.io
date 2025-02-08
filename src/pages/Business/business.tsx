@@ -17,9 +17,6 @@ const Business: React.FC = () => {
   const [business, setBusiness] = useState<BusinessData[]>([]);
 
   useEffect(() => {
-    // Fetch or import your JSON data here and set it in the state
-    // You can use fetch or import statements to load your JSON data
-    // For example, if using fetch:
     fetch("/assets/json/business.json")
       .then((response) => response.json())
       .then((data: BusinessData[]) => setBusiness(data))
