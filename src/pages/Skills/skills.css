@@ -1,0 +1,250 @@
+/*
+=====================================================
+            SKILLS PAGE STYLES
+=====================================================
+*/
+
+/* ============================================
+    Main Container for Skills Projects 
+    (Desktop View)
+============================================ */
+
+/* The container that holds all skills-related projects */
+.skillsProjectsContainer {
+  display: grid; /* Use grid layout */
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "skillsMenu skillsMenu skillsMenu skillsMenu skillsMenu"
+    "skillsHeader skillsHeader skillsHeader skillsHeader skillsHeader"
+    "skillsProject-1 skillsProject-2 skillsProject-3 skillsProject-4 skillsProject-5"
+    "skillsProject-6 skillsProject-7 skillsProject-8 skillsProject-9 skillsProject-10"
+    "divider1 divider1 divider1 divider1 divider1"
+    "skillsProject-11 skillsProject-12 skillsProject-13 skillsProject-14 skillsProject-15"
+    "skillsProject-16 skillsProject-17 skillsProject-18 skillsProject-19 skillsProject-20"
+    "divider2 divider2 divider2 divider2 divider2"
+    "skillsProject-21 skillsProject-22 skillsProject-23 skillsProject-24 skillsProject-25"
+    "skillsProject-26 skillsProject-27 skillsProject-28 skillsProject-29 skillsProject-30"
+    "divider3 divider3 divider3 divider3 divider3";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal columns */
+  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 488px 100px; /* Row heights */
+}
+
+/* ============================================
+    Divider Styles 
+============================================ */
+
+/* Generalized Divider Styles */
+.divider1-skill,
+.divider2-skill {
+  background-color: #3f6998 !important; /* Dark blue divider */
+}
+
+.divider3-skill {
+  background-color: #48c78e !important; /* Green divider */
+}
+
+/* Assign specific grid areas for the dividers */
+.divider1-skill {
+  grid-area: divider1;
+}
+.divider2-skill {
+  grid-area: divider2;
+}
+.divider3-skill {
+  grid-area: divider3;
+}
+
+/* ============================================
+    Main Container for Skills Projects 
+    (Tablet View)
+============================================ */
+
+@media (max-width: 1024px) {
+  .skillsProjectsContainer {
+    grid-template-areas:
+      "skillsMenu skillsMenu skillsMenu"
+      "skillsHeader skillsHeader skillsHeader"
+      "skillsProject-1 skillsProject-2 skillsProject-3"
+      "skillsProject-4 skillsProject-5 skillsProject-6"
+      "skillsProject-7 skillsProject-8 skillsProject-9"
+      "skillsProject-10 skillsProject-11 skillsProject-12"
+      "divider1 divider1 divider1"
+      "skillsProject-13 skillsProject-14 skillsProject-15"
+      "skillsProject-16 skillsProject-17 skillsProject-18"
+      "skillsProject-19 skillsProject-20 skillsProject-21"
+      "divider2 divider2 divider2"
+      "skillsProject-22 skillsProject-23 skillsProject-24"
+      "skillsProject-25 skillsProject-26 skillsProject-27"
+      "skillsProject-28 skillsProject-29 skillsProject-30"
+      "divider3 divider3 divider3";
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns on tablets */
+    grid-template-rows: 125px 700px 470px 470px 470px 470px 150px 470px 470px 470px 150px 470px 470px 488px 100px;
+  }
+}
+
+/* ============================================
+    Main Container for Skills Projects 
+    (Phone View)
+============================================ */
+
+@media (max-width: 768px) {
+  .skillsProjectsContainer {
+    grid-template-areas:
+      "skillsMenu"
+      "skillsHeader"
+      "skillsProject-1"
+      "skillsProject-2"
+      "skillsProject-3"
+      "skillsProject-4"
+      "skillsProject-5"
+      "skillsProject-6"
+      "skillsProject-7"
+      "skillsProject-8"
+      "skillsProject-9"
+      "skillsProject-10"
+      "divider1"
+      "skillsProject-11"
+      "skillsProject-12"
+      "skillsProject-13"
+      "skillsProject-14"
+      "skillsProject-15"
+      "skillsProject-16"
+      "skillsProject-17"
+      "skillsProject-18"
+      "skillsProject-19"
+      "skillsProject-20"
+      "divider2"
+      "skillsProject-21"
+      "skillsProject-22"
+      "skillsProject-23"
+      "skillsProject-24"
+      "skillsProject-25"
+      "skillsProject-26"
+      "skillsProject-27"
+      "skillsProject-28"
+      "skillsProject-29"
+      "skillsProject-30"
+      "divider3";
+    grid-template-columns: 1fr; /* Single column on phones */
+    grid-template-rows: auto;
+  }
+
+  /* Assign projects to correct grid container item */
+  .skillsProjectsContainer [class^="skillsProject-"] {
+    grid-area: inherit;
+  }
+
+  /* Adjust container padding and margin on smaller screens */
+  .skillsProjectsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #skillsHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+    max-height: 90px;
+  }
+
+  /* Adjust divider height for mobile view */
+  .divider1-skill,
+  .divider2-skill,
+  .divider3-skill {
+    height: 5rem; /* Smaller divider height on mobile */
+    min-height: 5em;
+  }
+
+  /* Reduce font size for skills projects on mobile */
+  .skillsProjectCard {
+    font-size: 0.9rem;
+  }
+
+  /* Hide the header image on mobile */
+  #skillsHeaderImage {
+    display: none !important;
+  }
+
+  /* Adjust header grid to be single column */
+  .skillsHeader {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+  }
+
+  /* Hide subtitle text on mobile */
+  .subtitle {
+    display: none !important;
+  }
+
+  /* Remove the header blurb text for mobile view */
+  .subtitleHeader {
+    display: none !important;
+  }
+}
+
+/* ============================================
+    Skill Project Card Styles
+============================================ */
+
+/* Apply background border and shadow for each project */
+.skillsProjectsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+/* ============================================
+    Skill Header Styles 
+============================================ */
+
+/* Header card styling */
+#skillsHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+/* Skill header image styling */
+#skillsHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+/* Header grid layout for desktop/tablet */
+.skillsHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  align-items: center;
+}
+
+/* ============================================
+    Menu and Grid Assignments
+============================================ */
+
+/* Assign specific grid areas for skill menu and header */
+.skillsMenu {
+  grid-area: skillsMenu;
+}
+
+.skillsHeader {
+  grid-area: skillsHeader;
+}
+
+/* Header image responsive styles */
+#skillsHeaderImage img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

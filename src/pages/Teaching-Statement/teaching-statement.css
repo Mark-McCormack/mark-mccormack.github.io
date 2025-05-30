@@ -1,0 +1,207 @@
+.teachingStatementContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "teachingStatementPortfolio-Menu teachingStatementPortfolio-Menu teachingStatementPortfolio-Menu teachingStatementPortfolio-Menu teachingStatementPortfolio-Menu"
+    "teachingStatementPortfolio-Header teachingStatementPortfolio-Header teachingStatementPortfolio-Header teachingStatementPortfolio-Header teachingStatementPortfolio-Header"
+    "teachingStatementProject-1 teachingStatementProject-2 teachingStatementProject-3 teachingStatementProject-4 teachingStatementProject-5"
+    "teachingStatementProject-6 teachingStatementProject-7 teachingStatementProject-8 teachingStatementProject-9 teachingStatementProject-10"
+    "divider1 divider1 divider1 divider1 divider1"
+    "teachingStatementProject-11 teachingStatementProject-12 teachingStatementProject-13 teachingStatementProject-14 teachingStatementProject-15"
+    "teachingStatementProject-16 teachingStatementProject-17 teachingStatementProject-18 teachingStatementProject-19 teachingStatementProject-20"
+    "divider2 divider2 divider2 divider2 divider2";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 100px;
+}
+
+.teachingStatementContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.imgTeachingStatement {
+  border-radius: 1rem;
+}
+
+#teachingStatementPortfolio-HeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#teachingStatementPortfolio-HeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+.teachingStatementPortfolio-Header {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: center;
+}
+
+.teachingStatementPortfolio-Menu {
+  grid-area: teachingStatementPortfolio-Menu;
+}
+
+.teachingStatementPortfolio-Header {
+  grid-area: teachingStatementPortfolio-Header;
+}
+
+/* Grid Area Assignments */
+.teachingStatementProject-1 {
+  grid-area: teachingStatementProject-1;
+}
+.teachingStatementProject-2 {
+  grid-area: teachingStatementProject-2;
+}
+.teachingStatementProject-3 {
+  grid-area: teachingStatementProject-3;
+}
+.teachingStatementProject-4 {
+  grid-area: teachingStatementProject-4;
+}
+.teachingStatementProject-5 {
+  grid-area: teachingStatementProject-5;
+}
+.teachingStatementProject-6 {
+  grid-area: teachingStatementProject-6;
+}
+.teachingStatementProject-7 {
+  grid-area: teachingStatementProject-7;
+}
+.teachingStatementProject-8 {
+  grid-area: teachingStatementProject-8;
+}
+.teachingStatementProject-9 {
+  grid-area: teachingStatementProject-9;
+}
+.teachingStatementProject-10 {
+  grid-area: teachingStatementProject-10;
+}
+.divider1 {
+  grid-area: divider1;
+  background-color: #3f6998;
+}
+.teachingStatementProject-11 {
+  grid-area: teachingStatementProject-11;
+}
+.teachingStatementProject-12 {
+  grid-area: teachingStatementProject-12;
+}
+.teachingStatementProject-13 {
+  grid-area: teachingStatementProject-13;
+}
+.teachingStatementProject-14 {
+  grid-area: teachingStatementProject-14;
+}
+.teachingStatementProject-15 {
+  grid-area: teachingStatementProject-15;
+}
+.teachingStatementProject-16 {
+  grid-area: teachingStatementProject-16;
+}
+.teachingStatementProject-17 {
+  grid-area: teachingStatementProject-17;
+}
+.teachingStatementProject-18 {
+  grid-area: teachingStatementProject-18;
+}
+.teachingStatementProject-19 {
+  grid-area: teachingStatementProject-19;
+}
+.teachingStatementProject-20 {
+  grid-area: teachingStatementProject-20;
+}
+.divider2 {
+  grid-area: divider2;
+  background-color: #48c78e;
+}
+
+.tables {
+  grid-area: tables;
+}
+
+.teachingStatementProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.teachingStatementProjectCard:hover {
+  transform: scale(1.02);
+}
+
+/* =======================
+    Mobile Styles
+======================= */
+@media (max-width: 768px) {
+  .teachingStatementContainer {
+    grid-template-areas:
+      "teachingStatementPortfolio-Menu"
+      "teachingStatementPortfolio-Header"
+      "teachingStatementProject-1"
+      "teachingStatementProject-2"
+      "teachingStatementProject-3"
+      "teachingStatementProject-4"
+      "teachingStatementProject-5"
+      "teachingStatementProject-6"
+      "teachingStatementProject-7"
+      "teachingStatementProject-8"
+      "teachingStatementProject-9"
+      "teachingStatementProject-10"
+      "divider1"
+      "teachingStatementProject-11"
+      "teachingStatementProject-12"
+      "teachingStatementProject-13"
+      "teachingStatementProject-14"
+      "teachingStatementProject-15"
+      "teachingStatementProject-16"
+      "teachingStatementProject-17"
+      "teachingStatementProject-18"
+      "teachingStatementProject-19"
+      "teachingStatementProject-20"
+      "divider2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .teachingStatementContainer > div {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  #teachingStatementPortfolio-HeaderCard {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .teachingStatementProjectCard {
+    font-size: 0.9rem;
+  }
+
+  #teachingStatementPortfolio-HeaderImage {
+    display: none;
+  }
+
+  .teachingStatementPortfolio-Header {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .subtitle {
+    display: none;
+  }
+}

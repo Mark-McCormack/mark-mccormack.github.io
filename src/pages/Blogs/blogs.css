@@ -1,0 +1,181 @@
+/* ================================
+   Layout: Main Blog Container Grid
+   ================================ */
+.blogContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "blogMenu blogMenu blogMenu blogMenu blogMenu"
+    "blogHeader blogHeader blogHeader blogHeader blogHeader"
+    "blog-0 blog-1 blog-2 blog-3 blog-4"
+    "blog-5 blog-6 blog-7 blog-8 blog-9"
+    "divider1 divider1 divider1 divider1 divider1"
+    "blog-10 blog-11 blog-12 blog-13 blog-14"
+    "blog-15 blog-16 blog-17 blog-18 blog-19"
+    "blogFooter blogFooter blogFooter blogFooter blogFooter";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 125px 700px repeat(2, 470px) 150px repeat(2, 470px) 100px;
+}
+
+/* ================================
+   General Blog Card Styling
+   ================================ */
+.blogContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+/* ================================
+   Blog Header Section
+   ================================ */
+#blogHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+#blogHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+.blogHeader {
+  grid-area: blogHeader;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Vertically center header content */
+}
+
+/* ================================
+   Area Assignment for Grid Items
+   ================================ */
+.blogMenu {
+  grid-area: blogMenu;
+}
+.blog-0 {
+  grid-area: blog-0;
+}
+.blog-1 {
+  grid-area: blog-1;
+}
+.blog-2 {
+  grid-area: blog-2;
+}
+.blog-3 {
+  grid-area: blog-3;
+}
+.blog-4 {
+  grid-area: blog-4;
+}
+.blog-5 {
+  grid-area: blog-5;
+}
+.blog-6 {
+  grid-area: blog-6;
+}
+.blog-7 {
+  grid-area: blog-7;
+}
+.blog-8 {
+  grid-area: blog-8;
+}
+.blog-9 {
+  grid-area: blog-9;
+}
+.blog-10 {
+  grid-area: blog-10;
+}
+.blog-11 {
+  grid-area: blog-11;
+}
+.blogFooter {
+  grid-area: blogFooter;
+}
+
+/* ================================
+   Project Card Hover Effect
+   ================================ */
+.blogProjectCard {
+  display: flex;
+  transition: transform 0.2s ease;
+}
+
+.blogProjectCard:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+}
+
+/* ================================
+   Responsive Layout (Mobile)
+   ================================ */
+@media (max-width: 768px) {
+  .blogContainer {
+    grid-template-areas:
+      "blogMenu"
+      "blogHeader"
+      "blog-0"
+      "blog-1"
+      "blog-2"
+      "blog-3"
+      "blog-4"
+      "divider1"
+      "blog-5"
+      "blog-6"
+      "blog-7"
+      "blog-8"
+      "blog-9"
+      "divider2"
+      "blog-10"
+      "blog-11"
+      "blogFooter";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .blogContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Slightly smaller padding */
+  }
+
+  #blogHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem;
+    max-height: 90px;
+  }
+
+  #blogHeaderImage {
+    display: none; /* Hide header image on mobile */
+  }
+
+  .blogHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .blogProjectCard {
+    flex-direction: column; /* Stack items vertically */
+    font-size: 0.9rem; /* Adjust font size for small screens */
+  }
+
+  .divider1,
+  .divider2 {
+    height: 2rem; /* Space between blog sections */
+  }
+
+  .subtitle {
+    display: none; /* Hide subtitles on smaller devices */
+  }
+}

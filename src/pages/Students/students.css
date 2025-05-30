@@ -1,0 +1,357 @@
+/*
+=====================================================
+            STUDENTS PAGE STYLES
+=====================================================
+*/
+
+/* ============================================
+    Main Container for Students Projects 
+    (Desktop View)
+============================================ */
+
+/* The container that holds all student-related projects */
+.studentsContainer {
+  display: grid; /* Use grid layout */
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu"
+    "studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader"
+    "studentProject-1 studentProject-2 studentProject-3 studentProject-4 studentProject-5"
+    "studentProject-6 studentProject-7 studentProject-8 studentProject-9 studentProject-10"
+    "divider1 divider1 divider1 divider1 divider1"
+    "studentProject-11 studentProject-12 studentProject-13 studentProject-14 studentProject-15"
+    "studentProject-16 studentProject-17 studentProject-18 studentProject-19 studentProject-20"
+    "divider2 divider2 divider2 divider2 divider2"
+    "studentProject-21 studentProject-22 studentProject-23 studentProject-24 studentProject-25"
+    "studentProject-26 studentProject-27 studentProject-28 studentProject-29 studentProject-30"
+    "divider3 divider3 divider3 divider3 divider3"
+    "studentProject-31 studentProject-32 studentProject-33 studentProject-34 studentProject-35"
+    "studentProject-36 studentProject-37 studentProject-38 studentProject-39 studentProject-40"
+    "divider4 divider4 divider4 divider4 divider4";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal columns */
+  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 470px 150px 470px 470px 100px; /* Row heights */
+}
+
+/* ============================================
+    Divider Styles 
+============================================ */
+
+/* Generalized Divider Styles */
+.divider1,
+.divider2 {
+  background-color: #3f6998 !important; /* Dark blue divider */
+}
+
+.divider3 {
+  background-color: #48c78e !important; /* Green divider */
+}
+
+/* ============================================
+    Student Project Card Styles
+============================================ */
+
+/* Apply background border and shadow for each project */
+.studentsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+/* Hover effect for student project cards */
+.studentProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.studentProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 2% on hover */
+}
+
+/* ============================================
+    Student Header Styles 
+============================================ */
+
+/* Header card styling */
+#studentPortfolioHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+/* Student header image styling */
+#studentPortfolioHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+/* Header grid layout for desktop/tablet */
+.studentPortfolioHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  align-items: center;
+}
+
+/* Header image responsive styles */
+#studentPortfolioHeaderImage img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ============================================
+    Menu and Grid Assignments
+============================================ */
+
+/* Assign specific grid areas for menu, header and dividers */
+.studentPortfolioMenu {
+  grid-area: studentPortfolioMenu;
+}
+
+.studentPortfolioHeader {
+  grid-area: studentPortfolioHeader;
+}
+
+.divider1 {
+  grid-area: divider1;
+}
+
+.divider2 {
+  grid-area: divider2;
+}
+
+.divider3 {
+  grid-area: divider3;
+}
+
+/* Individual project grid areas */
+/* These need to be kept in this section for proper grid mapping */
+.studentProject-1 {
+  grid-area: studentProject-1;
+}
+.studentProject-2 {
+  grid-area: studentProject-2;
+}
+.studentProject-3 {
+  grid-area: studentProject-3;
+}
+.studentProject-4 {
+  grid-area: studentProject-4;
+}
+.studentProject-5 {
+  grid-area: studentProject-5;
+}
+.studentProject-6 {
+  grid-area: studentProject-6;
+}
+.studentProject-7 {
+  grid-area: studentProject-7;
+}
+.studentProject-8 {
+  grid-area: studentProject-8;
+}
+.studentProject-9 {
+  grid-area: studentProject-9;
+}
+.studentProject-10 {
+  grid-area: studentProject-10;
+}
+.studentProject-11 {
+  grid-area: studentProject-11;
+}
+.studentProject-12 {
+  grid-area: studentProject-12;
+}
+.studentProject-13 {
+  grid-area: studentProject-13;
+}
+.studentProject-14 {
+  grid-area: studentProject-14;
+}
+.studentProject-15 {
+  grid-area: studentProject-15;
+}
+.studentProject-16 {
+  grid-area: studentProject-16;
+}
+.studentProject-17 {
+  grid-area: studentProject-17;
+}
+.studentProject-18 {
+  grid-area: studentProject-18;
+}
+.studentProject-19 {
+  grid-area: studentProject-19;
+}
+.studentProject-20 {
+  grid-area: studentProject-20;
+}
+.studentProject-21 {
+  grid-area: studentProject-21;
+}
+.studentProject-22 {
+  grid-area: studentProject-22;
+}
+.studentProject-23 {
+  grid-area: studentProject-23;
+}
+.studentProject-24 {
+  grid-area: studentProject-24;
+}
+.studentProject-25 {
+  grid-area: studentProject-25;
+}
+.studentProject-26 {
+  grid-area: studentProject-26;
+}
+.studentProject-27 {
+  grid-area: studentProject-27;
+}
+.studentProject-28 {
+  grid-area: studentProject-28;
+}
+.studentProject-29 {
+  grid-area: studentProject-29;
+}
+.studentProject-30 {
+  grid-area: studentProject-30;
+}
+
+/* ============================================
+    Main Container for Students Projects 
+    (Tablet View)
+============================================ */
+
+@media (max-width: 1024px) {
+  .studentsContainer {
+    grid-template-areas:
+      "studentPortfolioMenu studentPortfolioMenu studentPortfolioMenu"
+      "studentPortfolioHeader studentPortfolioHeader studentPortfolioHeader"
+      "studentProject-1 studentProject-2 studentProject-3"
+      "studentProject-4 studentProject-5 studentProject-6"
+      "studentProject-7 studentProject-8 studentProject-9"
+      "studentProject-10 studentProject-11 studentProject-12"
+      "divider1 divider1 divider1"
+      "studentProject-13 studentProject-14 studentProject-15"
+      "studentProject-16 studentProject-17 studentProject-18"
+      "studentProject-19 studentProject-20 studentProject-21"
+      "divider2 divider2 divider2"
+      "studentProject-22 studentProject-23 studentProject-24"
+      "studentProject-25 studentProject-26 studentProject-27"
+      "studentProject-28 studentProject-29 studentProject-30"
+      "divider3 divider3 divider3";
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns on tablets */
+    grid-template-rows: 125px 700px 470px 470px 470px 470px 150px 470px 470px 470px 150px 470px 470px 488px 100px;
+  }
+}
+
+/* ============================================
+    Main Container for Students Projects 
+    (Phone View)
+============================================ */
+
+@media (max-width: 768px) {
+  .studentsContainer {
+    grid-template-areas:
+      "studentPortfolioMenu"
+      "studentPortfolioHeader"
+      "studentProject-1"
+      "studentProject-2"
+      "studentProject-3"
+      "studentProject-4"
+      "studentProject-5"
+      "studentProject-6"
+      "studentProject-7"
+      "studentProject-8"
+      "studentProject-9"
+      "studentProject-10"
+      "divider1"
+      "studentProject-11"
+      "studentProject-12"
+      "studentProject-13"
+      "studentProject-14"
+      "studentProject-15"
+      "studentProject-16"
+      "studentProject-17"
+      "studentProject-18"
+      "studentProject-19"
+      "studentProject-20"
+      "divider2"
+      "studentProject-21"
+      "studentProject-22"
+      "studentProject-23"
+      "studentProject-24"
+      "studentProject-25"
+      "studentProject-26"
+      "studentProject-27"
+      "studentProject-28"
+      "studentProject-29"
+      "studentProject-30"
+      "divider3";
+    grid-template-columns: 1fr; /* Single column on phones */
+    grid-template-rows: auto;
+  }
+
+  /* Remove the grid-area: inherit that might cause duplication */
+  .studentsContainer [class^="studentProject-"] {
+    /* grid-area: inherit; - REMOVED as this could cause project duplication */
+  }
+
+  /* Adjust container padding and margin on smaller screens */
+  .studentsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #studentPortfolioHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+    max-height: 145px;
+  }
+
+  /* Adjust divider height for mobile view */
+  .divider1,
+  .divider2,
+  .divider3 {
+    height: 5rem; /* Smaller divider height on mobile */
+    min-height: 5em;
+  }
+
+  /* Reduce font size for student projects on mobile */
+  .studentProjectCard {
+    font-size: 0.9rem;
+  }
+
+  /* Hide the header image on mobile */
+  #studentPortfolioHeaderImage {
+    display: none !important;
+  }
+
+  /* Adjust header grid to be single column */
+  .studentPortfolioHeader {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+  }
+
+  /* Hide subtitle text on mobile */
+  .subtitle {
+    display: none !important;
+  }
+
+  /* Remove the header blurb text for mobile view */
+  .subtitleHeader {
+    display: none !important;
+  }
+}

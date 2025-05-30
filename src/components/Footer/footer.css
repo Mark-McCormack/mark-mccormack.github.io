@@ -1,0 +1,12 @@
+.column {
+  box-sizing: border-box;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.columns {
+  background-color: rgba(0, 0, 0, 0);
+}

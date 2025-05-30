@@ -1,0 +1,272 @@
+.homeContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "HomeMenu HomeMenu HomeMenu HomeMenu"
+    "HomeHeader HomeHeader HomeHeader HomeHeader"
+    "HomeHeader HomeHeader HomeHeader HomeHeader"
+    "HomeHeader HomeHeader HomeHeader HomeHeader"
+    "Skill-1 Skill-2 Skill-3 Skill-4"
+    "Skill-5 Skill-6 Skill-7 Skill-8"
+    "Portfolio Portfolio Portfolio Portfolio"
+    "Item-1 Item-2 Item-3 Item-4"
+    "Footer Footer Footer Footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 125px 420px 216px 216px 260px 260px 398px 375px 108px;
+}
+
+.homeContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+#headerText {
+  background-color: #ffffff !important;
+}
+
+.HomeMenu {
+  grid-area: HomeMenu;
+}
+
+.HomeHeader {
+  grid-area: HomeHeader;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Vertically center align items */
+  background-color: rgba(15, 77, 146, 0.5) !important;
+  clip-path: inset(0px 0px 0px 0px);
+}
+
+.Skill-1 {
+  grid-area: Skill-1;
+}
+.Skill-2 {
+  grid-area: Skill-2;
+}
+.Skill-3 {
+  grid-area: Skill-3;
+}
+.Skill-4 {
+  grid-area: Skill-4;
+}
+.Skill-5 {
+  grid-area: Skill-5;
+}
+.Skill-6 {
+  grid-area: Skill-6;
+}
+.Skill-7 {
+  grid-area: Skill-7;
+}
+.Skill-8 {
+  grid-area: Skill-8;
+}
+
+.Portfolio {
+  grid-area: Portfolio;
+}
+.Item-1 {
+  grid-area: Item-1;
+}
+.Item-2 {
+  grid-area: Item-2;
+}
+.Item-3 {
+  grid-area: Item-3;
+}
+.Item-4 {
+  grid-area: Item-4;
+}
+
+.Footer {
+  grid-area: Footer;
+}
+
+.headerImage img {
+  width: 100%;
+  height: 100%;
+  clip-path: url(#myClipPath);
+  -webkit-clip-path: url(#myClipPath); /* Safari/Chrome support */
+  z-index: 1;
+}
+
+.headerImage {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.headerText {
+  z-index: 1;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.project-showcase {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  color: black;
+}
+
+@keyframes rotateForward {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateBackward {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-14deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.waving-emoji {
+  display: inline-block;
+  font-size: 3rem; /* Increase font size to 3rem */
+  cursor: pointer; /* Add a cursor pointer for better interaction */
+  animation: rotateForward 1s infinite alternate;
+}
+
+.waving-emoji:hover {
+  animation: rotateBackward 1s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    grid-template-areas:
+      "HomeMenu"
+      "HomeHeader"
+      "Skill-1"
+      "Skill-2"
+      "Skill-3"
+      "Skill-4"
+      "Skill-5"
+      "Skill-6"
+      "Skill-7"
+      "Skill-8"
+      "Portfolio"
+      "Item-1"
+      "Item-2"
+      "Item-3"
+      "Item-4"
+      "Footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .homeContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Reduce padding for smaller devices */
+  }
+
+  #headerText {
+    /* max-height: 150px !important; */
+  }
+
+  .subtitle {
+    display: block !important;
+  }
+
+  .HomeHeader {
+    grid-template-columns: 1fr; /* Stack columns in header */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .headerImage img {
+    width: 100%;
+    height: auto; /* Make the image responsive */
+    clip-path: none; /* Remove clipping for better responsiveness */
+  }
+
+  .scroll-content {
+    animation: scroll 20s linear infinite;
+    font-size: 0.9rem; /* Adjust text size for scrolling */
+  }
+
+  .Skill-1,
+  .Skill-2,
+  .Skill-3,
+  .Skill-4,
+  .Skill-5,
+  .Skill-6,
+  .Skill-7,
+  .Skill-8 {
+    grid-template-columns: 1fr; /* Stack skills vertically */
+  }
+
+  .Portfolio,
+  .Item-1,
+  .Item-2,
+  .Item-3,
+  .Item-4 {
+    grid-template-columns: 1fr; /* Stack portfolio items vertically */
+  }
+
+  .Footer {
+    font-size: 0.9rem; /* Adjust font size for footer */
+  }
+
+  .waving-emoji {
+    font-size: 2.5rem; /* Adjust emoji size for small screens */
+  }
+
+  .subtitle {
+    display: block !important;
+  }
+
+  .HomeHeader .subtitle:not(.is-3) {
+    display: none !important;
+  }
+
+  #headerText {
+    background-color: #ffffff !important;
+  }
+
+  div[class*="Skill"] article p.subtitle {
+    display: block !important;
+  }
+
+  div[class*="Item"] article p.subtitle {
+    display: block !important;
+  }
+}

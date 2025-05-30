@@ -1,0 +1,9 @@
+.card {
+  box-shadow: none;
+  max-height: 100%;
+  text-align: left;
+}
+
+.card-content {
+  flex: 0 0 auto;
+}

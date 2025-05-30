@@ -1,0 +1,32 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.boxOne:hover,
+.boxTwo:hover,
+.boxThree:hover,
+.boxFour:hover,
+.boxFive:hover {
+  transform: scale(1.1); /* Enlarge the item by 10% on hover */
+}
+
+.boxOne,
+.boxTwo,
+.boxThree,
+.boxFour,
+.boxFive {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .boxOne,
+  .boxTwo,
+  .boxThree,
+  .boxFour,
+  .boxFive {
+    display: none;
+  }
+
+  .navbar-end{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

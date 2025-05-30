@@ -1,0 +1,288 @@
+/* ============================================
+    Business Container (Desktop View)
+============================================ */
+.businessContainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "businessMenu businessMenu businessMenu businessMenu businessMenu"
+    "businessHeader businessHeader businessHeader businessHeader businessHeader"
+    "businessProject-1 businessProject-2 businessProject-3 businessProject-4 businessProject-5"
+    "businessProject-6 businessProject-7 businessProject-8 businessProject-9 businessProject-10"
+    "divider1 divider1 divider1 divider1 divider1"
+    "businessProject-11 businessProject-12 businessProject-13 businessProject-14 businessProject-15"
+    "businessProject-16 businessProject-17 businessProject-18 businessProject-19 businessProject-20"
+    "divider2 divider2 divider2 divider2 divider2"
+    "businessProject-21 businessProject-22 businessProject-23 businessProject-24 businessProject-25"
+    "businessProject-26 businessProject-27 businessProject-28 businessProject-29 businessProject-30"
+    "businessFooter businessFooter businessFooter businessFooter businessFooter";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 125px 700px repeat(2, 470px) 150px repeat(2, 470px) 150px repeat(2, 470px) 100px;
+}
+
+/* ============================================
+    Grid Area Assignments
+============================================ */
+.businessMenu {
+  grid-area: businessMenu;
+}
+
+.businessHeader {
+  grid-area: businessHeader;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.businessFooter {
+  grid-area: businessFooter;
+  background-color: #48c78e !important;
+}
+
+.divider1-business {
+  grid-area: divider1;
+  background-color: #3f6998 !important;
+}
+
+.divider2-business {
+  grid-area: divider2;
+  background-color: #3f6998 !important;
+}
+
+/* ============================================
+    Business Project Cards
+============================================ */
+.businessContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.businessProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.businessProjectCard:hover {
+  transform: scale(1.02);
+}
+
+/* ============================================
+    Header Cards and Image
+============================================ */
+#businessHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  color: white;
+}
+
+#businessHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+/* Grid Area Naming Convention for Projects */
+[class^="article-"] {
+  /* legacy support - optional */
+}
+
+.businessProject-1 {
+  grid-area: businessProject-1;
+}
+.businessProject-2 {
+  grid-area: businessProject-2;
+}
+.businessProject-3 {
+  grid-area: businessProject-3;
+}
+.businessProject-4 {
+  grid-area: businessProject-4;
+}
+.businessProject-5 {
+  grid-area: businessProject-5;
+}
+.businessProject-6 {
+  grid-area: businessProject-6;
+}
+.businessProject-7 {
+  grid-area: businessProject-7;
+}
+.businessProject-8 {
+  grid-area: businessProject-8;
+}
+.businessProject-9 {
+  grid-area: businessProject-9;
+}
+.businessProject-10 {
+  grid-area: businessProject-10;
+}
+.businessProject-11 {
+  grid-area: businessProject-11;
+}
+.businessProject-12 {
+  grid-area: businessProject-12;
+}
+.businessProject-13 {
+  grid-area: businessProject-13;
+}
+.businessProject-14 {
+  grid-area: businessProject-14;
+}
+.businessProject-15 {
+  grid-area: businessProject-15;
+}
+.businessProject-16 {
+  grid-area: businessProject-16;
+}
+.businessProject-17 {
+  grid-area: businessProject-17;
+}
+.businessProject-18 {
+  grid-area: businessProject-18;
+}
+.businessProject-19 {
+  grid-area: businessProject-19;
+}
+.businessProject-20 {
+  grid-area: businessProject-20;
+}
+.businessProject-21 {
+  grid-area: businessProject-21;
+}
+.businessProject-22 {
+  grid-area: businessProject-22;
+}
+.businessProject-23 {
+  grid-area: businessProject-23;
+}
+.businessProject-24 {
+  grid-area: businessProject-24;
+}
+.businessProject-25 {
+  grid-area: businessProject-25;
+}
+.businessProject-26 {
+  grid-area: businessProject-26;
+}
+.businessProject-27 {
+  grid-area: businessProject-27;
+}
+.businessProject-28 {
+  grid-area: businessProject-28;
+}
+.businessProject-29 {
+  grid-area: businessProject-29;
+}
+.businessProject-30 {
+  grid-area: businessProject-30;
+}
+
+/* ============================================
+    Responsive: Tablet View
+============================================ */
+@media (max-width: 1024px) {
+  .businessContainer {
+    grid-template-areas:
+      "businessMenu businessMenu businessMenu"
+      "businessHeader businessHeader businessHeader"
+      "businessProject-1 businessProject-2 businessProject-3"
+      "businessProject-4 businessProject-5 businessProject-6"
+      "businessProject-7 businessProject-8 businessProject-9"
+      "businessProject-10 businessProject-11 businessProject-12"
+      "divider1 divider1 divider1"
+      "businessProject-13 businessProject-14 businessProject-15"
+      "businessProject-16 businessProject-17 businessProject-18"
+      "businessProject-19 businessProject-20 businessProject-21"
+      "divider2 divider2 divider2"
+      "businessProject-22 businessProject-23 businessProject-24"
+      "businessProject-25 businessProject-26 businessProject-27"
+      "businessProject-28 businessProject-29 businessProject-30"
+      "businessFooter businessFooter businessFooter";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/* ============================================
+    Responsive: Mobile View
+============================================ */
+@media (max-width: 768px) {
+  .businessContainer {
+    grid-template-areas:
+      "businessMenu"
+      "businessHeader"
+      "businessProject-1"
+      "businessProject-2"
+      "businessProject-3"
+      "businessProject-4"
+      "businessProject-5"
+      "businessProject-6"
+      "businessProject-7"
+      "businessProject-8"
+      "businessProject-9"
+      "businessProject-10"
+      "divider1"
+      "businessProject-11"
+      "businessProject-12"
+      "businessProject-13"
+      "businessProject-14"
+      "businessProject-15"
+      "businessProject-16"
+      "businessProject-17"
+      "businessProject-18"
+      "businessProject-19"
+      "businessProject-20"
+      "divider2"
+      "businessProject-21"
+      "businessProject-22"
+      "businessProject-23"
+      "businessProject-24"
+      "businessProject-25"
+      "businessProject-26"
+      "businessProject-27"
+      "businessProject-28"
+      "businessProject-29"
+      "businessProject-30"
+      "businessFooter";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .businessContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .businessProjectCard {
+    font-size: 0.9rem;
+    flex-direction: column;
+  }
+
+  #businessHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem;
+  }
+
+  #businessHeaderImage {
+    display: none;
+  }
+
+  .businessHeader {
+    grid-template-columns: 1fr !important;
+  }
+
+  .subtitle {
+    display: none;
+  }
+}

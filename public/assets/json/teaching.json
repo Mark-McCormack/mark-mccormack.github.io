@@ -1,0 +1,147 @@
+[
+  {
+    "title": "CS230: Web Information Processing",
+    "subtitle": "U.Grad Module @ MU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses",
+    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS230&YEAR=2025"
+  },
+  {
+    "title": "CS615C: Internet Solutions Engineering",
+    "subtitle": "P.Grad Module @ MU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8fDA%3D",
+    "tags": "Teaching, Lecturing, Courses",
+    "url": "https://www.maynoothuniversity.ie/computer-science"
+  },
+  {
+    "title": "CS264SS: Software Development",
+    "subtitle": "U.Grad Module @ MU & TTU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=4376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses",
+    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS264&YEAR=2025"
+  },
+  {
+    "title": "CS431FZ: Mobile Application Development",
+    "subtitle": "U.Grad Module @ MU & FU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses",
+    "url": "http://apps.nuim.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS385&YEAR=2025"
+  },
+  {
+    "title": "SDA[F]: Android Application Development",
+    "subtitle": "H.Dip Module @ DCU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0",
+    "tags": "Teaching, Lecturing, Courses",
+    "url": "https://www.dcu.ie/connected/software-development"
+  },
+  {
+    "title": "CS385FZ: Machine Learning & Neural Nets.",
+    "subtitle": "U.Grad Module @ MU & FU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=4138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS620C: Structured Programming",
+    "subtitle": "H.Dip Module @ MU",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "Any Questions from the Class?",
+    "subtitle": "Keep an Eye Out for New Courses!",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1534702795526-bab4dfcad657?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JhZHVhdGlvbiUyMGhhdHxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "Any Questions from the Class?",
+    "subtitle": "Keep an Eye Out for New Courses!",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1534702795526-bab4dfcad657?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JhZHVhdGlvbiUyMGhhdHxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "Any Questions from the Class?",
+    "subtitle": "Keep an Eye Out for New Courses!",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1534702795526-bab4dfcad657?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JhZHVhdGlvbiUyMGhhdHxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS161 & CS162: Intro. to Computer Science",
+    "subtitle": "Head Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS230: Web Information Processing",
+    "subtitle": "Head Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS240: Operating Systems & Networks",
+    "subtitle": "Head Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS210 & CS211: Data Structs. and Algorithms",
+    "subtitle": "Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1660165458059-57cfb6cc87e5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGFsZ29yaXRobXxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS280: Introduction to UI and UX Design",
+    "subtitle": "Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=3725&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS353C: Team Project in Software Engineering",
+    "subtitle": "Head Demonstrator",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=4142&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS431FZ: Machine Learning & Neural Nets.",
+    "subtitle": "Tutor",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=4138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "CS355: Theory of Computation",
+    "subtitle": "Tutor",
+    "body": "",
+    "img": "https://images.unsplash.com/photo-1681569685378-4ca075d22f1b?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "Coderdojo Portarlington & Maynooth",
+    "subtitle": "Teacher",
+    "body": "",
+    "img": "https://www.raspberrypi.org/app/uploads/2018/04/CoderDojo_Thumbnail_Homepage_V2.png",
+    "tags": "Teaching, Lecturing, Courses"
+  },
+  {
+    "title": "BEBRAS FINALS Maynooth",
+    "subtitle": "Supervisor & Invigilator",
+    "body": "",
+    "img": "https://www.stratfordcollege.ie/content/images/_495xAUTO_fit_center-center_80_none_ns/bebrasNatFinals.png?v=1695036226",
+    "tags": "Teaching, Lecturing, Courses"
+  }
+]

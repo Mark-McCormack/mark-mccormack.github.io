@@ -1,0 +1,17 @@
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.title {
+  text-align: left;
+}
+
+.subtitle {
+  text-align: justify;
+  text-justify: inter-word;
+}

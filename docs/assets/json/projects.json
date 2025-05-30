@@ -1,0 +1,162 @@
+[
+  {
+    "title": "SPARSE: AR Classrooms",
+    "subtitle": "Collaborative AR Education Spaces",
+    "body": "Collaborative AR Education Spaces",
+    "img": "https://images.unsplash.com/photo-1550052558-11de18b04282?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF1Z21lbnRlZCUyMHJlYWxpdHl8ZW58MHx8MHx8fDA%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/sparse"
+  },
+  {
+    "title": "While the Kettle's Hot!",
+    "subtitle": "Overcooked in a VR Cafe!",
+    "body": "Overcooked in a VR Cafe!",
+    "img": "https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=4138&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/while-the-kettles-hot"
+  },
+  {
+    "title": "Book & Cook!",
+    "subtitle": "VR Restaurant and Cooking Game!",
+    "body": "VR Restaurant and Cooking Game!",
+    "img": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=2428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/book-and-cook"
+  },
+  {
+    "title": "MU Grade Calculator",
+    "subtitle": "Calculate your degree grade!",
+    "body": "Calculate your degree grade!",
+    "img": "https://images.unsplash.com/photo-1516201580490-33550d32de5c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/mu-grade-calculator"
+  },
+  {
+    "title": "Pomodoro Timer",
+    "subtitle": "Simple & Effective Time Tracker!",
+    "body": "Simple & Effective Time Tracker!",
+    "img": "https://images.unsplash.com/photo-1711030239030-5f1eb868c907?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9tb2Rvcm98ZW58MHx8MHx8fDA%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/pomodoro-timer"
+  },
+  {
+    "title": "QR Code Manager",
+    "subtitle": "Scan, Track and Create QR Codes!",
+    "body": "Scan, Track and Create QR Codes!",
+    "img": "https://images.unsplash.com/photo-1600147131759-880e94a6185f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHFyJTIwY29kZXxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/qr-code-manager"
+  },
+  {
+    "title": "Angel Problem Chess",
+    "subtitle": "Live Simulation of the Angel Problem!",
+    "body": "Live Simulation of the Angel Problem!",
+    "img": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZXNzfGVufDB8fDB8fHww",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/angel-problem-chess"
+  },
+  {
+    "title": "PokeML: Team Builder",
+    "subtitle": "Build Fun/Effective Pokemon Teams!",
+    "body": "Build Fun/Effective Pokemon Teams!",
+    "img": "https://images.unsplash.com/photo-1638964758061-117853a20865?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBva2Vtb258ZW58MHx8MHx8fDA%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/poke-ml"
+  },
+  {
+    "title": "Gladiator Game of Life",
+    "subtitle": "Using ML to Predict Patterns!",
+    "body": "Using ML to Predict Patterns!",
+    "img": "https://images.unsplash.com/photo-1530328411047-7063dbd29029?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZSUyMG9mJTIwbGlmZXxlbnwwfHwwfHx8MA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/gladiator-game-of-life"
+  },
+  {
+    "title": "Dungeon Delver: Game",
+    "subtitle": "A Rogue-like Game in JavaScript!",
+    "body": "A Rogue-like Game in JavaScript!",
+    "img": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=4142&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/dungeon-delver-game"
+  },
+  {
+    "title": "Virtual Turing Machine",
+    "subtitle": "Understanding the Computer!",
+    "body": "Understanding the Original Computer!",
+    "img": "https://images.unsplash.com/photo-1572435555646-7ad9a149ad91?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "tags": "Personal Project, Coding, Software",
+    "url": "https://mark-mccormack.github.io/virtual-turing-machine"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  },
+  {
+    "title": "Coming Soon: Project",
+    "subtitle": "Exciting projects are on the way!",
+    "body": "I'm currently working on a collection of projects that I'm excited to share soon. These projects span various areas of interest, offering unique insights and creative solutions. Stay tuned for updates as I get closer to unveiling them!",
+    "img": "https://placehold.co/600x400",
+    "tags": "Coming Soon, Projects, Creativity, Innovation",
+    "url": "https://mark-mccormack.github.io/"
+  }
+]

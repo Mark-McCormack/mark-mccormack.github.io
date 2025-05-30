@@ -1,0 +1,345 @@
+/*
+=====================================================
+            RESEARCH PAGE STYLES
+=====================================================
+*/
+
+/* ============================================
+    Main Container for Research Projects 
+    (Desktop View)
+============================================ */
+
+/* The container that holds all research-related projects */
+.researchProjectsContainer {
+  display: grid; /* Use grid layout */
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "researchMenu researchMenu researchMenu researchMenu researchMenu"
+    "researchHeader researchHeader researchHeader researchHeader researchHeader"
+    "researchProject-1 researchProject-2 researchProject-3 researchProject-4 researchProject-5"
+    "researchProject-6 researchProject-7 researchProject-8 researchProject-9 researchProject-10"
+    "divider1 divider1 divider1 divider1 divider1"
+    "researchProject-11 researchProject-12 researchProject-13 researchProject-14 researchProject-15"
+    "researchProject-16 researchProject-17 researchProject-18 researchProject-19 researchProject-20"
+    "divider2 divider2 divider2 divider2 divider2"
+    "researchProject-21 researchProject-22 researchProject-23 researchProject-24 researchProject-25"
+    "researchProject-26 researchProject-27 researchProject-28 researchProject-29 researchProject-30"
+    "divider3 divider3 divider3 divider3 divider3";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal columns */
+  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 488px 100px; /* Row heights standardized */
+}
+
+/* ============================================
+    Divider Styles 
+============================================ */
+
+/* Generalized Divider Styles */
+.divider1,
+.divider2 {
+  background-color: #3f6998 !important; /* Dark blue divider */
+}
+
+.divider3 {
+  background-color: #48c78e !important; /* Green divider */
+}
+
+/* Assign specific grid areas for the dividers */
+.divider1 {
+  grid-area: divider1;
+}
+.divider2 {
+  grid-area: divider2;
+}
+.divider3 {
+  grid-area: divider3;
+}
+
+/* ============================================
+    Research Project Card Styles
+============================================ */
+
+/* Apply background border and shadow for each project */
+.researchProjectsContainer > div {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+/* Hover effect for research project cards */
+.researchProjectCard {
+  transition: transform 0.2s ease;
+}
+
+.researchProjectCard:hover {
+  transform: scale(1.02); /* Enlarge the item by 2% on hover */
+}
+
+/* ============================================
+    Research Header Styles 
+============================================ */
+
+/* Header card styling */
+#researchHeaderCard {
+  margin: 1.5rem;
+  background: #009fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: white;
+}
+
+/* Research header image styling */
+#researchHeaderImage {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+}
+
+/* Header grid layout for desktop/tablet */
+.researchHeader {
+  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  align-items: center;
+}
+
+/* Header image responsive styles */
+#researchHeaderImage img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ============================================
+    Menu and Grid Assignments
+============================================ */
+
+/* Assign specific grid areas for menu and header */
+.researchMenu {
+  grid-area: researchMenu;
+}
+
+.researchHeader {
+  grid-area: researchHeader;
+}
+
+/* Individual project grid areas */
+.researchProject-1 {
+  grid-area: researchProject-1;
+}
+.researchProject-2 {
+  grid-area: researchProject-2;
+}
+.researchProject-3 {
+  grid-area: researchProject-3;
+}
+.researchProject-4 {
+  grid-area: researchProject-4;
+}
+.researchProject-5 {
+  grid-area: researchProject-5;
+}
+.researchProject-6 {
+  grid-area: researchProject-6;
+}
+.researchProject-7 {
+  grid-area: researchProject-7;
+}
+.researchProject-8 {
+  grid-area: researchProject-8;
+}
+.researchProject-9 {
+  grid-area: researchProject-9;
+}
+.researchProject-10 {
+  grid-area: researchProject-10;
+}
+.researchProject-11 {
+  grid-area: researchProject-11;
+}
+.researchProject-12 {
+  grid-area: researchProject-12;
+}
+.researchProject-13 {
+  grid-area: researchProject-13;
+}
+.researchProject-14 {
+  grid-area: researchProject-14;
+}
+.researchProject-15 {
+  grid-area: researchProject-15;
+}
+.researchProject-16 {
+  grid-area: researchProject-16;
+}
+.researchProject-17 {
+  grid-area: researchProject-17;
+}
+.researchProject-18 {
+  grid-area: researchProject-18;
+}
+.researchProject-19 {
+  grid-area: researchProject-19;
+}
+.researchProject-20 {
+  grid-area: researchProject-20;
+}
+.researchProject-21 {
+  grid-area: researchProject-21;
+}
+.researchProject-22 {
+  grid-area: researchProject-22;
+}
+.researchProject-23 {
+  grid-area: researchProject-23;
+}
+.researchProject-24 {
+  grid-area: researchProject-24;
+}
+.researchProject-25 {
+  grid-area: researchProject-25;
+}
+.researchProject-26 {
+  grid-area: researchProject-26;
+}
+.researchProject-27 {
+  grid-area: researchProject-27;
+}
+.researchProject-28 {
+  grid-area: researchProject-28;
+}
+.researchProject-29 {
+  grid-area: researchProject-29;
+}
+.researchProject-30 {
+  grid-area: researchProject-30;
+}
+
+/* ============================================
+    Main Container for Research Projects 
+    (Tablet View)
+============================================ */
+
+@media (max-width: 1024px) {
+  .researchProjectsContainer {
+    grid-template-areas:
+      "researchMenu researchMenu researchMenu"
+      "researchHeader researchHeader researchHeader"
+      "researchProject-1 researchProject-2 researchProject-3"
+      "researchProject-4 researchProject-5 researchProject-6"
+      "researchProject-7 researchProject-8 researchProject-9"
+      "researchProject-10 researchProject-11 researchProject-12"
+      "divider1 divider1 divider1"
+      "researchProject-13 researchProject-14 researchProject-15"
+      "researchProject-16 researchProject-17 researchProject-18"
+      "researchProject-19 researchProject-20 researchProject-21"
+      "divider2 divider2 divider2"
+      "researchProject-22 researchProject-23 researchProject-24"
+      "researchProject-25 researchProject-26 researchProject-27"
+      "researchProject-28 researchProject-29 researchProject-30"
+      "divider3 divider3 divider3";
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns on tablets */
+    grid-template-rows: 125px 700px 470px 470px 470px 470px 150px 470px 470px 470px 150px 470px 470px 488px 100px;
+  }
+}
+
+/* ============================================
+    Main Container for Research Projects 
+    (Phone View)
+============================================ */
+
+@media (max-width: 768px) {
+  .researchProjectsContainer {
+    grid-template-areas:
+      "researchMenu"
+      "researchHeader"
+      "researchProject-1"
+      "researchProject-2"
+      "researchProject-3"
+      "researchProject-4"
+      "researchProject-5"
+      "researchProject-6"
+      "researchProject-7"
+      "researchProject-8"
+      "researchProject-9"
+      "researchProject-10"
+      "divider1"
+      "researchProject-11"
+      "researchProject-12"
+      "researchProject-13"
+      "researchProject-14"
+      "researchProject-15"
+      "researchProject-16"
+      "researchProject-17"
+      "researchProject-18"
+      "researchProject-19"
+      "researchProject-20"
+      "divider2"
+      "researchProject-21"
+      "researchProject-22"
+      "researchProject-23"
+      "researchProject-24"
+      "researchProject-25"
+      "researchProject-26"
+      "researchProject-27"
+      "researchProject-28"
+      "researchProject-29"
+      "researchProject-30"
+      "divider3";
+    grid-template-columns: 1fr; /* Single column on phones */
+    grid-template-rows: auto;
+  }
+
+  /* Adjust container padding and margin on smaller screens */
+  .researchProjectsContainer > div {
+    margin: 0.5rem;
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  #researchHeaderCard {
+    margin: 1rem;
+    padding: 0.8rem; /* Adjust padding for smaller devices */
+  }
+
+  /* Adjust divider height for mobile view */
+  .divider1,
+  .divider2,
+  .divider3 {
+    height: 5rem; /* Smaller divider height on mobile */
+    min-height: 5em;
+  }
+
+  /* Reduce font size for research projects on mobile */
+  .researchProjectCard {
+    font-size: 0.9rem;
+  }
+
+  /* Hide the header image on mobile */
+  #researchHeaderImage {
+    display: none !important;
+  }
+
+  /* Adjust header grid to be single column */
+  .researchHeader {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+  }
+
+  /* Hide subtitle text on mobile */
+  .subtitle {
+    display: none !important;
+  }
+
+  /* Remove the header blurb text for mobile view */
+  .subtitleHeader {
+    display: none !important;
+  }
+}
