@@ -96,7 +96,7 @@ const Card: React.FC<Props> = ({
             </div>
 
             <div className="content" style={{ overflow: "hidden", textAlign: "left", flex: 1, padding: "0 1rem" }}>
-              {body.length > 100 ? (
+              {/* {body.length > 100 ? (
                 <>
                   {body.slice(0, 100)}...
                   <br />
@@ -104,7 +104,7 @@ const Card: React.FC<Props> = ({
                 </>
               ) : (
                 body
-              )}
+              )} */}
             </div>
           </div>
         </div>

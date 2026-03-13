@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1841899b.css",
-    "main.js": "/static/js/main.21c6cfc3.js",
+    "main.js": "/static/js/main.f24db88d.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/profile-real.jpg": "/static/media/profile-real.53da1f4089946bad67ec.jpg",
     "static/media/graduation-hat.png": "/static/media/graduation-hat.48836fd61307baee79ad.png",
     "index.html": "/index.html",
     "main.1841899b.css.map": "/static/css/main.1841899b.css.map",
-    "main.21c6cfc3.js.map": "/static/js/main.21c6cfc3.js.map",
+    "main.f24db88d.js.map": "/static/js/main.f24db88d.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1841899b.css",
-    "static/js/main.21c6cfc3.js"
+    "static/js/main.f24db88d.js"
   ]
 }
