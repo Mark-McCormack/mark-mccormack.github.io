@@ -1,7 +1,6 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom"; // Import createPortal
 import "./project.css";
-// If you have a custom modal component to import, you can replace the inline modal below with it.
-// import Modal from "../Modal/modal";
 
 type Props = {
   title?: string;
@@ -26,14 +25,54 @@ const Card: React.FC<Props> = ({
   url = "https://google.com",
   updateState,
 }) => {
-  // State to manage modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
+  // We extract the modal into its own variable for cleaner reading
+  const modalContent = (
+    <div className={`modal ${isModalOpen ? "is-active" : ""}`}>
+      <div className="modal-background" onClick={toggleModal}></div>
+      <div className="modal-card">
+        <header className="modal-card-head">
+          <p className="modal-card-title">{title}</p>
+          <button className="delete" aria-label="close" onClick={toggleModal}></button>
+        </header>
+        <section className="modal-card-body" style={{ textAlign: "left" }}>
+          <figure className="image is-4by3" style={{ marginBottom: "1rem" }}>
+            <img alt={title} src={img} />
+          </figure>
+          <p className="subtitle is-5">
+            <strong>{subtitle}</strong>
+          </p>
+          <p style={{ marginBottom: "1rem" }}>{body}</p>
+          <div className="tags">
+            <span className="tag is-info is-light">
+              <strong>Tags:</strong>&nbsp;{tags}
+            </span>
+          </div>
+        </section>
+        <footer className="modal-card-foot" style={{ justifyContent: "flex-end" }}>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button is-link"
+            style={{ backgroundColor: "#35B2FC" }}
+          >
+            Visit Link
+          </a>
+          <button className="button" onClick={toggleModal}>
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
+  );
+
   return (
     <>
-      {/* Main Card */}
+      {/* Main Card remains exactly the same */}
       <div style={{ maxHeight: "100%", display: "flex", flexDirection: "column", overflow: "hidden" }}>
         <div className="card" style={{ backgroundColor: color, flex: 1 }}>
           <div className="card-image">
@@ -70,7 +109,6 @@ const Card: React.FC<Props> = ({
           </div>
         </div>
 
-        {/* Button triggers the modal instead of navigating immediately */}
         <button
           onClick={toggleModal}
           className="button is-danger projectButton"
@@ -80,44 +118,10 @@ const Card: React.FC<Props> = ({
         </button>
       </div>
 
-      {/* Modal Overlay */}
-      <div className={`modal ${isModalOpen ? "is-active" : ""}`}>
-        <div className="modal-background" onClick={toggleModal}></div>
-        <div className="modal-card">
-          <header className="modal-card-head">
-            <p className="modal-card-title">{title}</p>
-            <button className="delete" aria-label="close" onClick={toggleModal}></button>
-          </header>
-          <section className="modal-card-body" style={{ textAlign: "left" }}>
-            <figure className="image is-4by3" style={{ marginBottom: "1rem" }}>
-              <img alt={title} src={img} />
-            </figure>
-            <p className="subtitle is-5">
-              <strong>{subtitle}</strong>
-            </p>
-            <p style={{ marginBottom: "1rem" }}>{body}</p>
-            <div className="tags">
-              <span className="tag is-info is-light">
-                <strong>Tags:</strong>&nbsp;{tags}
-              </span>
-            </div>
-          </section>
-          <footer className="modal-card-foot" style={{ justifyContent: "flex-end" }}>
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button is-link"
-              style={{ backgroundColor: "#35B2FC" }}
-            >
-              Visit Link
-            </a>
-            <button className="button" onClick={toggleModal}>
-              Close
-            </button>
-          </footer>
-        </div>
-      </div>
+      {/* Render the modal using a Portal. 
+        The check for 'typeof document' ensures it doesn't crash if you are using SSR (like Next.js).
+      */}
+      {typeof document !== "undefined" && createPortal(modalContent, document.body)}
     </>
   );
 };
