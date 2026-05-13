@@ -77,7 +77,7 @@ const Card: React.FC<Props> = ({
         <div className="card" style={{ backgroundColor: color, flex: 1 }}>
           <div className="card-image">
             <figure className="image is-4by3">
-              <img alt={title} src={img} />
+              <img alt={title} src={img} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </figure>
           </div>
           <div className="card-content" style={{ padding: "0px", paddingTop: "1rem", flex: 1 }}>
@@ -88,10 +88,28 @@ const Card: React.FC<Props> = ({
                 </figure>
               </div>
               <div className="media-content">
-                <p className="title is-4" style={{ overflow: "hidden", textOverflow: "ellipsis" }}>
+                <p
+                  className="title is-4"
+                  style={{
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
                   {title}
                 </p>
-                <p className="subtitle is-6">{subtitle}</p>
+                <p
+                  className="subtitle is-6"
+                  style={{
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 1,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  {subtitle}
+                </p>
               </div>
             </div>
 

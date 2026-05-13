@@ -25,9 +25,10 @@
     "divider2 divider2 divider2 divider2 divider2"
     "conferencesProject-21 conferencesProject-22 conferencesProject-23 conferencesProject-24 conferencesProject-25"
     "conferencesProject-26 conferencesProject-27 conferencesProject-28 conferencesProject-29 conferencesProject-30"
+    "conferencesProject-31 conferencesProject-32 conferencesProject-33 conferencesProject-34 conferencesProject-35"
     "divider3 divider3 divider3 divider3 divider3";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal columns */
-  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 488px 100px; /* Row heights */
+  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 470px 470px 100px; /* Row heights */
 }
 
 /* ============================================
@@ -77,6 +78,8 @@
       "conferencesProject-22 conferencesProject-23 conferencesProject-24"
       "conferencesProject-25 conferencesProject-26 conferencesProject-27"
       "conferencesProject-28 conferencesProject-29 conferencesProject-30"
+      "conferencesProject-31 conferencesProject-32 conferencesProject-33"
+      "conferencesProject-34 conferencesProject-35 conferencesProject-36"
       "divider3 divider3 divider3";
     grid-template-columns: 1fr 1fr 1fr; /* Three columns on tablets */
     grid-template-rows: 125px 700px 470px 470px 470px 470px 150px 470px 470px 470px 150px 470px 470px 488px 100px;
@@ -125,6 +128,12 @@
       "conferencesProject-28"
       "conferencesProject-29"
       "conferencesProject-30"
+      "conferencesProject-31"
+      "conferencesProject-32"
+      "conferencesProject-33"
+      "conferencesProject-34"
+      "conferencesProject-35"
+      "conferencesProject-36"
       "divider3";
     grid-template-columns: 1fr; /* Single column on phones */
     grid-template-rows: auto;

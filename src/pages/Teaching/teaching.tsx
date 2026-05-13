@@ -121,7 +121,7 @@ const Teaching: React.FC = () => {
 
         <div className="divider1"></div>
 
-        {teaching.slice(10, 20).map((project, index) => (
+        {teaching.slice(10, 26).map((project, index) => (
           <div
             className={`teachingProject-${index + 11} teachingProjectCard`}
             key={index}

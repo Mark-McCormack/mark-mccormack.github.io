@@ -120,7 +120,7 @@ const Conferences: React.FC = () => {
 
         <div className="divider2-conference"></div>
 
-        {projects.slice(20, 30).map((project, index) => (
+        {projects.slice(20, 40).map((project, index) => (
           <div
             className={`conferencesProject-${index + 21} projectCard`}
             key={index}
