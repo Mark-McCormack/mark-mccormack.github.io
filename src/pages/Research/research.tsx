@@ -90,6 +90,7 @@ const Research: React.FC = () => {
           </div>
           <div id="researchHeaderImage" style={{ overflow: "hidden", height: "95%", borderRadius: "1rem" }}>
             <img
+              loading="lazy"
               alt=""
               id="image"
               src={

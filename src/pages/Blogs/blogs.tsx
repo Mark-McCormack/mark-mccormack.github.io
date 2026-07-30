@@ -67,6 +67,7 @@ const Blogs: React.FC = () => {
           </div>
           <div id="blogHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
             <img
+              loading="lazy"
               alt=""
               id="image"
               src={

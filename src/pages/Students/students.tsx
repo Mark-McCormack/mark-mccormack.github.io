@@ -72,6 +72,7 @@ const Students: React.FC = () => {
           </div>
           <div id="studentPortfolioHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
             <img
+              loading="lazy"
               alt=""
               id="image"
               src={

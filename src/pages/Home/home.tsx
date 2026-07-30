@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
 import Navbar from "../../components/Navbar/navbar";
 import Card from "../../components/Card/card";
@@ -9,7 +9,24 @@ import Project from "../../components/Project/project";
 import ParticlesComponent from "../../components/Particles/particlescomponent";
 import DesktopSuggestionPopup from "../../components/DesktopSuggestion/desktopsuggestion";
 
+interface StudentData {
+  title: string;
+  subtitle: string;
+  body: string;
+  img: string;
+  tags: string;
+}
+
 const Home: React.FC = () => {
+  const [students, setStudents] = useState<StudentData[]>([]);
+
+  useEffect(() => {
+    fetch("/assets/json/students.json")
+      .then((response) => response.json())
+      .then((data: StudentData[]) => setStudents(data))
+      .catch((error) => console.error("Error fetching student data:", error));
+  }, []);
+
   return (
     <div>
       <DesktopSuggestionPopup />
@@ -87,6 +104,7 @@ const Home: React.FC = () => {
           </div>
           <div id="headerImage" style={{ overflow: "hidden", height: "100%", zIndex: "1" }}>
             <img
+              loading="lazy"
               alt=""
               id="image"
               src={photo}
@@ -166,151 +184,42 @@ const Home: React.FC = () => {
         <div className="Portfolio" style={{ backgroundColor: "#48c78e" }}>
           <div className="scroll-container">
             <div className="scroll-content">
-              {/** Duplicate Group to Allow for Seamless Scroll Effect*/}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS264SS"
-                  subtitle="Software Design"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS431FZ"
-                  subtitle="Mobile Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS385FZ"
-                  subtitle="Machine Learning & Neural Nets."
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS620C"
-                  subtitle="Structured Programming"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="SDA[F]"
-                  subtitle="Android Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS264SS"
-                  subtitle="Software Design"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS431FZ"
-                  subtitle="Mobile Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS385FZ"
-                  subtitle="Machine Learning & Neural Nets."
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS620C"
-                  subtitle="Structured Programming"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="SDA[F]"
-                  subtitle="Android Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
+              {students.slice(0, 10).map((project, index) => (
+                <div className="project-showcase" key={index} style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                  <Project
+                    title={project.title}
+                    subtitle={project.subtitle}
+                    body={project.body}
+                    img={project.img}
+                    tags={project.tags}
+                    language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
+                  />
+                </div>
+              ))}
+              {students.slice(0, 10).map((project, index) => (
+                <div className="project-showcase" key={`dup-${index}`} style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                  <Project
+                    title={project.title}
+                    subtitle={project.subtitle}
+                    body={project.body}
+                    img={project.img}
+                    tags={project.tags}
+                    language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
+                  />
+                </div>
+              ))}
+              {students.slice(0, 10).map((project, index) => (
+                <div className="project-showcase" key={`dup2-${index}`} style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                  <Project
+                    title={project.title}
+                    subtitle={project.subtitle}
+                    body={project.body}
+                    img={project.img}
+                    tags={project.tags}
+                    language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

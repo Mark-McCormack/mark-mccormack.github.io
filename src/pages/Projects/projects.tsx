@@ -70,6 +70,7 @@ const Projects: React.FC = () => {
           </div>
           <div id="portfolioHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
             <img
+              loading="lazy"
               alt=""
               id="image"
               src={

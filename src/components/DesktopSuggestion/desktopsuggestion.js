@@ -4,6 +4,10 @@ const DesktopSuggestionPopup = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
+    // Only show the popup on mobile or tablet devices (width <= 1024px)
+    const isMobileOrTablet = window.innerWidth <= 1024;
+    if (!isMobileOrTablet) return;
+
     const hasSeen = sessionStorage.getItem("seenDesktopSuggestion");
     if (!hasSeen) {
       setShowAlert(true);

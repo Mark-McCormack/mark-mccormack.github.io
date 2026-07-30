@@ -68,6 +68,7 @@ const Skills: React.FC = () => {
           </div>
           <div id="skillsHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
             <img
+              loading="lazy"
               alt=""
               id="imageSkills"
               src={

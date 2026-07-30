@@ -92,6 +92,7 @@ const Teaching: React.FC = () => {
           </div>
           <div id="teaching-HeaderImage" style={{ overflow: "hidden", height: "100%" }}>
             <img
+              loading="lazy"
               alt=""
               id="imageteaching"
               src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

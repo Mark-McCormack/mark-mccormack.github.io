@@ -68,6 +68,7 @@ const Conferences: React.FC = () => {
           </div>
           <div id="conferencesHeaderImage" style={{ overflow: "hidden", height: "100%" }}>
             <img
+              loading="lazy"
               alt=""
               id="imageAcademia"
               src={

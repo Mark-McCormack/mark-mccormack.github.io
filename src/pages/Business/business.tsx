@@ -64,7 +64,7 @@ const Business: React.FC = () => {
             </div>
           </div>
           <div id="businessHeaderImage" style={{ overflow: "hidden", height: "100%", borderRadius: "1rem" }}>
-            <img
+            <img loading="lazy"
               alt=""
               id="image"
               src={
