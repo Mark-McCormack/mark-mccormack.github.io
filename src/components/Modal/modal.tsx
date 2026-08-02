@@ -41,6 +41,7 @@ const Modal: React.FC<Props> = ({
           </div>
           <div id="modalImage" style={{ overflow: "hidden", padding: "1rem", height: "100%", borderRadius: "1rem" }}>
             <img
+              loading="lazy"
               alt=""
               id="imageAcademia"
               src={
