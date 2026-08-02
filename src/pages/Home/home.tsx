@@ -8,8 +8,21 @@ import Typewriter from "typewriter-effect";
 import Project from "../../components/Project/project";
 import ParticlesComponent from "../../components/Particles/particlescomponent";
 import DesktopSuggestionPopup from "../../components/DesktopSuggestion/desktopsuggestion";
+import useData from "../../hooks/useData";
+
+type StudentEntry = {
+  title: string;
+  subtitle: string;
+  body: string;
+  img: string;
+  tags: string;
+};
 
 const Home: React.FC = () => {
+  const { data: students, isLoading, error } = useData<StudentEntry>("/assets/json/students.json");
+  const studentCards = students.slice(0, 15);
+  const carouselItems = [...studentCards, ...studentCards];
+
   return (
     <div>
       <DesktopSuggestionPopup />
@@ -22,7 +35,7 @@ const Home: React.FC = () => {
           <div id="headerText" className="project-showcase" style={{ backgroundColor: "rgba(0,0,0,0.0)", zIndex: "1" }}>
             <div id="headerCard">
               <p className="title is-1">
-                Hello, I'm Mark McCormack! <div className="waving-emoji">👋</div>
+                Hello, I'm Mark P. McCormack! <div className="waving-emoji">👋</div>
               </p>
               <div className="subtitle is-3">
                 <Typewriter
@@ -153,7 +166,7 @@ const Home: React.FC = () => {
           <Card
             notificationClass="is-warning"
             title="Pedagogical Approach"
-            body="Employing a project-based learning approach, I foster an inclusive environment, integrating technology to enhance learning experiences. My teaching emphasizes continuous collaboration and practical exercises, allowing students to work together on real-world issues."
+            body="Employing a project-based learning approach, I foster an inclusive environment, integrating technology to enhance learning experiences. My teaching emphasizes continuous collaboration and practical exercises, allowing students to work on real-world issues."
           />
         </div>
         <div className="Skill-8" style={{ overflow: "hidden", padding: "0px", backgroundColor: "#00d1b2" }}>
@@ -166,184 +179,57 @@ const Home: React.FC = () => {
         <div className="Portfolio" style={{ backgroundColor: "#48c78e" }}>
           <div className="scroll-container">
             <div className="scroll-content">
-              {/** Duplicate Group to Allow for Seamless Scroll Effect*/}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS264SS"
-                  subtitle="Software Design"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS431FZ"
-                  subtitle="Mobile Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS385FZ"
-                  subtitle="Machine Learning & Neural Nets."
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS620C"
-                  subtitle="Structured Programming"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="SDA[F]"
-                  subtitle="Android Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS264SS"
-                  subtitle="Software Design"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS431FZ"
-                  subtitle="Mobile Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS385FZ"
-                  subtitle="Machine Learning & Neural Nets."
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS620C"
-                  subtitle="Structured Programming"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="SDA[F]"
-                  subtitle="Android Application Development"
-                />
-              </div>{" "}
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS230"
-                  subtitle="Web Information Processing"
-                />
-              </div>
-              <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
-                <Project
-                  body=""
-                  language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
-                  img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyYWR1YXRpb258ZW58MHx8MHx8fDA%3D"
-                  title="CS615C"
-                  subtitle="Internet Solutions Engineering"
-                />
-              </div>{" "}
+              {isLoading && (
+                <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                  Loading student showcase...
+                </div>
+              )}
+              {error && (
+                <div className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                  Failed to load student showcase.
+                </div>
+              )}
+              {!isLoading && !error &&
+                carouselItems.map((student, index) => (
+                  <div key={`${student.title}-${index}`} className="project-showcase" style={{ minWidth: "15rem", maxWidth: "15rem" }}>
+                    <Project
+                      body={student.body}
+                      language="https://cdn-icons-png.freepik.com/512/5344/5344646.png"
+                      img={student.img}
+                      title={student.title}
+                      subtitle={student.subtitle}
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
         <div className="Item-1" style={{ padding: "0px", backgroundColor: "#ffe08a" }}>
-          {" "}
           <Card
             notificationClass="is-warning"
-            title="Software Engineer"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt metus eget mollis vulputate. Nam id erat at nunc condimentum efficitur. Nullam sed dolor leo. Ut non justo porta, malesuada turpis id, elementum ligula. Quisque in enim nec dui venenatis facilisis. Sed nisi ante, vulputate id augue in, iaculis facilisis metus. Etiam dolor velit, vulputate a dui quis, feugiat pretium ex. Vestibulum sollicitudin dui ac tortor posuere ornare."
+            title="AI in Education Research"
+            body="Showcasing student-led innovation in AI for learning, from RAG systems to pedagogical tools that support teaching, assessment, and personalised study experiences."
           />
         </div>
         <div className="Item-2" style={{ padding: "0px", backgroundColor: "#3e8ed0" }}>
-          {" "}
           <Card
             notificationClass="is-info"
-            title="Software Engineer"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt metus eget mollis vulputate. Nam id erat at nunc condimentum efficitur. Nullam sed dolor leo. Ut non justo porta, malesuada turpis id, elementum ligula. Quisque in enim nec dui venenatis facilisis. Sed nisi ante, vulputate id augue in, iaculis facilisis metus. Etiam dolor velit, vulputate a dui quis, feugiat pretium ex. Vestibulum sollicitudin dui ac tortor posuere ornare."
+            title="Student Mentorship"
+            body="Mentoring undergraduates and postgraduates through capstone projects, research theses, and collaborative development work that blends academic inquiry with practical impact."
           />
         </div>
         <div className="Item-3" style={{ padding: "0px", backgroundColor: "#f14668" }}>
-          {" "}
           <Card
             notificationClass="is-danger"
-            title="Software Engineer"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt metus eget mollis vulputate. Nam id erat at nunc condimentum efficitur. Nullam sed dolor leo. Ut non justo porta, malesuada turpis id, elementum ligula. Quisque in enim nec dui venenatis facilisis. Sed nisi ante, vulputate id augue in, iaculis facilisis metus. Etiam dolor velit, vulputate a dui quis, feugiat pretium ex. Vestibulum sollicitudin dui ac tortor posuere ornare."
+            title="Curriculum Innovation"
+            body="Designing experiential modules in software engineering, AI, and EdTech that challenge students to build real-world systems and think critically about digital learning."
           />
         </div>
-        <div className="Item-4" style={{ padding: "0px", backgroundColor: "#f5f5f5" }}>
-          {" "}
+        <div className="Item-4" style={{ padding: "0px", backgroundColor: "#3e8ed0" }}>
           <Card
-            notificationClass="is-failure"
-            title="Software Engineer"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt metus eget mollis vulputate. Nam id erat at nunc condimentum efficitur. Nullam sed dolor leo. Ut non justo porta, malesuada turpis id, elementum ligula. Quisque in enim nec dui venenatis facilisis. Sed nisi ante, vulputate id augue in, iaculis facilisis metus. Etiam dolor velit, vulputate a dui quis, feugiat pretium ex. Vestibulum sollicitudin dui ac tortor posuere ornare."
+            notificationClass="is-success"
+            title="Academic & Industry Reach"
+            body="Connecting teaching, research, and industry through partnerships, collaborative projects and community outreach that extend learning beyond the classroom."
           />
         </div>
         <div className="Footer" style={{ backgroundColor: "#48c78e" }}>
