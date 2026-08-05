@@ -121,7 +121,7 @@ const Conferences: React.FC = () => {
 
         <div className="divider2-conference"></div>
 
-        {projects.slice(20, 40).map((project, index) => (
+        {projects.slice(20, 30).map((project, index) => (
           <div
             className={`conferencesProject-${index + 21} projectCard`}
             key={index}
@@ -140,7 +140,28 @@ const Conferences: React.FC = () => {
           </div>
         ))}
 
-        <div className="divider3-conference">
+        <div className="divider3-conference"></div>
+
+        {projects.slice(30, 40).map((project, index) => (
+          <div
+            className={`conferencesProject-${index + 31} projectCard`}
+            key={index}
+            style={{ backgroundColor: "#fff" }}
+          >
+            <Project
+              title={project.title}
+              subtitle={project.subtitle}
+              body={project.body}
+              img={project.img}
+              tags={project.tags}
+              language={"https://cdn-icons-png.freepik.com/512/1321/1321029.png"}
+              color={"#fff"}
+              url={project.url}
+            />
+          </div>
+        ))}
+
+        <div className="divider4-conference">
           <Footer />
         </div>
       </div>

@@ -25,10 +25,16 @@
     "divider2 divider2 divider2 divider2 divider2"
     "conferencesProject-21 conferencesProject-22 conferencesProject-23 conferencesProject-24 conferencesProject-25"
     "conferencesProject-26 conferencesProject-27 conferencesProject-28 conferencesProject-29 conferencesProject-30"
+    "divider3 divider3 divider3 divider3 divider3"
     "conferencesProject-31 conferencesProject-32 conferencesProject-33 conferencesProject-34 conferencesProject-35"
-    "divider3 divider3 divider3 divider3 divider3";
+    "conferencesProject-36 conferencesProject-37 conferencesProject-38 conferencesProject-39 conferencesProject-40"
+    "divider4 divider4 divider4 divider4 divider4";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal columns */
-  grid-template-rows: 125px 700px 470px 470px 150px 470px 470px 150px 470px 470px 470px 100px; /* Row heights */
+  grid-template-rows:
+    125px 700px 470px 470px 150px
+    470px 470px 150px
+    470px 470px 150px
+    470px;
 }
 
 /* ============================================
@@ -37,11 +43,12 @@
 
 /* Generalized Divider Styles */
 .divider1-conference,
-.divider2-conference {
+.divider2-conference,
+.divider3-conference {
   background-color: #3f6998 !important; /* Dark blue divider */
 }
 
-.divider3-conference {
+.divider4-conference {
   background-color: #48c78e !important; /* Green divider */
 }
 
@@ -54,6 +61,10 @@
 }
 .divider3-conference {
   grid-area: divider3;
+}
+
+.divider4-conference {
+  grid-area: divider4;
 }
 
 /* ============================================
@@ -78,11 +89,21 @@
       "conferencesProject-22 conferencesProject-23 conferencesProject-24"
       "conferencesProject-25 conferencesProject-26 conferencesProject-27"
       "conferencesProject-28 conferencesProject-29 conferencesProject-30"
+      "divider3 divider3 divider3"
       "conferencesProject-31 conferencesProject-32 conferencesProject-33"
       "conferencesProject-34 conferencesProject-35 conferencesProject-36"
-      "divider3 divider3 divider3";
+      "conferencesProject-37 conferencesProject-38 conferencesProject-39"
+      "divider4 divider4 divider4";
     grid-template-columns: 1fr 1fr 1fr; /* Three columns on tablets */
-    grid-template-rows: 125px 700px 470px 470px 470px 470px 150px 470px 470px 470px 150px 470px 470px 488px 100px;
+    grid-template-rows:
+      125px 700px
+      470px 470px 470px 470px
+      150px
+      470px 470px 470px
+      150px
+      470px 470px 488px
+      150px
+      100px;
   }
 }
 
@@ -128,13 +149,17 @@
       "conferencesProject-28"
       "conferencesProject-29"
       "conferencesProject-30"
+      "divider3"
       "conferencesProject-31"
       "conferencesProject-32"
       "conferencesProject-33"
       "conferencesProject-34"
       "conferencesProject-35"
       "conferencesProject-36"
-      "divider3";
+      "conferencesProject-37"
+      "conferencesProject-38"
+      "conferencesProject-39"
+      "divider4";
     grid-template-columns: 1fr; /* Single column on phones */
     grid-template-rows: auto;
   }
@@ -159,8 +184,9 @@
   /* Adjust divider height for mobile view */
   .divider1-conference,
   .divider2-conference,
-  .divider3-conference {
-    height: 5rem; /* Smaller divider height on mobile */
+  .divider3-conference,
+  .divider4-conference {
+    height: 5rem;
     min-height: 5em;
   }
 
