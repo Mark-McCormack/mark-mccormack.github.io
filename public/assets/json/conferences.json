@@ -59,7 +59,7 @@
     "title": "ILTA 2024 (Sligo)",
     "subtitle": "Presenter | Attendee",
     "body": "",
-    "img": "https://www.theaddresssligo.com/wp-content/uploads/2023/05/Sligo-Town-Co-Sligo_Web-Size-1-1366x768-fp_mm-fpoff_0_0.jpg",
+    "img": "/assets/images/placeholder.svg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
     "url": "https://ilta.ie/"
   },
@@ -262,5 +262,13 @@
     "body": "",
     "img": "/assets/images/ai-personal.png",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+  },
+  {
+    "title": "AI in Education: Why, Where It's Going and What Do We Value? (Tor Vergata University)",
+    "subtitle": "Speaker | Ph.D. Talk",
+    "body": "A talk at Tor Vergata University (Rome) on my Ph.D. research: why AI belongs in education, where it is heading, and what we should value as it reshapes teaching and learning.",
+    "img": "/assets/images/placeholder.svg",
+    "tags": "Talk, Ph.D., AI in Education, EduTech, Generative AI",
+    "url": "https://web.uniroma2.it/"
   }
 ]

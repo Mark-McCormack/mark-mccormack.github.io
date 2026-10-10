@@ -1,60 +1,33 @@
 import { useEffect, useState } from "react";
 
-const cache = new Map<string, any>();
-const inFlightRequests = new Map<string, Promise<any>>();
+// One shared request per file, reused across pages and re-mounts.
+const cache = new Map<string, Promise<any[]>>();
 
-const useData = <T,>(jsonPath: string) => {
-  const [data, setData] = useState<T[]>(() => cache.get(jsonPath) ?? []);
-  const [isLoading, setIsLoading] = useState(() => !cache.has(jsonPath));
-  const [error, setError] = useState<string | null>(null);
+const useData = <T>(name: string) => {
+  const [data, setData] = useState<T[]>();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    let isMounted = true;
-
-    const setResult = (responseData: T[]) => {
-      if (!isMounted) return;
-      setData(responseData);
-      setIsLoading(false);
-    };
-
-    if (cache.has(jsonPath)) {
-      setResult(cache.get(jsonPath));
-      return;
-    }
-
-    const request =
-      inFlightRequests.get(jsonPath) ??
-      fetch(jsonPath)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`Failed to fetch ${jsonPath}`);
-          }
-          return response.json();
-        })
-        .then((responseData: T[]) => {
-          cache.set(jsonPath, responseData);
-          return responseData;
-        });
-
-    inFlightRequests.set(jsonPath, request);
-
-    request
-      .then(setResult)
-      .catch((fetchError: Error) => {
-        if (!isMounted) return;
-        setError(fetchError.message);
-        setIsLoading(false);
-      })
-      .finally(() => {
-        inFlightRequests.delete(jsonPath);
-      });
-
+    let live = true;
+    const url = `/assets/json/${name}.json`;
+    if (!cache.has(url))
+      cache.set(
+        url,
+        fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      );
+    cache.get(url)!.then(
+      (d) => live && setData(d),
+      () => {
+        cache.delete(url);
+        if (live) setError(true);
+      }
+    );
     return () => {
-      isMounted = false;
+      live = false;
     };
-  }, [jsonPath]);
+  }, [name]);
 
-  return { data, isLoading, error };
+  return { data: data ?? [], isLoading: !data && !error, error };
 };
 
 export default useData;

@@ -1,0 +1,669 @@
+:root {
+  --site-primary: #0b3e77;
+  --site-secondary: #48c78e;
+  --site-background: #009fff;
+  --ink: #111; /* dark text for light-ish Bulma colours (WCAG AA contrast) */
+  --edge: 0.5vmin solid #05060f;
+  --shadow: 0.4rem 0.4rem #05060f;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--site-background);
+}
+
+#root {
+  text-align: center;
+}
+
+:focus-visible {
+  outline: 3px solid #05060f;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 50;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: var(--ink);
+  border: var(--edge);
+  border-radius: 0.5rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ---------- Contrast fixes: keep Bulma's backgrounds, darken the text ---------- */
+.notification:is(.is-primary, .is-success),
+.button:is(.is-primary, .is-info, .is-success, .is-danger),
+.card-button,
+.footer-bar a {
+  color: var(--ink) !important;
+}
+
+/* Dark blocks with white text: navy is the site's primary colour; red is Bulma's red shaded 13% so white passes AA. */
+.notification.is-navy {
+  background: var(--site-primary);
+  color: #fff;
+}
+.notification.is-danger {
+  background: #d23d5a;
+  color: #fff;
+}
+
+/* ---------- Page shell and tiles ---------- */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--site-background);
+  transition: background-color 1s ease-in-out;
+}
+
+.page main {
+  flex: 1; /* keeps the footer at the bottom on short pages */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  outline: none;
+}
+
+.frame {
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: var(--edge);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  color: black;
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.top {
+  min-height: calc(125px - 1rem);
+  overflow: visible;
+}
+
+.divider {
+  height: calc(150px - 1rem);
+  background: var(--divider, var(--site-primary));
+}
+
+.footer-bar {
+  min-height: calc(100px - 1rem);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--site-secondary);
+}
+
+/* ---------- Navbar ---------- */
+.navbar-start .navbar-item {
+  text-transform: capitalize;
+  padding-inline: 0.5rem;
+}
+.navbar-brand img {
+  max-height: 50px;
+}
+/* The name shows next to the logo on touch screens; on desktop it only labels the link for screen readers. */
+.brand-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.navbar-menu {
+  flex-shrink: 1;
+  flex-wrap: wrap; /* on narrow laptops the buttons drop to a second row instead of overflowing */
+}
+
+.swatch {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.swatch:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- Page header (head) ---------- */
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: calc(700px - 1rem); /* grows if the intro is longer */
+}
+
+.head-card {
+  margin: 1.5rem;
+  background: var(--site-primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: var(--edge);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  color: #fff;
+}
+.head-card :is(.title, .subtitle) {
+  color: inherit;
+}
+.head-card a:not(.button) {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.toggle-row .title {
+  margin-bottom: 0.25rem;
+}
+.toggle {
+  display: none;
+}
+
+.intro {
+  padding: 2rem 5rem;
+  text-align: justify;
+}
+
+.head-image {
+  height: 100%;
+  border-radius: 1rem;
+  border: var(--edge);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.head-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Project cards ---------- */
+.item {
+  height: calc(470px - 1rem);
+  transition: transform 0.2s ease;
+}
+@media (hover: hover) {
+  .item:hover {
+    transform: scale(1.02);
+  }
+}
+
+.card {
+  box-shadow: none;
+  text-align: left;
+}
+.card .image img {
+  object-fit: cover;
+}
+.card .media {
+  padding-top: 1rem;
+}
+
+.clamp-1,
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.clamp-1 {
+  -webkit-line-clamp: 1;
+}
+
+.card-button {
+  width: 100%;
+  background: #35b2fc;
+  border-color: transparent;
+}
+
+dialog.modal {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+dialog.modal::backdrop {
+  background: none;
+}
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+.modal-card-title {
+  flex-shrink: 1; /* Bulma's 0 stops long titles wrapping */
+  min-width: 0;
+  text-align: left;
+  line-height: 1.25;
+}
+.modal-card-body {
+  text-align: left;
+}
+.modal-card-body .tag {
+  height: auto;
+  white-space: normal;
+}
+.modal-card-foot {
+  justify-content: flex-end;
+}
+
+/* ---------- Home ---------- */
+.home main {
+  grid-template-columns: repeat(4, 1fr);
+}
+.home .footer-bar {
+  min-height: calc(108px - 1rem);
+}
+
+.home .head {
+  position: relative;
+  height: calc(852px - 1rem);
+  background: rgba(15, 77, 146, 0.5);
+  clip-path: inset(0);
+}
+.particles,
+.particles canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+.home .head-card {
+  max-height: calc(100% - 1rem); /* scrolls inside the fixed-height header if the text is long */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  position: relative;
+  z-index: 1;
+  margin: 0.5rem;
+  background: #fff;
+  color: black;
+}
+.home .intro {
+  padding: 1.5rem 5rem 2rem;
+}
+
+.home .head-image {
+  position: relative;
+  z-index: 1;
+  border: 0;
+  box-shadow: none;
+}
+.home .head-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  min-width: 15rem;
+  max-width: 95%;
+  max-height: 95%;
+  margin: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: var(--edge);
+  box-shadow: var(--shadow);
+}
+
+.waving-emoji {
+  display: inline-block;
+  font-size: 3rem;
+  animation: wave 1s infinite alternate;
+}
+@keyframes wave {
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+.blurb {
+  height: calc(260px - 1rem);
+  padding: 0;
+}
+.showcase ~ .blurb {
+  height: calc(216px - 1rem);
+}
+.blurb .notification {
+  height: 100%;
+}
+.blurb .subtitle {
+  text-align: justify;
+}
+
+.showcase {
+  position: relative;
+  height: calc(398px - 1rem);
+  background: var(--site-secondary);
+}
+.showcase .pause {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+}
+.scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+.scroll > .frame {
+  width: 15rem;
+}
+/* Rendered twice, so sliding by half loops seamlessly. */
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.showcase:hover .scroll,
+.showcase:focus-within .scroll,
+.paused .scroll,
+.paused .waving-emoji {
+  animation-play-state: paused;
+}
+.paused .showcase {
+  overflow-x: auto;
+}
+
+/* ---------- Touch navbar (Bulma collapses the navbar below 1024px) ---------- */
+@media (max-width: 1023px) {
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 0.25rem 0.5rem;
+  }
+  .navbar-brand {
+    align-items: center;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  .brand-name {
+    position: static;
+    width: auto;
+    height: auto;
+    clip-path: none;
+    margin-left: 0.6rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .navbar-menu {
+    box-shadow: none;
+    padding: 0.5rem 0 0.25rem;
+  }
+  .navbar-menu .navbar-start {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .navbar-menu .navbar-start .navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    border: 2px solid #05060f;
+    border-radius: 0.75rem;
+    box-shadow: 0.2rem 0.2rem #05060f;
+    font-weight: 600;
+  }
+  .navbar-menu .navbar-start .navbar-item.active {
+    background: var(--site-primary);
+    color: #fff;
+  }
+  .swatch {
+    display: none;
+  }
+  .navbar-end {
+    padding-top: 0.75rem;
+  }
+  .navbar-end .navbar-item {
+    padding: 0.25rem 0;
+  }
+  .navbar-end :is(.dropdown, .dropdown-trigger, .button) {
+    display: flex;
+    width: 100%;
+  }
+  .navbar-end .dropdown {
+    flex-direction: column;
+  }
+  .navbar-end .dropdown-menu {
+    position: static;
+    padding-top: 0.25rem;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+  .page main,
+  .home main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top,
+  .head,
+  .home .head,
+  .item,
+  .blurb,
+  .showcase ~ .blurb {
+    height: auto;
+    min-height: 0;
+  }
+  .head {
+    grid-template-columns: 1fr;
+  }
+  .head-image {
+    height: 320px;
+  }
+  .home .head-image {
+    height: auto;
+  }
+  .intro,
+  .home .intro {
+    padding: 1rem 2rem;
+  }
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 768px) {
+  .page main,
+  .home main {
+    grid-template-columns: 1fr;
+  }
+  .frame {
+    padding: 0.8rem;
+  }
+
+  /* Collapsible headers and home blurbs: heading + chevron until opened */
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .toggle-row .title {
+    margin-bottom: 0;
+  }
+  .toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font-size: 2.25rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .open .toggle {
+    transform: rotate(180deg);
+  }
+  .collapsible:not(.open) .toggle-body {
+    display: none;
+  }
+  .toggle-body {
+    padding-top: 0.75rem;
+  }
+
+  /* Page header: the dark card is the frame (no white frame around it) */
+  .content-page .head {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    overflow: visible;
+  }
+  .head-card {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+  .content-page .head-card {
+    margin: 0;
+  }
+  .head .title.is-1 {
+    font-size: 2rem;
+  }
+  .head .subtitle.is-3 {
+    font-size: 1.25rem;
+  }
+  .intro,
+  .home .intro,
+  .blurb .subtitle {
+    padding: 0.75rem 0;
+    text-align: left;
+  }
+  .blurb .toggle-body {
+    padding-top: 0;
+  }
+  .blurb {
+    padding: 0; /* the coloured card fills its frame, no white edge */
+  }
+  .blurb .notification {
+    border-radius: 0;
+  }
+  .blurb .title {
+    font-size: 1.5rem;
+  }
+  .head-image {
+    display: none;
+  }
+  .home .head-image {
+    display: block;
+    height: auto;
+  }
+
+  /* Cards become compact tappable rows: thumbnail, title, chevron */
+  .divider {
+    display: none;
+  }
+  .item {
+    position: relative;
+    padding: 0.6rem;
+  }
+  .item .card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .item .card > .image {
+    flex-shrink: 0;
+    width: 5.5rem;
+    height: 5.5rem;
+    padding-top: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .item .media {
+    flex: 1;
+    min-width: 0;
+    padding-top: 0;
+  }
+  .item .media-left {
+    display: none;
+  }
+  .item .title.is-4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .item .title + .subtitle {
+    margin-top: 0;
+  }
+  .item .card::after {
+    content: "\f105";
+    font: var(--fa-font-solid);
+    font-size: 1.25rem;
+    padding-right: 0.25rem;
+  }
+  .item .card-button {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    border-radius: 1rem;
+    background: none;
+    color: transparent !important;
+  }
+
+  /* Student showcase: swipe with snapping instead of auto-scrolling */
+  .showcase {
+    height: auto;
+    padding-top: 3rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .scroll {
+    animation: none;
+  }
+  .scroll > .frame {
+    scroll-snap-align: start;
+  }
+  .scroll > .dupe {
+    display: none;
+  }
+
+  /* Info pop-up: full-screen sheet with pinned header and footer */
+  .modal-card {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+  }
+  .modal-card-head,
+  .modal-card-foot {
+    border-radius: 0;
+  }
+  .modal-card-foot {
+    padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+  }
+  .modal-card-foot .button {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
