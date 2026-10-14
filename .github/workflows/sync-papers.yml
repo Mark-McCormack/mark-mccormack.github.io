@@ -1,0 +1,30 @@
+# Weekly refresh of the Research page from the public ORCID record (see scripts/sync-papers.mjs).
+# Also runnable by hand: GitHub → Actions → "Sync papers from ORCID" → Run workflow.
+name: Sync papers from ORCID
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm run sync-papers
+      # The JSON is fetched at runtime, so the published copy in docs/ just needs updating (no rebuild).
+      - run: cp public/assets/json/research.json docs/assets/json/research.json
+      - name: Commit if anything changed
+        run: |
+          git diff --quiet && { echo "No new papers."; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Sync papers from ORCID"
+          git push
