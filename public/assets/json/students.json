@@ -278,5 +278,33 @@
     "body": "Utilizes Anthropic's Model Context Protocol (MCP) to develop a Reinforcement Learning training pipeline, allowing models to learn through direct environmental tool interaction.",
     "img": "https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9vbHN8ZW58MHx8MHx8fDA%3D",
     "tags": "Student Project, Research, Computer Science"
+  },
+  {
+    "title": "NEURO-FORECAST",
+    "subtitle": "Do LLMs and the brain share a predictive-coding hierarchy?",
+    "body": "Investigates whether layers of large language models reproduce the brain's hierarchy of language prediction across different timescales, and whether adding representations of future words improves alignment with fMRI responses. The project uses public fMRI datasets from people listening to natural stories and open LLMs.",
+    "img": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&auto=format&fit=crop&q=60",
+    "tags": "Student Project, Research, Neurocomputation, AI"
+  },
+  {
+    "title": "NEURO-SQUASH",
+    "subtitle": "How do AI 'brain regions' evolve or devolve with parameter count?",
+    "body": "Studies how topic-localised activation regions in open-weight language models change with model size, across model families, and after compression through distillation or quantisation. It compares region selectivity, overlap and depth, and examines whether changes track performance across domains.",
+    "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&auto=format&fit=crop&q=60",
+    "tags": "Student Project, Research, Neurocomputation, Interpretability"
+  },
+  {
+    "title": "OCEAN TEACHING",
+    "subtitle": "Does an AI's personality help it teach in certain ways?",
+    "body": "Explores whether large language models' Big Five (OCEAN) personality profiles predict tutoring behaviours such as hint quality, scaffolding, encouragement, answer-giving and accuracy. The project benchmarks models using authored programming tutoring scenarios, then tests whether changing a model's persona changes its teaching behaviour.",
+    "img": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&auto=format&fit=crop&q=60",
+    "tags": "Student Project, Research, AI in Education, LLMs"
+  },
+  {
+    "title": "AI-MARKER",
+    "subtitle": "How well do a TA and an AI grade the same assignment, with a specific and a general rubric?",
+    "body": "Compares teaching assistants and large language models marking the same archived, anonymised programming submissions using both a specific criterion-by-criterion rubric and a general holistic rubric. It evaluates agreement, consistency across repeated runs, feedback quality and cases where human and AI marks disagree.",
+    "img": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=900&auto=format&fit=crop&q=60",
+    "tags": "Student Project, Research, AI in Education, Assessment"
   }
 ]
