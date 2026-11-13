@@ -22,6 +22,7 @@ const universities: [abbr: string, name: string, href: string][] = [
   ["DCU", "Dublin City University", "https://www.dcu.ie"],
   ["TTU", "Texas Technology University", "https://www.ttu.edu"],
   ["FU", "Fuzhou University", "https://en.fzu.edu.cn/"],
+  ["UTV", "University of Rome Tor Vergata", "https://web.uniroma2.it/"],
 ];
 const uni = (i: number) => (
   <a href={universities[i][2]}>
@@ -35,9 +36,9 @@ const teachingIntro = (
     their teaching. I have taught courses globally within the realm of Computer Science Education and always strive to
     incorporate the theory into the practice such that students come away more knowledgable and with tangeble skills.
     <br />
-    <br />
-    Actively I teach both at {uni(0)} and {uni(1)} at both undergraduate and postgraduate courses. Below are some
-    shorthand acronyms for institutions I've been fortunate to teach alongside.
+    <br />I have taught at both {uni(0)} and {uni(1)} on undergraduate and postgraduate courses, and I am now a
+    researcher at the
+    {uni(4)}. Below are some shorthand acronyms for institutions I've been fortunate to teach alongside.
     <br />
     <br />
     {universities.map(([abbr], i) => (

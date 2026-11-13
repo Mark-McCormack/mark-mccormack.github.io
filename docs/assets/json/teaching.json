@@ -1,5 +1,21 @@
 [
   {
+    "title": "Pedagogy and Psychology and Sociology",
+    "subtitle": "P.Grad Module @ UTV",
+    "body": "Lecturer on the MSc in Physical Activity and Health Promotion, Faculty of Medicine and Surgery, University of Rome Tor Vergata (2026/27, taught in English). Fully teaching this combined course alongside Carlo De Medio, covering the pedagogy and psychology of education for health and physiotherapy professionals.",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Teaching, Lecturing, Pedagogy, Psychology, Health Education",
+    "url": "https://didatticaweb.uniroma2.it/it/moduli/index/insegnamento/211984/"
+  },
+  {
+    "title": "Ricerca Educativa e Valutativa (Educational and Evaluative Research)",
+    "subtitle": "Teaching Assistant & Research Lead @ UTV",
+    "body": "Department of History, Cultural Heritage, Education and Society, University of Rome Tor Vergata (2026/27). Co-teaching with Prof. Antonella Poce and running classroom experiments with the students as part of ongoing educational research.",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Teaching, Educational Research, Evaluation, Classroom Experiments",
+    "url": "https://didatticaweb.uniroma2.it/docenti/curriculum/20309-Antonella-Poce"
+  },
+  {
     "title": "CS230: Web Information Processing",
     "subtitle": "U.Grad Module @ MU",
     "body": "",
