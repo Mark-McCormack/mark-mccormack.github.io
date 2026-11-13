@@ -5,7 +5,9 @@
     "body": "",
     "img": "https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1467683240.jpg?auto=compress&fit=crop&format=auto&q=50&w=1200&h=800",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.ukicer.com/2022/index.html"
+    "url": "https://www.ukicer.com/2022/index.html",
+    "group": "Conferences",
+    "year": "2022"
   },
   {
     "title": "EDEN 2023 (Dublin)",
@@ -13,7 +15,9 @@
     "body": "",
     "img": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/526000/526877-dublin.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://eden-europe.eu/event/eden-2023-annual-conference-in-dublin/"
+    "url": "https://eden-europe.eu/event/eden-2023-annual-conference-in-dublin/",
+    "group": "Conferences",
+    "year": "2023"
   },
   {
     "title": "AHE 2023 (Manchester)",
@@ -21,7 +25,9 @@
     "body": "",
     "img": "https://i.guim.co.uk/img/media/5bb754ed0d06b8f8b251fcddfc713c2d4269b386/0_310_6720_4032/master/6720.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=c2ccd9ddeda43dd06639dd405ce0232d",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://ahenetwork.org/ahe-conference-2023/"
+    "url": "https://ahenetwork.org/ahe-conference-2023/",
+    "group": "Conferences",
+    "year": "2023"
   },
   {
     "title": "ITiCSE 2023 (Turku)",
@@ -29,7 +35,9 @@
     "body": "",
     "img": "https://s7g10.scene7.com/is/image/stena/AdobeStock_222774966:16-9?ts=1680362912730&dpr=off",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://iticse.acm.org/2023/"
+    "url": "https://iticse.acm.org/2023/",
+    "group": "Conferences",
+    "year": "2023"
   },
   {
     "title": "iCL 2023 (Madrid)",
@@ -37,7 +45,9 @@
     "body": "",
     "img": "https://static.barcelo.com/content/dam/bhg/master/es/main-destination-photo/province/madrid/destino_madrid_02.jpg.bhgimg.jpg/1604674609361.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.icl-conference.org/current/"
+    "url": "https://www.icl-conference.org/current/",
+    "group": "Conferences",
+    "year": "2023"
   },
   {
     "title": "HCAI-EP 2023 (Tallaght)",
@@ -45,7 +55,9 @@
     "body": "",
     "img": "https://a.cdn-hotels.com/gdcs/production196/d818/be3d3175-42bb-48ae-8465-c9a103e18003.jpg?impolicy=fcrop&w=800&h=533&q=medium",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://hcai-ep.sigcseire.acm.org/2023/"
+    "url": "https://hcai-ep.sigcseire.acm.org/2023/",
+    "group": "Conferences",
+    "year": "2023"
   },
   {
     "title": "SIGCSEire: ACM Ireland",
@@ -53,7 +65,8 @@
     "body": "",
     "img": "https://lp-cms-production.imgix.net/2020-10/shutterstockRF_752354146.jpg?auto=format&w=1440&h=810&fit=crop&q=75",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://sigcseire.acm.org/"
+    "url": "https://sigcseire.acm.org/",
+    "group": "Conferences"
   },
   {
     "title": "ILTA 2024 (Sligo)",
@@ -61,7 +74,9 @@
     "body": "",
     "img": "/assets/images/placeholder.svg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://ilta.ie/"
+    "url": "https://ilta.ie/",
+    "group": "Conferences",
+    "year": "2024"
   },
   {
     "title": "AHE 2024 (Manchester)",
@@ -69,7 +84,9 @@
     "body": "",
     "img": "https://i.guim.co.uk/img/media/5bb754ed0d06b8f8b251fcddfc713c2d4269b386/0_310_6720_4032/master/6720.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=c2ccd9ddeda43dd06639dd405ce0232d",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://ahenetwork.org/ahe-conference-2024/"
+    "url": "https://ahenetwork.org/ahe-conference-2024/",
+    "group": "Conferences",
+    "year": "2024"
   },
   {
     "title": "EDEN 2024 (Graz)",
@@ -77,7 +94,9 @@
     "body": "",
     "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/44/3e/graz.jpg?w=1400&h=1400&s=1",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://eden-europe.eu/event/eden-2024-annual-conference/"
+    "url": "https://eden-europe.eu/event/eden-2024-annual-conference/",
+    "group": "Conferences",
+    "year": "2024"
   },
   {
     "title": "EDEN 2024 (Timisoara)",
@@ -85,7 +104,9 @@
     "body": "",
     "img": "https://media.digitalnomads.world/wp-content/uploads/2021/11/20114741/Timisoara-digital-nomads.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://eden-europe.eu/event/eden-2024-research-workshop-in-timisoara/"
+    "url": "https://eden-europe.eu/event/eden-2024-research-workshop-in-timisoara/",
+    "group": "Conferences",
+    "year": "2024"
   },
   {
     "title": "EDEN 2025 (Bologna)",
@@ -93,7 +114,9 @@
     "body": "",
     "img": "https://static.independent.co.uk/2022/01/17/15/iStock-1143538638.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://eden-europe.eu/event/eden-2025-annual-conference/"
+    "url": "https://eden-europe.eu/event/eden-2025-annual-conference/",
+    "group": "Conferences",
+    "year": "2025"
   },
   {
     "title": "EDEN 2026 (Porto)",
@@ -101,7 +124,9 @@
     "body": "",
     "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://eden-europe.eu/event/eden-2025-annual-conference/"
+    "url": "https://eden-europe.eu/event/eden-2025-annual-conference/",
+    "group": "Conferences",
+    "year": "2026"
   },
   {
     "title": "Exploring Pedagogical Possibilities with GenAI",
@@ -109,7 +134,9 @@
     "body": "",
     "img": "https://i0.wp.com/nightcourses.com/wp-content/uploads/2018/07/IMG_6770.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series"
+    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series",
+    "group": "Keynotes & invited talks",
+    "year": "2024"
   },
   {
     "title": "Exploring Pedagogical Possibilities with GenAI",
@@ -117,7 +144,9 @@
     "body": "",
     "img": "https://www.msu.ie/pageassets/yourcommunity/campusmaps/Campus-Map-Icon.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series"
+    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series",
+    "group": "Keynotes & invited talks",
+    "year": "2024"
   },
   {
     "title": "Believable Interactions: How Multimodal Cues Shape Our Experience of Virtual Humans - Cathy Ennis",
@@ -125,7 +154,8 @@
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/hamilton%20institute%20logo.jpg?itok=Ybtw60fM",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series"
+    "url": "https://www.maynoothuniversity.ie/news-events/key-messages-genai-series",
+    "group": "Workshops & seminars"
   },
   {
     "title": "Teaching and Learning Showcase Maynooth",
@@ -133,7 +163,9 @@
     "body": "",
     "img": "https://abroad.mines.edu/_customtags/ct_Image.cfm?Image_ID=380600",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.maynoothuniversity.ie/news-events/teaching-learning-showcase-2024"
+    "url": "https://www.maynoothuniversity.ie/news-events/teaching-learning-showcase-2024",
+    "group": "Posters & showcases",
+    "year": "2024"
   },
   {
     "title": "Presentation to Technical Officers at Maynooth",
@@ -141,14 +173,17 @@
     "body": "https://allirelandtsn.com/an-introduction-to-ai-for-technical-staff/",
     "img": "https://punchconsulting.com/wp-content/uploads/2025/10/3834-2828-scaled.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://allirelandtsn.com/an-introduction-to-ai-for-technical-staff/"
+    "url": "https://allirelandtsn.com/an-introduction-to-ai-for-technical-staff/",
+    "group": "Keynotes & invited talks",
+    "year": "2024"
   },
   {
     "title": "Slow Vibing Workshop w/ Dr. John G. Keating",
     "subtitle": "Assistant Presenter of Action Lab",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/CAM12049%20copy.jpg?itok=nlkjg2b_",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "Hamilton Seminar: Mitigating Bias in AI",
@@ -156,112 +191,133 @@
     "body": "",
     "img": "https://images.ireland.com/media/Images/destinations/county/Kildare/county-kildare/5466b60f26284f729146dc84836f5ada.jpg",
     "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
-    "url": "https://www.maynoothuniversity.ie/sites/default/files/assets/document/FSE%20EDI%20Culture%20seminars_S2%202025%20-%20%27Mitigating%20Bias%20in%20Artificial%20Intelligence%27.pdf"
+    "url": "https://www.maynoothuniversity.ie/sites/default/files/assets/document/FSE%20EDI%20Culture%20seminars_S2%202025%20-%20%27Mitigating%20Bias%20in%20Artificial%20Intelligence%27.pdf",
+    "group": "Workshops & seminars",
+    "year": "2025"
   },
   {
     "title": "Portraying the Patterns: Tools and Strategies for Effective & Compelling Visualization of Research Data",
     "subtitle": "6th of August, Presenter of SPUR Supporter",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/SPUR_header.jpg?itok=NyQISkyw",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "Confronting the Conference: A Practical Approach to Conducting Presentations and Speech Skills",
     "subtitle": "19th of August, Presenter of SPUR Supporter",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/SPUR_header.jpg?itok=NyQISkyw",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "AI in the Pi! - Teaching Children about Responsible AI Development w/ Maynooth Summer Camps",
     "subtitle": "19th of August, Presenter of SPUR Supporter",
     "body": "",
     "img": "/assets/images/ai-pi.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "The AI Appointment – How to Leverage AI for Promoting Your Health",
     "subtitle": "Keynote Presentation @  International Digital Health Summer School",
     "body": "",
     "img": "/assets/images/ai-health.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Keynotes & invited talks"
   },
   {
     "title": "Alchemy with Agents: Uses for GenAI and N8N in Healthcare Domain",
     "subtitle": "Action Lab Session on Digital Health Technologies @ IVI Digital Health Summmer School",
     "body": "",
     "img": "/assets/images/ai-agent.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "Artificial Intelligence in Doctoral Education: Implications for Students and Supervisors",
     "subtitle": "Keynote Presentation @ European Doctoral Day Maynooth",
     "body": "",
     "img": "/assets/images/ai-doctoral.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Keynotes & invited talks"
   },
   {
     "title": "Data for Diagnostics: Managing your Personal Health with IoT Dashboard",
     "subtitle": "Action Lab Session on Digital Health Technologies @ IVI Digital Health Summmer School",
     "body": "",
     "img": "/assets/images/ai-dash.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "Teaching and Learning Showcase Maynooth (2026)",
     "subtitle": "Poster",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/CTL_Show25_IPS_small.jpg?itok=d9cPLe-N",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Posters & showcases",
+    "year": "2026"
   },
   {
     "title": "EDEN NAP Webinar: Academic Freedom vs. Algorithmic Reliability",
     "subtitle": "Attendee / Organiser",
     "body": "",
     "img": "https://eden-europe.eu/wp-content/uploads/2026/04/Webinarsphd-3-1024x1024.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "FSE Research Connections May 2026",
     "subtitle": "Poster",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/FSE%20Research%20Event%20Oct%202025%20-%20Website%20Event%20Visual%20%28510%20x%20337%20px%29.jpg?itok=aoZR4Ntg",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Posters & showcases",
+    "year": "2026"
   },
   {
     "title": "What is GenAI?: A Guide on Using Generative AI in Industry",
     "subtitle": "Presentation to Higher Diploma Students with Joe Duffin @ MU",
     "body": "",
     "img": "https://appdirect.imgix.net/10-Ways-GenAI-Helps-You_Work-Smarter-_Blog.png?auto=format%2C%20compress&crop=focalpoint&dpr=2&fit=crop&fp-x=0.5&fp-y=0.5&h=340&q=80&w=668&s=c198f73f612ee1433ebcc44912bae90d",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Keynotes & invited talks"
   },
   {
     "title": "EDEN NAP Seminar: Critical GenAI Literacy in Online Education",
     "subtitle": "Presenter",
     "body": "",
     "img": "https://eden-europe.eu/wp-content/uploads/2026/01/Feb-4-NAP-updated-scaled.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars"
   },
   {
     "title": "CS Research Postgraduate Workshop 2026",
     "subtitle": "Presenter",
     "body": "",
     "img": "https://www.maynoothuniversity.ie/sites/default/files/styles/ratio_2_3/public/assets/images/Summer%20Research%20Workshops%202026.png?itok=RYLprEii",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars",
+    "year": "2026"
   },
   {
     "title": "Classrooms, Collaborations & Chatbots: Investigating the Use of Generative AI Agents for Collaborative Learning in Higher Education - CS Research Postgraduate Workshop 2026",
     "subtitle": "Presenter",
     "body": "",
     "img": "https://images.unsplash.com/photo-1602272990331-76adc62ef46c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Workshops & seminars",
+    "year": "2026"
   },
   {
     "title": "Vibe Coding & AI Personal Health Assistants",
     "subtitle": "Keynote Presenter @ Fundamentals of Digital Health Transformation for Nurses - IDHA, Maynooth University",
     "body": "",
     "img": "/assets/images/ai-personal.png",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Keynotes & invited talks"
   },
   {
     "title": "AI in Education: Why, Where It's Going and What Do We Value? (Tor Vergata University)",
@@ -269,6 +325,8 @@
     "body": "A talk at Tor Vergata University (Rome) on my Ph.D. research: why AI belongs in education, where it is heading, and what we should value as it reshapes teaching and learning.",
     "img": "/assets/images/placeholder.svg",
     "tags": "Talk, Ph.D., AI in Education, EduTech, Generative AI",
-    "url": "https://web.uniroma2.it/"
+    "url": "https://web.uniroma2.it/",
+    "group": "Keynotes & invited talks",
+    "year": "2026"
   }
 ]

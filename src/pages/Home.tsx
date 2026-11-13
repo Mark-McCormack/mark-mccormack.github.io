@@ -1,66 +1,55 @@
-import React, { useState } from "react";
-import Typewriter from "typewriter-effect";
-import Layout, { Collapsible, HeadCard } from "../components/Layout";
+import React, { ReactNode } from "react";
+import { Link } from "react-router-dom";
+import Layout, { Chip, Collapsible, sectionStyle } from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
-import Particles from "../components/Particles";
 import useData from "../hooks/useData";
-import { Item } from "../content";
+import { Item, LINKEDIN, pageOf, profiles } from "../content";
 import photo from "../assets/images/profile-real.jpg";
 
-const roles = [
-  "Lecturer of Computer Science",
-  "Ph.D of Computer Science (AI in Education)",
-  "Software Engineer",
-  "Web Developer",
-  "Full Stack Developer",
-];
+const palette = { teal: "#00d1b2", yellow: "#ffe08a", navy: "#0b3e77", red: "#d23d5a", green: "#48c78e" };
 
-const highlights: [color: string, title: string, body: string][] = [
+const highlights: [color: keyof typeof palette, title: string, body: string][] = [
   [
-    "primary",
+    "teal",
     "Expertise",
-    "Holding with a First Class Honours Bachelors Degree in Computer Science and Software Engineering, I'm currently immersed in a Ph.D. program focusing on AI in Education with Collaborative Technologies. For my studies, Maynooth University is my home institution!",
+    "First Class Honours degree in Computer Science and Software Engineering, and a Ph.D. in AI in Education with collaborative technologies at Maynooth University.",
   ],
   [
-    "warning",
+    "yellow",
     "Teaching Experience",
-    "I've enthusiastically immersed myself in lecturing at Maynooth University, Fuzhou University, and Dublin City University. I've also tutored and demonstrated for several Computer Science subjects. Let's explore the world of code together!",
+    "I've lectured at Maynooth, DCU, Fuzhou and Tor Vergata, and tutored and demonstrated on many computer science modules.",
   ],
   [
     "navy",
     "Research",
-    "Focused on primary research in Applications of Artificial Intelligence in Collaborative Education. Additionally, my interests extend to Large Language Models and Computational Neuroscience, showcasing a comprehensive commitment to cutting-edge CS studies.",
+    "My main focus is AI in collaborative education. I'm also interested in large language models and computational neuroscience.",
   ],
   [
-    "danger",
+    "red",
     "Software Engineer",
-    "With over a decade of programming expertise, it has become second nature! Experienced in diverse software projects, including the SAP Fiori Toolkit, with expertise in AI (LLMs), Genetic Algorithms, and Web Development, demonstrating versatility across domains.",
+    "Over ten years of programming, from the SAP Fiori toolkit to LLM tools, genetic algorithms and web development.",
   ],
-  [
-    "danger",
-    "Industry Experience",
-    "With a diverse professional background, I've excelled outside education as a UI/UX and DevOps Engineer at SAP Technologies. This experience has honed my skills in Software Engineering, showcasing adaptability and expertise in dynamic industry settings.",
-  ],
+  ["red", "Industry Experience", "I've worked in industry as a UI/UX and DevOps engineer at SAP Technologies."],
   [
     "navy",
     "Student Projects",
-    "As an experienced mentor, I have successfully guided students through their capstone projects, fostering research excellence in domains such as AI in Education, Web Development, and Natural Language Processing.",
+    "I supervise capstone projects in AI in Education, web development and natural language processing.",
   ],
   [
-    "warning",
+    "yellow",
     "Pedagogical Approach",
-    "Employing a project-based learning approach, I foster an inclusive environment, integrating technology to enhance learning experiences. My teaching emphasizes continuous collaboration and practical exercises, allowing students to work on real-world issues.",
+    "I teach through projects: real problems, lots of collaboration and hands-on practice, in a class where everyone can take part.",
   ],
   [
-    "primary",
+    "teal",
     "Affiliations",
-    "I've conducted impactful educational sessions for Maynooth, Fuzhou, Texas Tech and Dublin City University showcasing a commitment to academic excellence. Also, I've contributed my expertise through demonstrations and work at CoderDojo in Portarlington and Maynooth.",
+    "I've taught sessions for Maynooth, Fuzhou, Texas Tech and DCU, and helped out at CoderDojo in Portarlington and Maynooth.",
   ],
 ];
 
 const focusAreas: typeof highlights = [
   [
-    "warning",
+    "yellow",
     "AI in Education Research",
     "Showcasing student-led innovation in AI for learning, from RAG systems to pedagogical tools that support teaching, assessment, and personalised study experiences.",
   ],
@@ -70,124 +59,167 @@ const focusAreas: typeof highlights = [
     "Mentoring undergraduates and postgraduates through capstone projects, research theses, and collaborative development work that blends academic inquiry with practical impact.",
   ],
   [
-    "danger",
+    "red",
     "Curriculum Innovation",
     "Designing experiential modules in software engineering, AI, and EdTech that challenge students to build real-world systems and think critically about digital learning.",
   ],
   [
-    "success",
+    "green",
     "Academic & Industry Reach",
     "Connecting teaching, research, and industry through partnerships, collaborative projects and community outreach that extend learning beyond the classroom.",
   ],
 ];
 
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-const Card = ([color, title, body]: (typeof highlights)[number]) => (
-  <article key={title} className="frame blurb">
-    <Collapsible className={`notification is-${color}`} label={title} heading={<h2 className="title">{title}</h2>}>
-      <p className="subtitle">{body}</p>
-    </Collapsible>
-  </article>
+const Blurbs = ({ items }: { items: typeof highlights }) => (
+  <div className="blurbs">
+    {items.map(([color, title, body]) => (
+      <article key={title} className="blurb" style={sectionStyle(palette[color])}>
+        <Collapsible className="blurb-inner" label={title} heading={<h3 className="blurb-title">{title}</h3>}>
+          <p>{body}</p>
+        </Collapsible>
+      </article>
+    ))}
+  </div>
 );
 
+// A home-page preview of one section, in that section's colour, linking to the full page.
+const Preview = ({ path, heading, children }: { path: string; heading: string; children: ReactNode }) => {
+  const page = pageOf(path);
+  return (
+    <section className="wrap home-section" style={sectionStyle(page.color, page.onColor)} aria-labelledby={`h-${path}`}>
+      <div className="section-head">
+        <h2 id={`h-${path}`} className="section-title">
+          <Chip>{path.replace("-", " ")}</Chip>
+          {heading}
+        </h2>
+        <Link className="text-link" to={`/${path}`}>
+          View all<span className="is-sr-only"> {page.title.toLowerCase()}</span> →
+        </Link>
+      </div>
+      {children}
+    </section>
+  );
+};
+
 const Home: React.FC = () => {
-  const { data, isLoading, error } = useData<Item>("students");
-  const [paused, setPaused] = useState(reducedMotion);
-  const students = data.slice(0, 15);
+  const research = useData<Item>("research").data;
+  const teaching = useData<Item>("teaching").data;
+  const students = useData<Item>("students").data;
 
   return (
-    <Layout className={`home ${paused ? "paused" : ""}`} title="Portfolio">
-      <section className="frame wide head" aria-labelledby="page-title">
-        {!paused && <Particles />}
-        <HeadCard
-          scroll
-          title={
-            <>
-              Hello, I'm Mark P. McCormack!{" "}
-              <span className="waving-emoji" aria-hidden="true">
-                👋
-              </span>
-            </>
+    <Layout className="home" title="Portfolio">
+      <section className="hero-ed wrap" aria-labelledby="page-title">
+        <div className="hero-text">
+          <p className="kicker">Computer Science Education · AI in Education</p>
+          <h1 id="page-title" className="display name">
+            Mark P. McCormack, <em>Ph.D.</em>
+          </h1>
+          <p className="lede">
+            Lecturer and researcher in Computer Science Education, with a Ph.D. in AI in Education and over a decade of
+            software engineering.
+          </p>
+          <p className="now">
+            Currently a researcher at the University of Rome Tor Vergata. Previously lecturing at Maynooth University
+            and Dublin City University.
+          </p>
+          <div className="actions">
+            <a className="btn-ed" href={LINKEDIN}>
+              Get in touch
+            </a>
+            <a className="text-link" href={profiles[0][1]} target="_blank" rel="noopener noreferrer">
+              Google Scholar →<span className="is-sr-only"> (opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+        <figure className="hero-photo">
+          <img src={photo} alt="Mark P. McCormack" />
+        </figure>
+      </section>
+
+      <section className="wrap" aria-label="Key facts">
+        <dl className="facts">
+          {[
+            ["10+", "years teaching", palette.teal],
+            ["5", "universities", palette.yellow],
+            [research.length || 7, "peer-reviewed papers", palette.red],
+            [students.length || 40, "student projects supervised", "#009fff"],
+          ].map(([n, label, color]) => (
+            <div key={label} style={{ borderTopColor: String(color) }}>
+              <dt>{label}</dt>
+              <dd>{n}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <figure className="wrap quote">
+        <blockquote>
+          “Anyone can become great at anything with the right teacher, and that's what I aim to be!”
+        </blockquote>
+      </figure>
+
+      <section className="wrap home-section" aria-labelledby="h-about">
+        <Collapsible
+          className="about"
+          label="About me"
+          heading={
+            <h2 id="h-about" className="section-title">
+              About me
+            </h2>
           }
         >
-          <div className="subtitle is-3">
-            <span className="is-sr-only">I'm a {roles.join(", ")}.</span>
-            <span aria-hidden="true">
-              {paused ? (
-                `I'm a ${roles[0]}`
-              ) : (
-                <Typewriter
-                  options={{ autoStart: true, loop: true, delay: 50 }}
-                  onInit={(t) => {
-                    roles.forEach((r, i) =>
-                      t
-                        .typeString(i ? r : `I'm a ${r}`)
-                        .pauseFor(1000)
-                        .deleteChars(r.length)
-                    );
-                    t.start();
-                  }}
-                />
-              )}
-            </span>
+          <div className="prose columns-2">
+            <p>
+              I've been teaching computer science for over ten years, at Maynooth University, Dublin City University,
+              Fuzhou University and Texas Tech, and I'm now a researcher at the University of Rome Tor Vergata. I like
+              teaching through real projects, so students leave with skills they can use, not just theory.
+            </p>
+            <p>
+              My research looks at how AI can support learning, especially when students learn together: AI tutors,
+              shared annotation, and what these tools change for students and teachers. I also supervise capstone
+              projects, and it's been great to see many of those students go on to careers in tech.
+            </p>
           </div>
-          <p className="subtitle intro">
-            <b>
-              <i>Anyone can become great at anything with the right teacher, and that's what I aim to be!</i>
-            </b>
-            <br />
-            <br />
-            Get ready to explore Computer Science Education with Mark McCormack, a lecturer with over 10 years of
-            experience in the field. McCormack has taught at several top universities, combining deep knowledge with a
-            genuine passion for helping students become future tech leaders.
-            <br />
-            <br />
-            Beyond teaching, McCormack focuses on AI in Education and is involved in exciting, hands-on research.
-            McCormack makes sure students aren’t just learning theory but are also part of real-world projects and
-            discoveries. As a capstone project supervisor, McCormack encourages students to think creatively and solve
-            real problems.
-            <br />
-            <br />
-            McCormacks's impact goes beyond the classroom, with many students going on to succeed in the tech world.
-            It's not just about the coursework—it’s the practical skills and mindset McCormack helps develop that make a
-            lasting difference. Learn from Mark McCormack and start building your future in technology!
-          </p>
-        </HeadCard>
-        <div className="head-image">
-          <img src={photo} alt="Mark P. McCormack" />
-        </div>
+        </Collapsible>
       </section>
 
-      {highlights.map(Card)}
-
-      <section className="frame wide showcase" aria-label="Student project showcase">
-        <button className="button is-small pause" onClick={() => setPaused(!paused)}>
-          <span className="icon is-small">
-            <i className={`fas fa-${paused ? "play" : "pause"}`} aria-hidden="true" />
-          </span>
-          <span>{paused ? "Play" : "Pause"} animations</span>
-        </button>
-        <div className="scroll">
-          {isLoading && <div className="frame">Loading student showcase...</div>}
-          {error && <div className="frame">Failed to load student showcase.</div>}
-          {/* The list is rendered twice for a seamless loop; the copy is hidden from assistive tech and keyboard. */}
-          {[0, 1].map((copy) =>
-            students.map((s, i) => (
-              <div
-                key={`${copy}-${i}`}
-                className={`frame ${copy ? "dupe" : ""}`}
-                aria-hidden={copy ? true : undefined}
-                {...(copy ? { inert: "" } : {})}
-              >
-                <ProjectCard {...s} icon="https://cdn-icons-png.freepik.com/512/5344/5344646.png" />
-              </div>
-            ))
-          )}
-        </div>
+      <section className="wrap home-section" aria-labelledby="h-glance">
+        <h2 id="h-glance" className="section-title">
+          At a glance
+        </h2>
+        <Blurbs items={highlights} />
       </section>
 
-      {focusAreas.map(Card)}
+      <Preview path="research" heading="Selected publications">
+        <div className="rows">
+          {research.slice(0, 3).map((item) => (
+            <ProjectCard key={item.title} {...item} variant="row" level="h3" thumb={false} />
+          ))}
+        </div>
+      </Preview>
+
+      <Preview path="teaching" heading="Current courses">
+        <div className="rows">
+          {teaching.slice(0, 2).map((item) => (
+            <ProjectCard key={item.title} {...item} variant="row" level="h3" />
+          ))}
+        </div>
+      </Preview>
+
+      <Preview path="students" heading="Student projects">
+        <div className="scroller" tabIndex={0} aria-label="Student projects, scrollable">
+          {students.slice(0, 12).map((item) => (
+            <ProjectCard key={item.title} {...item} level="h3" />
+          ))}
+        </div>
+      </Preview>
+
+      <section className="wrap home-section" aria-labelledby="h-focus">
+        <h2 id="h-focus" className="section-title">
+          Focus areas
+        </h2>
+        <Blurbs items={focusAreas} />
+      </section>
     </Layout>
   );
 };

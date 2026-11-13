@@ -1,22 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { CSSProperties, useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { pages, hidden } from "../content";
-import hat from "../assets/images/graduation-hat.png";
+import { pages, hidden, LINKEDIN } from "../content";
 
-const LINKEDIN = "https://www.linkedin.com/in/mark-patrick-mccormack/";
-const links = [
-  ["", "Home"],
-  ...pages.filter((p) => !hidden.includes(p.path)).map((p) => [p.path, p.path.replace("-", " ")]),
-];
-const swatches = [
-  ["black", "Black"],
-  ["#ff82aa", "Pink"],
-  ["#ed1b24", "Red"],
-  ["#effe01", "Yellow"],
-  ["#00158a", "Navy"],
-];
+// Each section's menu link carries a dot in that section's colour.
+const links = pages.filter((p) => !hidden.includes(p.path)).map((p) => [p.path, p.path.replace("-", " "), p.color]);
 const cvs = ["Teaching C.V.", "Software Engineer C.V."];
-const setBackground = (color: string) => document.documentElement.style.setProperty("--site-background", color);
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,11 +21,10 @@ const Navbar: React.FC = () => {
   }, [cvOpen]);
 
   return (
-    <nav className="navbar" aria-label="Main">
+    <nav className="navbar wrap" aria-label="Main">
       <div className="navbar-brand">
-        <NavLink className="navbar-item" to="/">
-          <img src={hat} alt="" width={50} height={50} />
-          <span className="brand-name">Mark P. McCormack</span>
+        <NavLink className="navbar-item brand" to="/">
+          Mark P. McCormack
         </NavLink>
         <button
           className={`navbar-burger ${menuOpen ? "is-active" : ""}`}
@@ -54,60 +41,44 @@ const Navbar: React.FC = () => {
 
       <div id="main-menu" className={`navbar-menu ${menuOpen ? "is-active" : ""}`}>
         <div className="navbar-start">
-          {links.map(([to, label]) => (
-            <NavLink key={to} className="navbar-item" to={`/${to}`} end>
+          <NavLink className="navbar-item" to="/" end>
+            Home
+          </NavLink>
+          {links.map(([to, label, color]) => (
+            <NavLink key={to} className="navbar-item dot" to={`/${to}`} style={{ "--dot": color } as CSSProperties}>
               {label}
             </NavLink>
           ))}
         </div>
 
         <div className="navbar-end">
-          {swatches.map(([color, name]) => (
-            <button
-              key={color}
-              className="navbar-item swatch"
-              aria-label={`${name} background`}
-              onClick={() => setBackground(color)}
-            >
-              <svg width="25" height="37.5" aria-hidden="true">
-                <rect width="100%" height="100%" stroke={color} strokeWidth="5" fill="none" />
-              </svg>
-            </button>
-          ))}
-
           <div className="navbar-item">
-            <div ref={cvRef} className={`dropdown ${cvOpen ? "is-active" : ""}`}>
+            <div ref={cvRef} className={`dropdown is-right ${cvOpen ? "is-active" : ""}`}>
               <div className="dropdown-trigger">
                 <button
-                  className="button is-info"
+                  className="btn-ed ghost"
                   aria-expanded={cvOpen}
                   aria-controls="cv-menu"
                   onClick={() => setCvOpen(!cvOpen)}
                 >
-                  <b>Get my C.V.!</b>
-                  <span className="icon is-small">
-                    <i className="fas fa-angle-down" aria-hidden="true" />
-                  </span>
+                  Get my C.V.
+                  <i className="fas fa-angle-down" aria-hidden="true" />
                 </button>
               </div>
               <div className="dropdown-menu" id="cv-menu">
                 <div className="dropdown-content">
                   {cvs.map((cv) => (
                     <a key={cv} href={LINKEDIN} className="dropdown-item">
-                      <b>{cv}</b>&nbsp;
-                      <span className="icon is-small">
-                        <i className="fa fa-download" aria-hidden="true" />
-                      </span>
+                      {cv} <i className="fa fa-download" aria-hidden="true" />
                     </a>
                   ))}
                 </div>
               </div>
             </div>
           </div>
-
           <div className="navbar-item">
-            <a className="button is-primary" href={LINKEDIN}>
-              <strong>Contact Me!</strong>
+            <a className="btn-ed" href={LINKEDIN}>
+              Contact me
             </a>
           </div>
         </div>

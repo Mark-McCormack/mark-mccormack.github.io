@@ -16,7 +16,7 @@ const useData = <T>(name: string) => {
         fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       );
     cache.get(url)!.then(
-      (d) => live && setData(d),
+      (d) => live && setData(d.filter((item) => !item.hidden)), // entries marked "hidden" stay in the JSON only
       () => {
         cache.delete(url);
         if (live) setError(true);

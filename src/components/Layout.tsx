@@ -1,24 +1,18 @@
 import React, { CSSProperties, ReactNode, useEffect, useId, useState } from "react";
 import Navbar from "./Navbar";
-
-export const Footer = () => (
-  <footer className="frame footer-bar">
-    <a href="https://www.flaticon.com/free-icons/university">University icons created by Freepik - Flaticon</a>
-  </footer>
-);
+import { profiles, LINKEDIN } from "../content";
 
 // Heading + body that collapses to the heading and a chevron on phones; always open on larger screens.
-export const Collapsible: React.FC<{
-  heading: ReactNode;
-  label: string;
-  className: string;
-  scroll?: boolean;
-  children: ReactNode;
-}> = ({ heading, label, className, scroll, children }) => {
+export const Collapsible: React.FC<{ heading: ReactNode; label: string; className: string; children: ReactNode }> = ({
+  heading,
+  label,
+  className,
+  children,
+}) => {
   const [open, setOpen] = useState(false);
   const id = useId();
   return (
-    <div className={`${className} collapsible ${open ? "open" : ""}`} tabIndex={scroll ? 0 : undefined}>
+    <div className={`${className} collapsible ${open ? "open" : ""}`}>
       <div className="toggle-row">
         {heading}
         <button
@@ -38,20 +32,35 @@ export const Collapsible: React.FC<{
   );
 };
 
-export const HeadCard: React.FC<{ title: ReactNode; scroll?: boolean; children: ReactNode }> = ({ title, ...rest }) => (
-  <Collapsible
-    className="head-card"
-    label="Page introduction"
-    heading={
-      <h1 id="page-title" className="title is-1">
-        {title}
-      </h1>
-    }
-    {...rest}
-  />
+// Small coloured label naming the section ("Research", "Teaching"…).
+export const Chip: React.FC<{ children: ReactNode }> = ({ children }) => <span className="chip">{children}</span>;
+
+// Section colour as CSS variables, read by the chip, menu dots and accents.
+export const sectionStyle = (color: string, onColor = "#1b1f24") =>
+  ({ "--sc": color, "--sc-on": onColor }) as CSSProperties;
+
+const Footer = () => (
+  <footer className="site-footer">
+    <div className="wrap">
+      <p className="footer-name">Mark P. McCormack</p>
+      <ul className="footer-links" aria-label="Profiles">
+        <li>
+          <a href={LINKEDIN}>LinkedIn</a>
+        </li>
+        {profiles.slice(0, 3).map(([label, href]) => (
+          <li key={label}>
+            <a href={href}>{label}</a>
+          </li>
+        ))}
+      </ul>
+      <p className="footer-credit">
+        <a href="https://www.flaticon.com/free-icons/university">University icons created by Freepik - Flaticon</a>
+      </p>
+    </div>
+  </footer>
 );
 
-// Shared page shell: skip link, nav, <main> grid of bordered tiles and footer.
+// Shared page shell: skip link, sticky navigation, <main> and footer.
 const Layout: React.FC<{ className: string; title: string; style?: CSSProperties; children: ReactNode }> = ({
   className,
   title,
@@ -75,10 +84,10 @@ const Layout: React.FC<{ className: string; title: string; style?: CSSProperties
         Skip to main content
       </a>
       <div className={`page ${className}`} style={style}>
-        <header className="frame top">
+        <header className="site-header">
           <Navbar />
         </header>
-        <main id="main" tabIndex={-1} className="grid">
+        <main id="main" tabIndex={-1}>
           {children}
         </main>
         <Footer />

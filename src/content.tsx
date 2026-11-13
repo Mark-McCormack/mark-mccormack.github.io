@@ -1,6 +1,16 @@
 import { ReactNode } from "react";
 
-export type Item = { title: string; subtitle: string; body: string; img: string; tags: string; url?: string };
+export type Item = {
+  title: string;
+  subtitle: string;
+  body: string;
+  img: string;
+  tags: string;
+  url?: string;
+  group?: string; // section heading on pages that define `groups`
+  year?: string;
+  hidden?: boolean; // kept in the JSON but not shown
+};
 
 export type PageConfig = {
   path: string;
@@ -9,13 +19,25 @@ export type PageConfig = {
   tagline?: string;
   intro: ReactNode;
   img: string;
-  icon: string;
-  links?: [label: string, href: string, color: string][];
-  divider?: string;
+  color: string; // section colour: menu dot, labels and accents
+  onColor?: string; // text colour on the section colour, when white is needed
+  layout?: "list" | "cards"; // list suits text-heavy entries (papers, courses, talks)
+  thumbs?: false; // hide entry images (e.g. papers, which have no real image)
+  links?: [label: string, href: string][];
+  groups?: [name: string, description: string][]; // entries are shown under these headings, in this order
+  newestFirst?: true; // the JSON lists entries oldest first
 };
 
 const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}?w=1600&auto=format&fit=crop&q=70`;
-const icon = (path: string) => `https://cdn-icons-png.freepik.com/${path}.png`;
+
+export const LINKEDIN = "https://www.linkedin.com/in/mark-patrick-mccormack/";
+export const profiles: [label: string, href: string][] = [
+  ["Google Scholar", "https://scholar.google.com/citations?view_op=list_works&hl=en&user=sgOfPUsAAAAJ"],
+  ["ORCID", "https://orcid.org/0009-0000-0281-3011"],
+  ["ACM", "https://dl.acm.org/profile/99660948439"],
+  ["ResearchGate", "https://www.researchgate.net/profile/Mark-Mccormack-7"],
+  ["Academia.edu", "https://independent.academia.edu/MarkMcCormack16"],
+];
 
 const universities: [abbr: string, name: string, href: string][] = [
   ["MU", "Maynooth University", "https://www.maynoothuniversity.ie/"],
@@ -53,85 +75,18 @@ const teachingIntro = (
 export const pages: PageConfig[] = [
   {
     path: "teaching-statement",
+    color: "#48c78e",
     json: "teaching-statement",
     title: "Teaching Statement",
     tagline: "My Principles for an Excellent Learning Experience!",
     intro: teachingIntro,
     img: unsplash("1594122230689-45899d9e6f69"),
-    icon: icon("512/5344/5344646"),
-  },
-  {
-    path: "blogs",
-    json: "blog",
-    title: "Blogs",
-    intro: (
-      <>
-        During the weekly research, once I get the time, I like to engage in some writing on one of my several blogs.
-        The aim for most of these is to provide an outlet for ideas and knowledge in a more conversational/less formal
-        manner.
-        <br />
-        <br />
-        I look into subject such as the daily academic life, interesting breakthroughts in Computer Science and a
-        handful of theories I have in the area, which may not be fit for a paper (just yet!).
-        <br />
-        <br />
-        Within the blogs, I hope to facilitate a glimpse into the life of academics in the realm of computer scientists.
-        So, for those of you considering this as an area in the future, be sure to keep up to date! And for those
-        others, I hope you gain some food for thought on new CS areas and what this may mean.
-      </>
-    ),
-    img: unsplash("1457369804613-52c61a468e7d"),
-    icon: "https://cdn-icons-png.flaticon.com/512/4659/4659050.png",
-  },
-  {
-    path: "business",
-    json: "business",
-    title: "Businesses",
-    tagline: "Projects Designed to Help Others!",
-    intro: (
-      <>
-        This page highlights a selection of my business projects, each designed to tackle complex challenges and create
-        meaningful solutions. Some of the projects I have worked on over the years have expanded, grown, and developed
-        in scope, and it would be a shame to leave them lying somewhere on a USB.
-        <br />
-        <br />
-        For these more advanced initiatives, which provide users with valuable services, I’ve converted them into Free
-        and Open Source Software (FOSS) businesses. The aim of these projects is not to gain capital but to offer useful
-        tools to those who truly need them.
-        <br />
-        <br />I focus on identifying problems and finding ways to address them that not only make a difference but also
-        drive positive outcomes for individuals and organizations. Through these initiatives, I've honed my skills in
-        project management, strategic thinking, and collaboration.
-      </>
-    ),
-    img: unsplash("1431540015161-0bf868a2d407"),
-    icon: icon("512/2503/2503742"),
-  },
-  {
-    path: "projects",
-    json: "projects",
-    title: "Personal Projects",
-    tagline: "Some Fun Comp. Sci. Projects!",
-    intro: (
-      <>
-        This page showcases a variety of my personal computer science projects, where I’ve applied my skills and
-        creativity to tackle interesting challenges. From building AI-driven tools to developing software solutions,
-        each project reflects my curiosity and passion for problem-solving.
-        <br />
-        <br />
-        Whether I’m experimenting with new algorithms, creating applications to address real-world needs, or exploring
-        the latest advancements in technology, these projects are a way for me to put theory into practice.
-        <br />
-        <br />
-        I’m always looking for new ways to grow as a developer, and these projects are a testament to that journey. I
-        hope you enjoy checking them out as much as I enjoyed building them!
-      </>
-    ),
-    img: unsplash("1455894127589-22f75500213a"),
-    icon: icon("256/14146/14146592"),
   },
   {
     path: "research",
+    color: "#00d1b2",
+    layout: "list",
+    thumbs: false,
     json: "research",
     title: "Research Projects",
     tagline: "Pushing the Boundary of AIEd and CSE!",
@@ -151,22 +106,13 @@ export const pages: PageConfig[] = [
         engaging, and effective.
       </>
     ),
-    links: [
-      [
-        "Google Scholar",
-        "https://scholar.google.com/citations?view_op=list_works&hl=en&user=sgOfPUsAAAAJ",
-        "is-primary",
-      ],
-      ["ACM Profile", "https://dl.acm.org/profile/99660948439", "is-warning"],
-      ["ResearchGate", "https://www.researchgate.net/profile/Mark-Mccormack-7", "is-link"],
-      ["OrcID", "https://orcid.org/my-orcid?orcid=0009-0000-0281-3011", "is-success"],
-      ["Academia.edu", "https://independent.academia.edu/MarkMcCormack16", "is-danger"],
-    ],
+    links: profiles,
     img: unsplash("1623631633177-7fbb2d3ae94d"),
-    icon: icon("512/2680/2680900"),
   },
   {
     path: "students",
+    color: "#d23d5a",
+    onColor: "#fff",
     json: "students",
     title: "Student Projects",
     tagline: "Amazing Projects from Past Students!",
@@ -189,19 +135,21 @@ export const pages: PageConfig[] = [
       </>
     ),
     img: unsplash("1503676382389-4809596d5290"),
-    icon: icon("256/2995/2995620"),
   },
   {
     path: "teaching",
+    color: "#ffe08a",
+    layout: "list",
     json: "teaching",
     title: "Teaching",
     tagline: "Classes, Demonstrations, Tutoring and Teaching!",
     intro: teachingIntro,
     img: unsplash("1594122230689-45899d9e6f69"),
-    icon: icon("512/5344/5344646"),
   },
   {
     path: "academia",
+    color: "#009fff",
+    layout: "list",
     json: "conferences",
     title: "Academia",
     tagline: "Conferences, Journals, Funding and More!",
@@ -222,11 +170,20 @@ export const pages: PageConfig[] = [
       </>
     ),
     img: unsplash("1505664194779-8beaceb93744"),
-    icon: icon("512/1321/1321029"),
-    divider: "#3f6998",
+    groups: [
+      ["Conferences", "Papers, symposia and sessions at international education and computing conferences."],
+      [
+        "Keynotes & invited talks",
+        "Keynotes and invited talks for universities, summer schools and professional groups.",
+      ],
+      ["Workshops & seminars", "Hands-on sessions, seminars and webinars I have run, chaired or taken part in."],
+      ["Posters & showcases", "Posters and showcase presentations of my research."],
+    ],
+    newestFirst: true,
   },
   {
     path: "skills",
+    color: "#e0a526",
     json: "skills",
     title: "Skills",
     tagline: "Always Learning, Always Improving!",
@@ -248,9 +205,92 @@ export const pages: PageConfig[] = [
       </>
     ),
     img: unsplash("1557149769-d376acfba1f1"),
-    icon: icon("512/10262/10262344"),
+    groups: [
+      ["Neuroscience", "Courses on the brain and computational neuroscience."],
+      ["AI & computing", "Courses in AI, large language models and game theory."],
+      ["Languages", "Languages I am learning."],
+    ],
+  },
+  {
+    path: "projects",
+    color: "#0b3e77",
+    onColor: "#fff",
+    json: "projects",
+    title: "Personal Projects",
+    tagline: "Some Fun Comp. Sci. Projects!",
+    intro: (
+      <>
+        This page showcases a variety of my personal computer science projects, where I’ve applied my skills and
+        creativity to tackle interesting challenges. From building AI-driven tools to developing software solutions,
+        each project reflects my curiosity and passion for problem-solving.
+        <br />
+        <br />
+        Whether I’m experimenting with new algorithms, creating applications to address real-world needs, or exploring
+        the latest advancements in technology, these projects are a way for me to put theory into practice.
+        <br />
+        <br />
+        I’m always looking for new ways to grow as a developer, and these projects are a testament to that journey. I
+        hope you enjoy checking them out as much as I enjoyed building them!
+      </>
+    ),
+    img: unsplash("1455894127589-22f75500213a"),
+    groups: [
+      ["VR & AR", "Virtual and augmented reality experiences."],
+      ["AI & machine learning", "Projects that learn from data."],
+      ["Games & simulations", "Games and interactive simulations."],
+      ["Tools & apps", "Small tools for everyday use."],
+    ],
+  },
+  {
+    path: "blogs",
+    color: "#ff82aa",
+    json: "blog",
+    title: "Blogs",
+    intro: (
+      <>
+        During the weekly research, once I get the time, I like to engage in some writing on one of my several blogs.
+        The aim for most of these is to provide an outlet for ideas and knowledge in a more conversational/less formal
+        manner.
+        <br />
+        <br />
+        I look into subject such as the daily academic life, interesting breakthroughts in Computer Science and a
+        handful of theories I have in the area, which may not be fit for a paper (just yet!).
+        <br />
+        <br />
+        Within the blogs, I hope to facilitate a glimpse into the life of academics in the realm of computer scientists.
+        So, for those of you considering this as an area in the future, be sure to keep up to date! And for those
+        others, I hope you gain some food for thought on new CS areas and what this may mean.
+      </>
+    ),
+    img: unsplash("1457369804613-52c61a468e7d"),
+  },
+  {
+    path: "business",
+    color: "#e0a526",
+    json: "business",
+    title: "Businesses",
+    tagline: "Projects Designed to Help Others!",
+    intro: (
+      <>
+        This page highlights a selection of my business projects, each designed to tackle complex challenges and create
+        meaningful solutions. Some of the projects I have worked on over the years have expanded, grown, and developed
+        in scope, and it would be a shame to leave them lying somewhere on a USB.
+        <br />
+        <br />
+        For these more advanced initiatives, which provide users with valuable services, I’ve converted them into Free
+        and Open Source Software (FOSS) businesses. The aim of these projects is not to gain capital but to offer useful
+        tools to those who truly need them.
+        <br />
+        <br />I focus on identifying problems and finding ways to address them that not only make a difference but also
+        drive positive outcomes for individuals and organizations. Through these initiatives, I've honed my skills in
+        project management, strategic thinking, and collaboration.
+      </>
+    ),
+    img: unsplash("1431540015161-0bf868a2d407"),
   },
 ];
 
-// Pages listed here are kept but not linked or routed (e.g. "business").
-export const hidden = ["business"];
+export const pageOf = (path: string) => pages.find((p) => p.path === path)!;
+
+// Pages listed here are kept but not linked or routed. The menu follows the order of `pages` above.
+export const hidden = ["blogs", "business"];

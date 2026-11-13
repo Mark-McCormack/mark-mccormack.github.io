@@ -9,14 +9,18 @@ const PLACEHOLDER = "/assets/images/placeholder.svg";
 const sized = (src: string, w: number) =>
   src.includes("images.unsplash.com") ? src.replace(/([?&])w=\d+/, `$1w=${w}`) : src;
 
-const ProjectCard: React.FC<Item & { icon: string }> = ({
+// One entry: an image card ("card") or a text row ("row"). The "Details" button's hit area covers the whole entry.
+const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h3"; thumb?: boolean }> = ({
   title,
   subtitle,
   body,
   img = PLACEHOLDER,
   tags,
   url,
-  icon,
+  year,
+  variant = "card",
+  level: Heading = "h2",
+  thumb = true,
 }) => {
   const [open, setOpen] = useState(false);
   const dialog = useRef<Dialog>(null);
@@ -29,23 +33,20 @@ const ProjectCard: React.FC<Item & { icon: string }> = ({
   const close = () => dialog.current?.close();
 
   return (
-    <>
-      <div className="card">
-        <figure className="image is-4by3">
-          <img src={sized(img, 600)} alt="" loading="lazy" />
+    <article className={`entry ${variant} ${thumb ? "" : "no-thumb"}`}>
+      {thumb && (
+        <figure className="thumb">
+          <img src={sized(img, variant === "card" ? 600 : 200)} alt="" loading="lazy" />
         </figure>
-        <div className="media">
-          <figure className="media-left image is-48x48">
-            <img src={icon} alt="" loading="lazy" />
-          </figure>
-          <div className="media-content">
-            <h2 className="title is-4 clamp-2">{title}</h2>
-            <p className="subtitle is-6 clamp-1">{subtitle}</p>
-          </div>
-        </div>
+      )}
+      <div className="entry-text">
+        {year && <span className="entry-year">{year}</span>}
+        <Heading className="entry-title">{title}</Heading>
+        {subtitle && <p className="entry-sub">{subtitle}</p>}
       </div>
-      <button className="button card-button" onClick={() => setOpen(true)} aria-haspopup="dialog">
-        Open for Info!<span className="is-sr-only">: {title}</span>
+      <button className="details" onClick={() => setOpen(true)} aria-haspopup="dialog">
+        Details<span className="is-sr-only">: {title}</span>
+        <i className="fas fa-arrow-right" aria-hidden="true" />
       </button>
 
       {open && (
@@ -59,31 +60,35 @@ const ProjectCard: React.FC<Item & { icon: string }> = ({
               <button className="delete" aria-label="Close" onClick={close} />
             </header>
             <section className="modal-card-body">
-              <figure className="image is-4by3 mb-4">
-                <img src={sized(img, 1200)} alt="" />
-              </figure>
-              <p className="subtitle is-5">
-                <strong>{subtitle}</strong>
-              </p>
+              {thumb && (
+                <figure className="image is-16by9 mb-4">
+                  <img src={sized(img, 1200)} alt="" />
+                </figure>
+              )}
+              {subtitle && <p className="modal-sub">{subtitle}</p>}
               {body && <p className="mb-4">{body}</p>}
-              <span className="tag is-info is-light">
-                <strong>Tags:</strong>&nbsp;{tags}
-              </span>
+              {tags && (
+                <ul className="tag-list" aria-label="Tags">
+                  {tags.split(",").map((t) => (
+                    <li key={t}>{t.trim()}</li>
+                  ))}
+                </ul>
+              )}
             </section>
             <footer className="modal-card-foot">
               {url && (
-                <a href={url} target="_blank" rel="noopener noreferrer" className="button card-button">
-                  Visit Link<span className="is-sr-only"> (opens in a new tab)</span>
+                <a href={url} target="_blank" rel="noopener noreferrer" className="btn-ed">
+                  Visit link<span className="is-sr-only"> (opens in a new tab)</span>
                 </a>
               )}
-              <button className="button" onClick={close}>
+              <button className="btn-ed ghost" onClick={close}>
                 Close
               </button>
             </footer>
           </div>
         </dialog>
       )}
-    </>
+    </article>
   );
 };
 
