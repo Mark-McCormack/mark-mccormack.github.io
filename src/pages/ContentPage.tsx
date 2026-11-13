@@ -22,6 +22,7 @@ const ContentPage: React.FC<PageConfig> = ({
   newestFirst,
   groupByYear,
   sortByYear,
+  ungroupedLabel = "Other",
 }) => {
   const { data } = useData<Item>(json);
   const latest = (i: Item) => Math.max(0, ...(i.year?.match(/\d{4}/g) ?? []).map(Number));
@@ -62,7 +63,7 @@ const ContentPage: React.FC<PageConfig> = ({
         entries: items.filter((i) => groupOf(i) === name),
       })),
       {
-        name: groupByYear ? "More projects" : "Other",
+        name: ungroupedLabel,
         description: "",
         entries: items.filter((i) => !groups.some(([name]) => name === groupOf(i))),
       },

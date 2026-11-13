@@ -27,6 +27,7 @@ export type PageConfig = {
   groups?: [name: string, description: string][]; // entries are shown under these headings, in this order
   newestFirst?: true; // the JSON lists entries oldest first
   groupByYear?: true; // one group per `year`, newest first; entries without a year go last
+  ungroupedLabel?: string; // heading for entries outside every group (default "Other")
   sortByYear?: true; // within each group, newest first by the latest year in `year` ("2022–2025" → 2025); undated last
 };
 
@@ -119,6 +120,7 @@ export const pages: PageConfig[] = [
     ),
     links: profiles,
     img: unsplash("1623631633177-7fbb2d3ae94d"),
+    groupByYear: true,
   },
   {
     path: "students",
@@ -147,6 +149,7 @@ export const pages: PageConfig[] = [
     ),
     img: unsplash("1503676382389-4809596d5290"),
     groupByYear: true,
+    ungroupedLabel: "More projects",
   },
   {
     path: "teaching",
