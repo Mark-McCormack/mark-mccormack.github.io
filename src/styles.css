@@ -544,6 +544,20 @@ a.navbar-item.active {
   border-radius: 6px;
 }
 
+.done-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  background: #e3f6ec;
+  color: #1a6e45; /* 5.6:1 on the badge background */
+  font: 600 0.78rem var(--sans);
+}
+.sheet-sub + .done-badge {
+  margin: -0.4rem 0 1rem;
+}
 .entry-year {
   display: block;
   font: 500 0.78rem var(--mono);

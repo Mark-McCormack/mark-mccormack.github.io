@@ -10,6 +10,7 @@ export type Item = {
   group?: string; // section heading on pages that define `groups`
   year?: string;
   hidden?: boolean; // kept in the JSON but not shown
+  done?: boolean; // shows a green "Completed" badge (student projects)
 };
 
 export type PageConfig = {
@@ -28,6 +29,7 @@ export type PageConfig = {
   newestFirst?: true; // the JSON lists entries oldest first
   groupByYear?: true; // one group per `year`, newest first; entries without a year go last
   ungroupedLabel?: string; // heading for entries outside every group (default "Other")
+  ungroupedDescription?: string;
   sortByYear?: true; // within each group, newest first by the latest year in `year` ("2022–2025" → 2025); undated last
 };
 
@@ -149,7 +151,8 @@ export const pages: PageConfig[] = [
     ),
     img: unsplash("1503676382389-4809596d5290"),
     groupByYear: true,
-    ungroupedLabel: "More projects",
+    ungroupedLabel: "Not yet assigned",
+    ungroupedDescription: "Project ideas that haven't been taken on by a student yet.",
   },
   {
     path: "teaching",

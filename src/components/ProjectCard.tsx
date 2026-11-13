@@ -43,6 +43,7 @@ const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h
   tags,
   url,
   year,
+  done,
   variant = "card",
   level: Heading = "h2",
   thumb = true,
@@ -68,6 +69,11 @@ const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h
         {year && <span className="entry-year">{year}</span>}
         <Heading className="entry-title">{title}</Heading>
         {subtitle && <p className="entry-sub">{subtitle}</p>}
+        {done && (
+          <span className="done-badge">
+            <i className="fas fa-circle-check" aria-hidden="true" /> Completed
+          </span>
+        )}
       </div>
       <button className="details" onClick={() => setOpen(true)} aria-haspopup="dialog">
         Details<span className="is-sr-only">: {title}</span>
@@ -99,6 +105,11 @@ const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h
                   {title}
                 </h2>
                 {subtitle && <p className="sheet-sub">{subtitle}</p>}
+                {done && (
+                  <span className="done-badge">
+                    <i className="fas fa-circle-check" aria-hidden="true" /> Completed
+                  </span>
+                )}
                 {body && <Body text={body} />}
                 {tags && (
                   <ul className="tag-list" aria-label="Tags">

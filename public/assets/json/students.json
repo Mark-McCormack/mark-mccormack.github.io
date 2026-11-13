@@ -1,99 +1,111 @@
 [
   {
-    "title": "✅ FRACC",
+    "title": "FRACC",
     "subtitle": "Feedback Rater and Assessment for College Classrooms",
     "body": "Developed a system for digitizing and quantifying qualitative feedback in higher education, bridging the gap between abstract student comments and actionable, data-driven grading metrics.",
     "img": "https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=3800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2022"
+    "year": "2022",
+    "done": true
   },
   {
-    "title": "✅ CELTIC-I",
+    "title": "CELTIC-I",
     "subtitle": "Collaborative Env. for Learning and Teaching with Integrated Coding",
     "body": "Built the foundational infrastructure for a real-time, multi-user coding environment, integrating shared terminals and synchronized editor states to facilitate seamless peer collaboration.",
     "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3Nyb29tJTIwY29sbGFib3JhdGlvbiUyMGNsYXNzcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2023"
+    "year": "2023",
+    "done": true
   },
   {
-    "title": "✅ PACTS",
+    "title": "PACTS",
     "subtitle": "Pedagogical AI Copilot for Teachers and Students",
     "body": "An AI-driven 'teaching assistant' designed to provide real-time scaffolding for students during coding tasks, ensuring help is provided without bypassing the pedagogical learning process.",
     "img": "https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2023"
+    "year": "2023",
+    "done": true
   },
   {
-    "title": "✅ SEPTOR",
+    "title": "SEPTOR",
     "subtitle": "Student Exam Practice Tool with Organised Resources",
     "body": "A centralized curriculum-mapping platform that links exam requirements to high-quality study materials, providing students a structured path from practice questions to deep conceptual resources.",
     "img": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2023"
+    "year": "2023",
+    "done": true
   },
   {
-    "title": "✅ RAMP",
+    "title": "RAMP",
     "subtitle": "Retrieval Augmented Memory Palace for HCI in Learning",
     "body": "A novel HCI interface merging the ancient 'Method of Loci' with RAG to anchor complex data points within a virtual spatial environment, significantly improving long-term information retention.",
     "img": "https://images.unsplash.com/photo-1588580000645-4562a6d2c839?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxpYnJhcnl8ZW58MHx8MHx8fDA%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ STAMPEDE",
+    "title": "STAMPEDE",
     "subtitle": "Stable Diffusion Tracked to Memory Palaces for Easy and Direct Education",
     "body": "Augments spatial learning by using Stable Diffusion to automatically generate unique, context-aware visual anchors for memory palaces based on a user's specific study materials.",
     "img": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpbnRpbmdzfGVufDB8fDB8fHww",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ CELTIC-II",
+    "title": "CELTIC-II",
     "subtitle": "Collaborative Env. for Learning and Teaching with Integrated Coding",
     "body": "The second iteration focused on UI/UX optimization and workspace management, introducing automated tidying features for complex, multi-file collaborative programming sessions.",
     "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3Nyb29tJTIwY29sbGFib3JhdGlvbiUyMGNsYXNzcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ BRAIN-DMP 🏆",
+    "title": "BRAIN-DMP 🏆",
     "subtitle": "Generate Visualisation of Brains for Large Language Models",
     "body": "Nominated for Best CS Project. Creates interactive, high-fidelity visualizations of neural network activations, mapping how an LLM processes logic during real-time inference.",
     "img": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ LLM-NOTE",
+    "title": "LLM-NOTE",
     "subtitle": "Transcribe and Note YouTube Videos with Local LLM",
     "body": "A privacy-first tool that processes video content locally to automate transcription and summarization, allowing students to generate structured study notes from video lectures without external data transfer.",
     "img": "https://images.unsplash.com/photo-1599299009482-3b5326fc52e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxlY3R1cmUlMjBub3Rlc3xlbnwwfHwwfHx8MA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ CLUSTER",
+    "title": "CLUSTER",
     "subtitle": "Classroom Simulator for Undergrad. Teaching and Education Students",
     "body": "A 'Flight Simulator for Teachers' that uses diverse LLM personas to simulate classroom dynamics, allowing education students to practice classroom management and query response in a safe environment.",
     "img": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ MUSIC-LLM",
+    "title": "MUSIC-LLM",
     "subtitle": "Create Playlists Ideas with Large Language Models",
     "body": "A creative discovery tool using LLMs to generate complex thematic playlist ideas and musical discovery paths based on nuanced user mood and preference prompts.",
     "img": "https://images.unsplash.com/photo-1489641493513-ba4ee84ccea9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBwbGF5bGlzdHN8ZW58MHx8MHx8fDA%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
-    "title": "✅ DOCTALK",
+    "title": "DOCTALK",
     "subtitle": "Discuss Research Papers Locally with LLM and RAG",
     "body": "A research-focused interface using local RAG to 'interview' PDF libraries, allowing researchers to extract methodologies and cross-reference citations with high precision and zero data leakage.",
     "img": "https://images.unsplash.com/photo-1610385983496-d9bb0fe6a852?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2024"
+    "year": "2024",
+    "done": true
   },
   {
     "title": "BRAIN-DNC",
@@ -112,12 +124,13 @@
     "year": "2025"
   },
   {
-    "title": "✅ GAELTACHT-VR",
+    "title": "GAELTACHT-VR",
     "subtitle": "VR Learning Environment for Interactive Irish Learning",
     "body": "An immersive VR experience designed for Irish language preservation, utilizing speech recognition to facilitate natural conversation and cultural immersion in a simulated Gaeltacht.",
     "img": "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?q=80&w=4032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "year": "2025",
+    "done": true
   },
   {
     "title": "CELTIC-III",
@@ -128,12 +141,13 @@
     "year": "2025"
   },
   {
-    "title": "✅ PROMPT-DB",
+    "title": "PROMPT-DB",
     "subtitle": "Full-Stack Prompt Database for CS. Department Maynooth",
     "body": "A centralized, full-stack hub for prompt engineering, allowing faculty and students to share, version-control, and benchmark effective prompts for academic and research use.",
     "img": "https://images.unsplash.com/photo-1648459776041-cbeab708f17b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGF0YWJhc2V8ZW58MHx8MHx8fDA%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "year": "2025",
+    "done": true
   },
   {
     "title": "DND-DISCORD",
@@ -238,28 +252,31 @@
     "tags": "Student Project, Research, Computer Science"
   },
   {
-    "title": "✅ LLM-ACCESS",
+    "title": "LLM-ACCESS",
     "subtitle": "Converting Higer Ed. Material for Accessibility",
     "body": "An accessibility-first tool that converts traditional higher education materials into diverse formats optimized for various learning and physical accessibility requirements.",
     "img": "https://images.unsplash.com/photo-1634947096506-6d9f114cf64e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWNjZXNzaWJpbGl0eXxlbnwwfHwwfHx8MA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "year": "2025",
+    "done": true
   },
   {
-    "title": "✅ GAINS",
+    "title": "GAINS",
     "subtitle": "Generative AI for Nutrition & Statistics in Bodybuilding Support",
     "body": "A specialized assistant for high-performance bodybuilding, utilizing generative AI to track nutrition metrics and provide statistical training insights.",
     "img": "https://images.unsplash.com/photo-1603287681836-b174ce5074c2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym9keWJ1aWxkaW5nfGVufDB8fDB8fHww",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "year": "2025",
+    "done": true
   },
   {
-    "title": "✅ AIR",
+    "title": "AIR",
     "subtitle": "AI Audiobook Reader (Convert PDF to Audiobook)",
     "body": "A generative audio tool that converts academic PDFs into high-quality audiobooks with natural prosody and context-aware pacing for auditory learning.",
     "img": "https://images.unsplash.com/photo-1594769777888-c6bf27dd87ed?q=80&w=4031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "year": "2025",
+    "done": true
   },
   {
     "title": "Prompt Guarding",
@@ -270,12 +287,13 @@
     "year": "2025"
   },
   {
-    "title": "✅ ACADEMIC-SOCIAL",
+    "title": "ACADEMIC-SOCIAL",
     "subtitle": "Goodreads for Academic Papers",
     "body": "A social discovery platform for academic research, acting as 'Goodreads for academia' to facilitate paper discovery, peer discussion, and shared annotation.",
     "img": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "tags": "Student Project, Research, Computer Science",
-    "year": "2026"
+    "year": "2026",
+    "done": true
   },
   {
     "title": "COMP-CODE",
@@ -331,7 +349,8 @@
     "subtitle": "Does an AI's personality help it teach in certain ways?",
     "body": "Explores whether large language models' Big Five (OCEAN) personality profiles predict tutoring behaviours such as hint quality, scaffolding, encouragement, answer-giving and accuracy. The project benchmarks models using authored programming tutoring scenarios, then tests whether changing a model's persona changes its teaching behaviour.",
     "img": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&auto=format&fit=crop&q=60",
-    "tags": "Student Project, Research, AI in Education, LLMs"
+    "tags": "Student Project, Research, AI in Education, LLMs",
+    "year": "2026"
   },
   {
     "title": "AI-MARKER",
