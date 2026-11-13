@@ -112,16 +112,14 @@
     "subtitle": "Incorporate 3D Gaussian Splatting for SPARSE Project",
     "body": "Advanced visualization research that integrates 3D Gaussian Splatting into the SPARSE learning environment, enabling the rendering of hyper-realistic 3D educational objects within spatial data contexts.",
     "img": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHBvaW50c3xlbnwwfHwwfHx8MA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "KASPER",
     "subtitle": "K-Means Adaptive System for Personalising Education Resources",
     "body": "An algorithmic approach to personalized learning that uses K-Means clustering to analyze learning styles and dynamically group resources to target specific student knowledge gaps.",
     "img": "https://images.unsplash.com/photo-1653388569673-98e42c71e44e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "GAELTACHT-VR",
@@ -137,8 +135,7 @@
     "subtitle": "Collaborative Env. for Learning and Teaching with Integrated Coding",
     "body": "The agentic evolution of the platform, introducing autonomous AI collaborators that join the session for live debugging, code refactoring, and peer-review alongside human students.",
     "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3Nyb29tJTIwY29sbGFib3JhdGlvbiUyMGNsYXNzcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "PROMPT-DB",
@@ -154,88 +151,77 @@
     "subtitle": "Use Group of LLM Actors to Simulate a DND Adventure",
     "body": "An experiment in multi-agent orchestration where a group of unique LLM personas interact on Discord to manage and participate in a cohesive, long-form tabletop RPG campaign.",
     "img": "https://images.unsplash.com/photo-1633506079263-7029b4f46762?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "PRUNES",
     "subtitle": "Generative Analysis / Comparison of LLM Structures & Connections",
     "body": "A research tool that compares the structural architecture and connection weights of different LLMs to identify redundant paths and optimize overall model efficiency.",
     "img": "https://images.unsplash.com/photo-1545987796-200677ee1011?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "BRAIN-DMP II",
     "subtitle": "Generate Visualisation of Brains for Large Language Models",
     "body": "The next evolution in LLM visualization, expanding on 3D weight mapping and real-time activation tracking within increasingly complex model architectures.",
     "img": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "AWARE",
     "subtitle": "Analysing and Generation of Conciousness in LLM (MoE)",
     "body": "Investigates emergent properties in Mixture of Experts (MoE) models, analyzing how specific expert routing mimics specialized cognitive functions and simulated consciousness.",
     "img": "https://images.unsplash.com/photo-1531318701087-32c11653dd77?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "PSYCH-AI",
     "subtitle": "Psycho-Analysis of Contemporary LLMs (Reasoning)",
     "body": "A psycho-analytical study of modern LLMs, using behavioral testing to assess reasoning capabilities and the logical implications of their decision-making frameworks.",
     "img": "https://images.unsplash.com/photo-1630692157675-4ee0762fdc16?q=80&w=4229&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "APPLE",
     "subtitle": "LLM Feedback Analysis (Reasoning, RAG, Prompts etc.)",
     "body": "An analytical framework for evaluating the intersection of reasoning, RAG efficiency, and prompt sensitivity in high-level model feedback loops.",
     "img": "https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhcm5pbmd8ZW58MHx8MHx8fDA%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "PEDAL-MATCH",
     "subtitle": "AI Tool That Listens to A Guitar Pedal and Creates a Digital Pedal",
     "body": "A bridge between analog and digital audio using machine learning to analyze harmonic profiles and clipping characteristics, generating high-fidelity digital twins of physical hardware.",
     "img": "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "CYCL-CAM",
     "subtitle": "View Photos with Several Filters without Modification",
     "body": "A non-destructive image viewer that allows for complex, multi-layered filter stacks in real-time without ever altering the original raw pixel data.",
     "img": "https://images.unsplash.com/photo-1460134846237-51c777df6111?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "LLM-DISCO",
     "subtitle": "Mobile Flutter App for Local Ollama Services",
     "body": "A sleek mobile Flutter application designed to provide a portable, high-performance interface for managing and interacting with local Ollama-hosted LLM services.",
     "img": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=4032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "LLM-THERAPIST",
     "subtitle": "Context-Specific LLM for Therapy and Guidance",
     "body": "A context-specific LLM trained for ethical guidance and therapy-adjacent support, focusing on supportive dialogue and safety-guarded mental wellness assistance.",
     "img": "https://images.unsplash.com/photo-1517842536804-bf6629e2c291?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2026"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "LLM-BOARD",
     "subtitle": "Simulate & Analysis of LLM Groups (Viva/Interview)",
     "body": "A high-stakes simulation environment where a group of LLM 'examiners' conducts a mock Viva, testing a student's reasoning and thesis defense against diverse academic personas.",
     "img": "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW50ZXJ2aWV3fGVufDB8fDB8fHww",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "EDU-ADAPT (SPUR)",
@@ -283,8 +269,7 @@
     "subtitle": "Research into Limiting LLM Feedback for Academics using Guards",
     "body": "Explores the use of 'guards' to limit LLM feedback, ensuring students use AI as a tool for critical thinking rather than a source of direct answers.",
     "img": "https://images.unsplash.com/photo-1664262283608-05edf08055be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hpZWxkJTIwZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D",
-    "tags": "Student Project, Research, Computer Science",
-    "year": "2025"
+    "tags": "Student Project, Research, Computer Science"
   },
   {
     "title": "ACADEMIC-SOCIAL",
