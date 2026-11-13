@@ -19,7 +19,7 @@
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
   --radius: 10px;
-  --gutter: 56px;
+  --gutter: clamp(20px, 4vw, 64px);
   --sc: var(--navy); /* section colour, set per page/section */
   --sc-on: var(--ink); /* text colour on the section colour */
 }
@@ -47,7 +47,7 @@ a {
 }
 
 .wrap {
-  max-width: 1200px;
+  max-width: 1680px; /* full width on laptops and desktops; only very wide screens get side margins */
   margin-inline: auto;
   padding-inline: var(--gutter);
 }
@@ -596,51 +596,123 @@ a.navbar-item.active {
 }
 
 /* ---------- Info pop-up ---------- */
-dialog.modal {
-  width: 100%;
-  height: 100%;
+dialog.sheet {
+  width: min(760px, calc(100vw - 32px));
   max-width: none;
-  max-height: none;
-  margin: 0;
+  max-height: calc(100dvh - 48px);
   padding: 0;
   border: 0;
-  background: none;
+  border-top: 6px solid var(--sc);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 30px 80px -20px rgb(27 31 36 / 0.45);
+  overflow: hidden;
 }
-dialog.modal::backdrop {
-  background: none;
+dialog.sheet[open] {
+  display: flex;
+  animation: sheet-in 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+dialog.sheet::backdrop {
+  background: rgb(27 31 36 / 0.55);
+  backdrop-filter: blur(3px);
+  animation: fade-in 0.28s ease;
+}
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 }
 html:has(dialog[open]) {
   overflow: hidden;
 }
-.modal-background {
-  background: rgb(27 31 36 / 0.7);
+.sheet-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
 }
-.modal-card {
-  border-radius: var(--radius);
+.sheet-scroll {
+  overflow-y: auto;
+  min-height: 0;
 }
-.modal-card-head,
-.modal-card-foot {
-  background: var(--bg);
-  border-color: var(--line);
+.sheet-image {
+  margin: 0;
+  aspect-ratio: 16 / 7;
+  background: #efebe2;
 }
-.modal-card-title {
-  flex-shrink: 1; /* Bulma's 0 stops long titles wrapping */
-  min-width: 0;
-  font: 600 1.4rem/1.25 var(--serif);
+.sheet-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sheet-content {
+  padding: 1.5rem 2rem 1.75rem;
+}
+.sheet-title {
+  font: 600 clamp(1.4rem, 3vw, 1.85rem) / 1.2 var(--serif);
+  margin: 0 3rem 0.4rem 0;
   color: var(--ink);
 }
-.modal-card-body {
-  color: var(--sub);
-  line-height: 1.6;
-}
-.modal-sub {
+.sheet-sub {
+  margin: 0 0 1.1rem;
   font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 0.75rem;
+  color: var(--muted);
 }
-.modal-card-foot {
+.sheet-text {
+  color: var(--sub);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+.sheet-text p,
+.sheet-text ul {
+  margin: 0 0 0.8rem;
+}
+.sheet-text ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+.sheet-text li + li {
+  margin-top: 0.35rem;
+}
+.sheet-text li::marker {
+  color: var(--sc);
+}
+.sheet-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.92);
+  color: var(--ink);
+  font-size: 1.1rem;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.18);
+  cursor: pointer;
+}
+.sheet-close:hover {
+  background: #fff;
+}
+.sheet-foot {
+  display: flex;
   justify-content: flex-end;
   gap: 0.75rem;
+  padding: 0.9rem 2rem;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
 }
 .tag-list {
   display: flex;
@@ -941,22 +1013,32 @@ html:has(dialog[open]) {
     border-bottom: 2px solid var(--sc);
   }
 
-  /* Info pop-up: full-screen sheet with pinned header and footer */
-  .modal-card {
-    width: 100%;
-    height: 100%;
+  /* Info pop-up: full-screen sheet that slides up, with the buttons pinned at the bottom */
+  dialog.sheet {
+    width: 100vw;
+    height: 100dvh;
     max-height: none;
     margin: 0;
     border-radius: 0;
   }
-  .modal-card-head,
-  .modal-card-foot {
-    border-radius: 0;
+  dialog.sheet[open] {
+    animation-name: sheet-up;
   }
-  .modal-card-foot {
-    padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+  @keyframes sheet-up {
+    from {
+      transform: translateY(100%);
+    }
   }
-  .modal-card-foot .btn-ed {
+  .sheet-image {
+    aspect-ratio: 16 / 10;
+  }
+  .sheet-content {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+  .sheet-foot {
+    padding: 0.75rem 1.25rem max(0.75rem, env(safe-area-inset-bottom));
+  }
+  .sheet-foot .btn-ed {
     flex: 1;
     justify-content: center;
   }

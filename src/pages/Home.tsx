@@ -119,8 +119,8 @@ const Home: React.FC = () => {
             software engineering.
           </p>
           <p className="now">
-            Currently a researcher at the University of Rome Tor Vergata. Previously lecturing at Maynooth University
-            and Dublin City University.
+            Currently a Research Fellow (postdoctoral researcher) at the University of Rome Tor Vergata. Previously a
+            lecturer at Maynooth University and Dublin City University.
           </p>
           <div className="actions">
             <a className="btn-ed" href={LINKEDIN}>
@@ -171,8 +171,8 @@ const Home: React.FC = () => {
           <div className="prose columns-2">
             <p>
               I've been teaching computer science for over ten years, at Maynooth University, Dublin City University,
-              Fuzhou University and Texas Tech, and I'm now a researcher at the University of Rome Tor Vergata. I like
-              teaching through real projects, so students leave with skills they can use, not just theory.
+              Fuzhou University and Texas Tech, and I'm now a Research Fellow at the University of Rome Tor Vergata. I
+              like teaching through real projects, so students leave with skills they can use, not just theory.
             </p>
             <p>
               My research looks at how AI can support learning, especially when students learn together: AI tutors,

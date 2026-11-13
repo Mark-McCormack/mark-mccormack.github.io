@@ -1,163 +1,220 @@
 [
   {
     "title": "Personal Statement",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Employment",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Education",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Collaborations",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Memberships",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Undergraduate Courses",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Graduate Courses",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Demonstrations & Tutoring",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Grants",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Research Placements",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Articles",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Conference Activity",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Supervision",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Professional Development / Training",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
-  },
-  {
-    "title": "Guest Lecturing and Visits",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "subtitle": "Who I am and what I do",
+    "body": "I'm a Research Fellow (postdoctoral researcher) at the University of Rome Tor Vergata. Before that I completed my Ph.D. in AI in Education at Maynooth University (2022–2026), where I also lectured from 2022 to 2026.\nI've taught computer science for over ten years, at Maynooth University, Dublin City University, Fuzhou University and on a summer school for Texas Tech students. I also hold a Level 9 certificate in Speech & Drama, which helps me explain complex ideas clearly. I also worked as a UI/UX engineer at SAP (2021–2022).",
+    "img": "https://picsum.photos/seed/personalstatement/1160/720",
+    "tags": "Teaching, Research, AI in Education",
+    "group": "About me"
   },
   {
     "title": "Teaching Statement",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "subtitle": "How I teach",
+    "body": "I believe anyone can become great at anything with the right teacher, and that's what I try to be.\n- Learn by building: students work on real projects, not just exercises. On the Texas Tech summer school, my class went from beginner programmers to designing their own version of the game Asteroids, and I ran mock interviews to prepare them for jobs.\n- Learn together: collaboration, peer feedback and shared work are built into my modules.\n- Everyone takes part: I aim for an inclusive classroom where students feel able to ask and try.\n- Use technology with care: I bring in tools like generative AI where they help learning, and talk openly with students about their limits.",
+    "img": "https://picsum.photos/seed/teachingstatement/1160/720",
+    "tags": "Teaching Philosophy, Pedagogy, Project-Based Learning",
+    "group": "About me"
   },
   {
     "title": "Research Plan",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "subtitle": "Where my research is heading",
+    "body": "My Ph.D. looked at how AI can support learning, especially collaborative learning in higher education: collaborative annotation, AI tutors built on mastery learning, generative AI agents for group work, and what large language models mean for syllabi and assessment.\nAs a Research Fellow at Tor Vergata, working under the scientific supervision of Prof. Antonella Poce (Experimental Pedagogy), I'm now:\n- researching educational models for well-being and inclusion through cultural and museum heritage;\n- investigating generative AI, immersive technologies and collaborative environments for heritage and museum education;\n- designing and evaluating digital social prescribing approaches.",
+    "img": "https://picsum.photos/seed/researchplan/1160/720",
+    "tags": "Research, AI in Education, Collaborative Learning",
+    "group": "About me"
   },
   {
-    "title": "FUNDING: John & Pat Hume Scholarship",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Employment",
+    "subtitle": "Teaching and industry roles",
+    "body": "- Research Fellow, University of Rome Tor Vergata, Department of History, Cultural Heritage, Education and Society (Oct 2026 – present)\n- University Lecturer, Maynooth University: CS230, CS615 and CS620 (Aug 2022 – Oct 2026)\n- Ph.D. Candidate (Postgraduate Researcher), Maynooth University (Sep 2022 – Sep 2026)\n- University Lecturer, Android App Development, Dublin City University (Sep 2023 – Sep 2025)\n- University Lecturer with Maynooth International Engineering College, Fuzhou University: CS385FZ, CS404FZ and CS431FZ (Sep – Dec 2022)\n- Summer school lecturer, CS264SS Software Design, for Texas Tech University students (2022)\n- Student Ambassador, Maynooth University (Jun 2022 – Jun 2023)\n- UI/UX Engineer (internship), SAP (Feb 2021 – Jan 2022)",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Employment, Lecturing, Industry",
+    "group": "Teaching"
   },
   {
-    "title": "FUNDING: MU SPUR Research Funding",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Education",
+    "subtitle": "Degrees",
+    "body": "- Ph.D. in AI in Education with Collaborative Technologies, Maynooth University (2022–2026), funded by the John & Pat Hume Scholarship and supervised by Dr. John G. Keating.\n- B.Sc. in Computer Science & Software Engineering, First Class Honours, Maynooth University (2018–2022).\n- Speech & Drama certificate (Level 9).",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Education, Ph.D., Computer Science",
+    "group": "Teaching"
   },
   {
-    "title": "FUNDING: Erasmus Funding for Research Placement",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Undergraduate Courses",
+    "subtitle": "Modules I have lectured",
+    "body": "- CS230: Web Information Processing, Maynooth (2022–2025). More than 300 students; HTML, CSS and JavaScript through to MERN, MEAN and LAMP stacks and MVC, MVVM and MVP architectures.\n- CS264SS: Software Design, summer school for Texas Tech students (2022).\n- CS385FZ: React web development, with Maynooth International Engineering College at Fuzhou University (2022).\n- CS404FZ and CS431FZ: artificial intelligence, with Maynooth International Engineering College at Fuzhou University (2022).",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Undergraduate, Lecturing, Modules",
+    "group": "Teaching"
   },
   {
-    "title": "RESEARCH PLACEMENT: Tor Vergata Six-Month Research Placement",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Graduate Courses",
+    "subtitle": "Postgraduate and Higher Diploma modules",
+    "body": "- Pedagogy and Psychology and Sociology, MSc Physical Activity and Health Promotion, University of Rome Tor Vergata (2026/27, taught in English, with Carlo De Medio)\n- Ricerca Educativa e Valutativa (Educational and Evaluative Research), teaching assistant and research lead with Prof. Antonella Poce, University of Rome Tor Vergata (2026/27)\n- CS615: Internet Solutions Engineering, Maynooth (2023–2025). More than 100 postgraduates; MERN stack with MongoDB, React and Node.js.\n- CS620: Structured Programming, Higher Diploma, Maynooth (2024–2026). Co-taught Java programming to more than 40 students.\n- Android App Development, Higher Diploma, Dublin City University (2023–2025)",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Postgraduate, Higher Diploma, Lecturing",
+    "group": "Teaching"
   },
   {
-    "title": "SPUR SUPPORTER",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Demonstrations & Tutoring",
+    "subtitle": "Labs, tutorials and outreach",
+    "body": "- Head demonstrator for CS353C (Software Project) in 2022, leading a team of demonstrators and guiding Higher Diploma students through team projects.\n- Tutor for CS230 (Web Information Processing) over the 2022 inter-semester and summer break.\n- Demonstrator for CS161 & CS162 (Introduction to Computer Science), CS230, CS240 (Operating Systems & Networks), CS210 & CS211 (Data Structures and Algorithms), CS264 (Software Design) and CS280 (UI/UX Design); tutor for CS355 (Theory of Computation).\n- Coordinated the Generative AI course for CS162, taught at Maynooth's computer science summer camps (2023, 2026) and supervised the Bebras finals at Maynooth.",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Demonstrating, Tutoring, Outreach",
+    "group": "Teaching"
   },
   {
-    "title": "Postgraduate Feedback Council Rep. Maynoth CS Department",
-    "subtitle": "Position of Referee",
-    "body": "A brief description of the referee's professional background and their relationship to the candidate. The referee is familiar with the candidate's teaching skills and academic achievements.",
-    "img": "https://picsum.photos/1160/720",
-    "tags": "Teaching, Reference, Recommendation"
+    "title": "Supervision",
+    "subtitle": "Student projects",
+    "body": "I've supervised over 40 student projects, mostly final-year capstones. Topics include AI in Education, large language models, assessment tools, neurocomputation, AI interpretability and web development. Many of these are on the Students page.",
+    "img": "https://picsum.photos/seed/supervision/1160/720",
+    "tags": "Supervision, Capstone Projects, Mentoring",
+    "group": "Teaching"
+  },
+  {
+    "title": "Guest Lecturing and Visits",
+    "subtitle": "Invited talks and keynotes",
+    "body": "- AI in Education: Why, Where It's Going and What Do We Value? (Tor Vergata)\n- Keynote: Artificial Intelligence in Doctoral Education, European Doctoral Day, Maynooth\n- Keynote: The AI Appointment, International Digital Health Summer School\n- Keynote: Vibe Coding & AI Personal Health Assistants, for nurses on the IDHA programme at Maynooth\n- What is GenAI?, for Higher Diploma students at Maynooth, with Joe Duffin\n- An introduction to AI for technical officers at Maynooth\nThe full list is on the Academia page.",
+    "img": "https://picsum.photos/seed/guestlecturingandvisits/1160/720",
+    "tags": "Guest Lectures, Keynotes, Talks",
+    "group": "Teaching"
+  },
+  {
+    "title": "Articles",
+    "subtitle": "Peer-reviewed publications",
+    "body": "- Investigating the impact of Collaborative Annotation on Student Quality of Learning in Higher Education (2025)\n- Application of Tutor AI Using Mastery Learning for Guided Student Learning (2024)\n- Use of Collaborative Annotation Technology with Tutor AI in Computer Science Education (2024)\n- Integrating Collaborative Annotation into Higher Education Courses for Social Engagement (2024, book chapter)\n- Incorporating Collaborative Annotation into Hybrid Learning for Meaningful Learning (2023)\n- Investigating the impact of Collaborative Annotation on Student Quality of Learning (ITiCSE 2023)\n- Investigating the Impact of Large Language Model Technologies on Syllabi and Assessment Design\nDetails and links are on the Research page.",
+    "img": "https://picsum.photos/seed/articles/1160/720",
+    "tags": "Publications, Articles, Research",
+    "group": "Research"
+  },
+  {
+    "title": "Conference Activity",
+    "subtitle": "Presenting, reviewing and chairing",
+    "body": "- Papers and presentations at EDEN (2023–2026), AHE (2023, 2024), ITiCSE 2023, iCL 2023, HCAI-EP 2023 and ILTA 2024.\n- Best Short Paper Award at HCAI-EP 2023.\n- Mini-keynote at AHE 2023.\n- Doctoral consortium and Ph.D. symposium at ITiCSE 2023 and EDEN 2024 and 2025.\n- Reviewer for iCL 2023 and AHE 2024, and session chair at AHE 2024 and the Hamilton Seminar 2025.",
+    "img": "https://picsum.photos/seed/conferenceactivity/1160/720",
+    "tags": "Conferences, Reviewing, Session Chair",
+    "group": "Research"
+  },
+  {
+    "title": "Collaborations",
+    "subtitle": "People I work with",
+    "body": "- Dr. John G. Keating (Maynooth University), my Ph.D. supervisor and co-author on my research papers.\n- Prof. Antonella Poce (University of Rome Tor Vergata), scientific supervisor of my Research Fellowship; we co-teach Ricerca Educativa e Valutativa and run classroom experiments together.\n- Melat Tecle, co-author on my collaborative annotation research.\n- Carlo De Medio (University of Rome Tor Vergata), with whom I teach Pedagogy and Psychology and Sociology.\n- Joe Duffin (Maynooth University), with whom I presented to Higher Diploma students on generative AI.",
+    "img": "https://picsum.photos/seed/collaborations/1160/720",
+    "tags": "Collaboration, Research, Teaching",
+    "group": "Research"
+  },
+  {
+    "title": "Research Placements",
+    "subtitle": "Research visits abroad",
+    "body": "Before my Research Fellowship, I completed a six-month research placement at the University of Rome Tor Vergata, funded by Erasmus. The entry below has the details.",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Research Placement, Erasmus, Tor Vergata",
+    "group": "Research"
+  },
+  {
+    "title": "Tor Vergata Research Placement",
+    "subtitle": "Six months at the University of Rome Tor Vergata (completed)",
+    "body": "A six-month research placement at the University of Rome Tor Vergata, funded by Erasmus. It led on to my current Research Fellowship there, under the scientific supervision of Prof. Antonella Poce.",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Research Placement, Tor Vergata, Educational Research",
+    "group": "Research",
+    "url": "https://web.uniroma2.it/"
+  },
+  {
+    "title": "Grants",
+    "subtitle": "Funding I have received",
+    "body": "- John & Pat Hume Scholarship, Maynooth University (2022), for my Ph.D. research.\n- SPUR research funding, Maynooth University.\n- Erasmus funding for my research placement at Tor Vergata.\nEach one has its own entry below.",
+    "img": "https://picsum.photos/seed/grants/1160/720",
+    "tags": "Grants, Funding, Scholarships",
+    "group": "Funding"
+  },
+  {
+    "title": "John & Pat Hume Scholarship",
+    "subtitle": "Maynooth University doctoral scholarship",
+    "body": "Maynooth University's John & Pat Hume Scholarship, awarded in July 2022 for my Ph.D. research on AI in Education with Collaborative Technologies.",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Scholarship, Ph.D., Funding",
+    "group": "Funding",
+    "url": "https://www.maynoothuniversity.ie/graduate-studies/john-pat-hume-doctoral-awards"
+  },
+  {
+    "title": "MU SPUR Research Funding",
+    "subtitle": "Maynooth University SPUR programme",
+    "body": "Research funding through Maynooth University's SPUR programme, which supports summer undergraduate research.",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Research Funding, SPUR, Maynooth",
+    "group": "Funding"
+  },
+  {
+    "title": "Erasmus Funding for Research Placement",
+    "subtitle": "Erasmus mobility funding",
+    "body": "Erasmus funding supported my six-month research placement at the University of Rome Tor Vergata.",
+    "img": "/assets/images/tor-vergata-logo.svg",
+    "tags": "Erasmus, Funding, Research Placement",
+    "group": "Funding"
+  },
+  {
+    "title": "Memberships",
+    "subtitle": "Professional networks",
+    "body": "- ACM Ireland chapter (SIGCSEire), member.\n- EDEN Digital Learning Europe: regular conference presenter, and organiser of a webinar for its Network of Academics and Professionals (NAP).",
+    "img": "https://picsum.photos/seed/memberships/1160/720",
+    "tags": "Memberships, ACM, EDEN",
+    "group": "Service & development"
+  },
+  {
+    "title": "SPUR Supporter",
+    "subtitle": "Workshops for undergraduate researchers",
+    "body": "As a SPUR supporter at Maynooth, I ran sessions for undergraduate researchers:\n- Portraying the Patterns: tools and strategies for visualising research data.\n- Confronting the Conference: a practical approach to presentations and speaking.\n- AI in the Pi!: teaching children about responsible AI, with Maynooth's summer camps.",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "SPUR, Workshops, Undergraduate Research",
+    "group": "Service & development"
+  },
+  {
+    "title": "Postgraduate Feedback Council Rep.",
+    "subtitle": "Maynooth Department of Computer Science",
+    "body": "I served as postgraduate representative on the Feedback Council for Maynooth University's Department of Computer Science, passing postgraduate students' feedback on to the department.",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "tags": "Student Representation, Service, Maynooth",
+    "group": "Service & development"
+  },
+  {
+    "title": "Professional Development / Training",
+    "subtitle": "Courses I have completed",
+    "body": "- Computational Neuroscience (University of Washington, Coursera)\n- Advanced Neurobiology I (Peking University, Coursera)\n- Understanding the Brain: Neurobiology of Life (University of Chicago, Coursera)\n- Generative AI with Large Language Models (DeepLearning.AI, Coursera)\n- Game Theory (University of Tokyo, Coursera)\n- Introductory (A1) courses in Spanish, French, Italian, German and Chinese",
+    "img": "https://picsum.photos/seed/professionaldevelopmenttraining/1160/720",
+    "tags": "Professional Development, Courses, Lifelong Learning",
+    "group": "Service & development"
+  },
+  {
+    "title": "Volunteering",
+    "subtitle": "Teaching outside the university",
+    "group": "Service & development",
+    "tags": "Volunteering, Outreach, Mentoring",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "body": "- Mentor of 3D Modelling, MakePort Makerspace Portarlington (2017 – present).\n- Mentor of 3D Game Development, CoderDojo (2015–2017): designed courses around the Unity game engine with small class projects, taught weekly classes, and worked with other mentors on Raspberry Pi, Scratch and Java sessions."
+  },
+  {
+    "title": "Student Ambassador",
+    "subtitle": "Maynooth University, 2022–2023",
+    "group": "Service & development",
+    "tags": "Outreach, Communication, Maynooth",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "body": "- Explained Maynooth's computer science courses to prospective students.\n- Led campus tours on open days.\n- Created social media content for university campaigns.\n- Answered student questions through the MU Ask A Student service."
+  },
+  {
+    "title": "Joe Timoney",
+    "subtitle": "Head of Maynooth International Engineering College, Maynooth University",
+    "group": "Recommendations",
+    "tags": "Recommendation, LinkedIn",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "body": "“Mark is very clever and capable. He is a great teacher and really liked by his classes. He is a motivated researcher and is working hard to contribute to his field.”\nJoe managed Mark directly (September 2022)."
+  },
+  {
+    "title": "Behnam Faghih",
+    "subtitle": "Assistant Professor / Lecturer in Computer Science, Maynooth University",
+    "group": "Recommendations",
+    "tags": "Recommendation, LinkedIn",
+    "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
+    "body": "“He was always prepared and knowledgeable to answer undergraduate students' questions reasonably. Moreover, when the other demonstrators could not find the answer to the questions, they were usually asking for Mark's help, and he supported his colleagues pleasantly. Several times that I couldn't attend the labs, Mark was the head, managing everything very well.”\n“I saw that Mark's students were very excited about his classes.”\nBehnam worked with Mark as a fellow lab demonstrator and summer school lecturer (September 2022)."
   }
 ]

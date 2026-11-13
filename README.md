@@ -7,7 +7,7 @@ React + Bulma site, served by GitHub Pages from `docs/`.
 - **Cards** (projects, talks, blogs…): edit the JSON files in `public/assets/json/`. Each entry is
   `{ "title", "subtitle", "body", "img", "tags", "url"?, "group"?, "year"?, "hidden"? }`.
   On Academia, Skills and Projects, `group` picks the heading an entry appears under (the headings and their order
-  are set in `src/content.tsx`); `year` is shown above the title; `"hidden": true` keeps an entry in the file but off the site.
+  are set in `src/content.tsx`; Students is grouped by `year` automatically); `year` is shown above the title; `"hidden": true` keeps an entry in the file but off the site.
 - **Page headers** (title, tagline, intro text, header image, section colour, list or card layout): `src/content.tsx`.
   Adding an entry there creates the route and the navbar link (the menu follows the order of `pages`);
   list a path in `hidden` to keep a page offline (Blogs and Business currently are).

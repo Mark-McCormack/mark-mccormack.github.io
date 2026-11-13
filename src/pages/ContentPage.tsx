@@ -18,8 +18,9 @@ const ContentPage: React.FC<PageConfig> = ({
   layout,
   thumbs,
   links,
-  groups,
+  groups: configured,
   newestFirst,
+  groupByYear,
 }) => {
   const { data } = useData<Item>(json);
   const items = newestFirst ? [...data].reverse() : data;
@@ -31,6 +32,7 @@ const ContentPage: React.FC<PageConfig> = ({
         <ProjectCard
           key={i}
           {...item}
+          year={groupByYear ? undefined : item.year} // the group heading already shows it
           variant={layout === "list" ? "row" : "card"}
           thumb={thumbs !== false}
           level={level}
@@ -39,12 +41,27 @@ const ContentPage: React.FC<PageConfig> = ({
     </div>
   );
 
+  // Year grouping turns each distinct year into a group, newest first.
+  const years = Array.from(new Set(items.map((i) => i.year).filter(Boolean) as string[]))
+    .sort()
+    .reverse();
+  const groups: [string, string][] | undefined = groupByYear ? years.map((y) => [y, ""]) : configured;
+  const groupOf = (i: Item) => (groupByYear ? i.year : i.group);
+
   // Pages with groups show a heading per group (in the configured order); anything ungrouped goes last under "Other".
   const sections =
     groups &&
     [
-      ...groups.map(([name, description]) => ({ name, description, entries: items.filter((i) => i.group === name) })),
-      { name: "Other", description: "", entries: items.filter((i) => !groups.some(([name]) => name === i.group)) },
+      ...groups.map(([name, description]) => ({
+        name,
+        description,
+        entries: items.filter((i) => groupOf(i) === name),
+      })),
+      {
+        name: groupByYear ? "More projects" : "Other",
+        description: "",
+        entries: items.filter((i) => !groups.some(([name]) => name === groupOf(i))),
+      },
     ].filter((g) => g.entries.length);
 
   return (

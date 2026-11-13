@@ -9,6 +9,31 @@ const PLACEHOLDER = "/assets/images/placeholder.svg";
 const sized = (src: string, w: number) =>
   src.includes("images.unsplash.com") ? src.replace(/([?&])w=\d+/, `$1w=${w}`) : src;
 
+// Entry text: each line is a paragraph; consecutive lines starting "- " become a bullet list.
+const Body = ({ text }: { text: string }) => {
+  const blocks: (string | string[])[] = [];
+  for (const line of text.split("\n").filter(Boolean)) {
+    const last = blocks[blocks.length - 1];
+    if (line.startsWith("- ")) Array.isArray(last) ? last.push(line.slice(2)) : blocks.push([line.slice(2)]);
+    else blocks.push(line);
+  }
+  return (
+    <div className="sheet-text">
+      {blocks.map((b, i) =>
+        Array.isArray(b) ? (
+          <ul key={i}>
+            {b.map((li) => (
+              <li key={li}>{li}</li>
+            ))}
+          </ul>
+        ) : (
+          <p key={i}>{b}</p>
+        )
+      )}
+    </div>
+  );
+};
+
 // One entry: an image card ("card") or a text row ("row"). The "Details" button's hit area covers the whole entry.
 const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h3"; thumb?: boolean }> = ({
   title,
@@ -50,35 +75,45 @@ const ProjectCard: React.FC<Item & { variant?: "card" | "row"; level?: "h2" | "h
       </button>
 
       {open && (
-        <dialog ref={dialog} className="modal is-active" aria-labelledby={id} onClose={() => setOpen(false)}>
-          <div className="modal-background" onClick={close} />
-          <div className="modal-card">
-            <header className="modal-card-head">
-              <h2 id={id} className="modal-card-title">
-                {title}
-              </h2>
-              <button className="delete" aria-label="Close" onClick={close} />
-            </header>
-            <section className="modal-card-body">
+        // Clicking the backdrop (the dialog element itself, outside .sheet-inner) closes it.
+        <dialog
+          ref={dialog}
+          className="sheet"
+          aria-labelledby={id}
+          onClose={() => setOpen(false)}
+          onClick={(e) => e.target === e.currentTarget && close()}
+        >
+          <div className="sheet-inner">
+            <button className="sheet-close" aria-label="Close" onClick={close}>
+              <i className="fas fa-xmark" aria-hidden="true" />
+            </button>
+            <div className="sheet-scroll">
               {thumb && (
-                <figure className="image is-16by9 mb-4">
+                <figure className="sheet-image">
                   <img src={sized(img, 1200)} alt="" />
                 </figure>
               )}
-              {subtitle && <p className="modal-sub">{subtitle}</p>}
-              {body && <p className="mb-4">{body}</p>}
-              {tags && (
-                <ul className="tag-list" aria-label="Tags">
-                  {tags.split(",").map((t) => (
-                    <li key={t}>{t.trim()}</li>
-                  ))}
-                </ul>
-              )}
-            </section>
-            <footer className="modal-card-foot">
+              <div className="sheet-content">
+                {year && <span className="entry-year">{year}</span>}
+                <h2 id={id} className="sheet-title">
+                  {title}
+                </h2>
+                {subtitle && <p className="sheet-sub">{subtitle}</p>}
+                {body && <Body text={body} />}
+                {tags && (
+                  <ul className="tag-list" aria-label="Tags">
+                    {tags.split(",").map((t) => (
+                      <li key={t}>{t.trim()}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+            <footer className="sheet-foot">
               {url && (
                 <a href={url} target="_blank" rel="noopener noreferrer" className="btn-ed">
                   Visit link<span className="is-sr-only"> (opens in a new tab)</span>
+                  <i className="fas fa-arrow-up-right-from-square" aria-hidden="true" />
                 </a>
               )}
               <button className="btn-ed ghost" onClick={close}>

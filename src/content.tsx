@@ -26,6 +26,7 @@ export type PageConfig = {
   links?: [label: string, href: string][];
   groups?: [name: string, description: string][]; // entries are shown under these headings, in this order
   newestFirst?: true; // the JSON lists entries oldest first
+  groupByYear?: true; // one group per `year`, newest first; entries without a year go last
 };
 
 const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}?w=1600&auto=format&fit=crop&q=70`;
@@ -58,9 +59,8 @@ const teachingIntro = (
     their teaching. I have taught courses globally within the realm of Computer Science Education and always strive to
     incorporate the theory into the practice such that students come away more knowledgable and with tangeble skills.
     <br />
-    <br />I have taught at both {uni(0)} and {uni(1)} on undergraduate and postgraduate courses, and I am now a
-    researcher at the
-    {uni(4)}. Below are some shorthand acronyms for institutions I've been fortunate to teach alongside.
+    <br />I have taught at both {uni(0)} and {uni(1)} on undergraduate and postgraduate courses, and I am now a Research
+    Fellow at the {uni(4)}. Below are some shorthand acronyms for institutions I've been fortunate to teach alongside.
     <br />
     <br />
     {universities.map(([abbr], i) => (
@@ -77,10 +77,20 @@ export const pages: PageConfig[] = [
     path: "teaching-statement",
     color: "#48c78e",
     json: "teaching-statement",
+    layout: "list",
+    thumbs: false, // text entries; a list reads better than stock-photo cards
     title: "Teaching Statement",
     tagline: "My Principles for an Excellent Learning Experience!",
     intro: teachingIntro,
     img: unsplash("1594122230689-45899d9e6f69"),
+    groups: [
+      ["About me", "Who I am, how I teach and where my research is going."],
+      ["Teaching", "Roles, modules, supervision and invited talks."],
+      ["Research", "Publications, conferences, collaborators and placements."],
+      ["Funding", "Scholarships and grants that support my work."],
+      ["Service & development", "Memberships, service roles, volunteering and ongoing learning."],
+      ["Recommendations", "What colleagues have said about my teaching (from LinkedIn)."],
+    ],
   },
   {
     path: "research",
@@ -135,6 +145,7 @@ export const pages: PageConfig[] = [
       </>
     ),
     img: unsplash("1503676382389-4809596d5290"),
+    groupByYear: true,
   },
   {
     path: "teaching",
