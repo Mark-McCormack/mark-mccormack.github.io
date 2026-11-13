@@ -3,6 +3,7 @@
 //
 // - Versions of the same paper (e.g. conference then journal) are merged into one card, newest first.
 // - A card's authors line, image and tags are kept from the existing file (matched by title), so hand edits survive.
+// - Entries marked "manual": true (papers not on ORCID yet) are kept as they are, unless ORCID now has the same title.
 import fs from "fs";
 
 const ORCID = "0009-0000-0281-3011";
@@ -66,8 +67,13 @@ const cards = [...groups.values()].map(([lead, ...others]) => {
     img: old.img && !/picsum\.photos\/\d/.test(old.img) ? old.img : `https://picsum.photos/seed/${key(lead.title)}/1160/720`,
     tags: old.tags || old.keywords || lead.type,
     url: lead.url || others.find((p) => p.url)?.url || old.url || "",
+    ...(lead.year || old.year ? { year: String(lead.year || old.year) } : {}), // keep a hand-entered year if ORCID has none
   };
 });
 
-fs.writeFileSync(FILE, JSON.stringify(cards, null, 2) + "\n");
-console.log(`Wrote ${cards.length} papers (${papers.length} ORCID works) to research.json`);
+const manual = [...previous.values()].filter((p) => p.manual && !groups.has(key(p.title)));
+// Newest first; undated entries last (sort is stable, so ties keep their order).
+const all = [...cards, ...manual].sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
+
+fs.writeFileSync(FILE, JSON.stringify(all, null, 2) + "\n");
+console.log(`Wrote ${all.length} papers (${papers.length} ORCID works, ${manual.length} manual) to research.json`);

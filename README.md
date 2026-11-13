@@ -14,6 +14,7 @@ React + Bulma site, served by GitHub Pages from `docs/`.
 - **Research papers** are generated from your public ORCID record by `npm run sync-papers` (Node 18+), and a
   GitHub Action (`.github/workflows/sync-papers.yml`) does it every Monday, committing straight to `main`.
   Add new papers on ORCID; to change a paper's image, tags or author line, edit `research.json` (the sync keeps those).
+  A paper that isn't on ORCID yet can be added to `research.json` with `"manual": true`; the sync keeps it until ORCID has it.
 - **Home page**: `src/pages/Home.tsx` (the highlight cards are plain arrays at the top).
 - **Styles**: everything lives in `src/styles.css` (desktop first, then tablet ≤1024px and phone ≤768px overrides).
   Design: academic editorial with colour-coded sections (fonts: Fraunces, Inter, JetBrains Mono).

@@ -1,11 +1,22 @@
 [
   {
+    "title": "Saved by the Bot! A Comparative Analysis of Human vs. AI Tutors on Formative Assessment Performance of Computer Science Students in Higher Education",
+    "subtitle": "MP McCormack, JG Keating",
+    "body": "Conference Paper, EDEN Conference 2026 (Ubiquity Proceedings), 2026.",
+    "img": "https://picsum.photos/seed/savedbythebot/1160/720",
+    "tags": "AI Tutors, Formative Assessment, Computer Science Education",
+    "url": "https://doi.org/10.5334/uproc.270",
+    "year": "2026",
+    "manual": true
+  },
+  {
     "title": "Investigating the impact of Collaborative Annotation on Student Quality of Learning in Higher Education",
     "subtitle": "MP McCormack, M Tecle, JG Keating",
     "body": "Journal Article, Practitioner Research in Higher Education, 2025.",
     "img": "https://picsum.photos/seed/investigatingtheimpactofcollaborativeannotationonstudentqualityoflearninginhighereducation/1160/720",
     "tags": "Collaborative Annotation, Student Learning, Higher Education",
-    "url": ""
+    "url": "",
+    "year": "2025"
   },
   {
     "title": "Application of Tutor AI Using Mastery Learning for Guided Student Learning",
@@ -13,7 +24,8 @@
     "body": "Journal Article, Emerging Technologies, Challenges and Opportunities in Education and Research, 2024.",
     "img": "https://picsum.photos/seed/applicationoftutoraiusingmasterylearningforguidedstudentlearning/1160/720",
     "tags": "Tutor AI, Mastery Learning, Guided Learning",
-    "url": ""
+    "url": "",
+    "year": "2024"
   },
   {
     "title": "Use of Collaborative Annotation Technology with Tutor AI in Computer Science Education",
@@ -21,7 +33,8 @@
     "body": "Journal Article, Learning in the Age of AI: Towards Imaginative Futures, 2024.",
     "img": "https://picsum.photos/seed/useofcollaborativeannotationtechnologywithtutoraiincomputerscienceeducation/1160/720",
     "tags": "Collaborative Annotation, Tutor AI, Computer Science Education",
-    "url": ""
+    "url": "",
+    "year": "2024"
   },
   {
     "title": "Integrating Collaborative Annotation into Higher Education Courses for Social Engagement",
@@ -29,7 +42,8 @@
     "body": "Book Chapter, 2024. Also: Conference Paper, International Conference on Interactive Collaborative Learning, 2023.",
     "img": "https://picsum.photos/seed/integratingcollaborativeannotationintohighereducationcoursesforsocialengagement/1160/720",
     "tags": "Collaborative Annotation, Higher Education, Social Engagement",
-    "url": "https://doi.org/10.1007/978-3-031-51979-6_9"
+    "url": "https://doi.org/10.1007/978-3-031-51979-6_9",
+    "year": "2024"
   },
   {
     "title": "INCORPORATING COLLABORATIVE ANNOTATION INTO HYBRID LEARNING FOR MEANINGFUL LEARNING",
@@ -37,7 +51,8 @@
     "body": "Journal Article, “Yes we can!”--Digital Education for Better Futures, 2023.",
     "img": "https://picsum.photos/seed/incorporatingcollaborativeannotationintohybridlearningformeaningfullearning/1160/720",
     "tags": "Collaborative Annotation, Hybrid Learning, Meaningful Learning",
-    "url": ""
+    "url": "",
+    "year": "2023"
   },
   {
     "title": "Investigating the impact of Collaborative Annotation on Student Quality of Learning",
@@ -45,7 +60,8 @@
     "body": "Conference Paper, 2023. Also: Conference Paper, Proceedings of the 2023 Conference on Innovation and Technology in Computer Science Education V. 2, 2023.",
     "img": "https://picsum.photos/seed/investigatingtheimpactofcollaborativeannotationonstudentqualityoflearning/1160/720",
     "tags": "Collaborative Annotation, Student Learning, Education Research",
-    "url": "https://doi.org/10.1145/3587103.3594138"
+    "url": "https://doi.org/10.1145/3587103.3594138",
+    "year": "2023"
   },
   {
     "title": "Investigating the Impact of Large Language Model Technologies on Syllabi and Assessment Design",
@@ -53,6 +69,7 @@
     "body": "Journal Article.",
     "img": "https://picsum.photos/seed/investigatingtheimpactoflargelanguagemodeltechnologiesonsyllabiandassessmentdesign/1160/720",
     "tags": "Large Language Models, Assessment Design, Syllabi",
-    "url": ""
+    "url": "",
+    "year": "2023"
   }
 ]
