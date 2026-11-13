@@ -21,9 +21,13 @@ const ContentPage: React.FC<PageConfig> = ({
   groups: configured,
   newestFirst,
   groupByYear,
+  sortByYear,
 }) => {
   const { data } = useData<Item>(json);
-  const items = newestFirst ? [...data].reverse() : data;
+  const latest = (i: Item) => Math.max(0, ...(i.year?.match(/\d{4}/g) ?? []).map(Number));
+  const ordered = newestFirst ? [...data].reverse() : data;
+  // Array.prototype.sort is stable, so undated entries keep their JSON order at the end.
+  const items = sortByYear ? [...ordered].sort((a, b) => latest(b) - latest(a)) : ordered;
   const label = path.replace("-", " ");
 
   const list = (entries: Item[], level: "h2" | "h3") => (

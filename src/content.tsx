@@ -27,6 +27,7 @@ export type PageConfig = {
   groups?: [name: string, description: string][]; // entries are shown under these headings, in this order
   newestFirst?: true; // the JSON lists entries oldest first
   groupByYear?: true; // one group per `year`, newest first; entries without a year go last
+  sortByYear?: true; // within each group, newest first by the latest year in `year` ("2022–2025" → 2025); undated last
 };
 
 const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}?w=1600&auto=format&fit=crop&q=70`;
@@ -156,6 +157,15 @@ export const pages: PageConfig[] = [
     tagline: "Classes, Demonstrations, Tutoring and Teaching!",
     intro: teachingIntro,
     img: unsplash("1594122230689-45899d9e6f69"),
+    groups: [
+      ["University of Rome Tor Vergata", "Teaching alongside my Research Fellowship (2026–)."],
+      ["Maynooth University", "Lecturing, demonstrating and tutoring in the Department of Computer Science."],
+      ["Dublin City University", "Higher Diploma lecturing."],
+      ["Fuzhou University", "With Maynooth International Engineering College."],
+      ["Texas Tech University", "Summer school for Texas Tech students."],
+      ["Outreach", "Teaching beyond the university: coding clubs, camps and competitions."],
+    ],
+    sortByYear: true,
   },
   {
     path: "academia",

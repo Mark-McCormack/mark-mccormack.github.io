@@ -83,10 +83,24 @@ const Blurbs = ({ items }: { items: typeof highlights }) => (
 );
 
 // A home-page preview of one section, in that section's colour, linking to the full page.
-const Preview = ({ path, heading, children }: { path: string; heading: string; children: ReactNode }) => {
+const Preview = ({
+  path,
+  heading,
+  bare,
+  children,
+}: {
+  path: string;
+  heading: string;
+  bare?: true;
+  children: ReactNode;
+}) => {
   const page = pageOf(path);
   return (
-    <section className="wrap home-section" style={sectionStyle(page.color, page.onColor)} aria-labelledby={`h-${path}`}>
+    <section
+      className={`${bare ? "" : "wrap "}home-section`}
+      style={sectionStyle(page.color, page.onColor)}
+      aria-labelledby={`h-${path}`}
+    >
       <div className="section-head">
         <h2 id={`h-${path}`} className="section-title">
           <Chip>{path.replace("-", " ")}</Chip>
@@ -152,13 +166,12 @@ const Home: React.FC = () => {
         </dl>
       </section>
 
-      <figure className="wrap quote">
-        <blockquote>
-          “Anyone can become great at anything with the right teacher, and that's what I aim to be!”
-        </blockquote>
-      </figure>
-
-      <section className="wrap home-section" aria-labelledby="h-about">
+      <section className="wrap home-section about-grid" aria-labelledby="h-about">
+        <figure className="quote">
+          <blockquote>
+            “Anyone can become great at anything with the right teacher, and that's what I aim to be!”
+          </blockquote>
+        </figure>
         <Collapsible
           className="about"
           label="About me"
@@ -168,7 +181,7 @@ const Home: React.FC = () => {
             </h2>
           }
         >
-          <div className="prose columns-2">
+          <div className="prose">
             <p>
               I've been teaching computer science for over ten years, at Maynooth University, Dublin City University,
               Fuzhou University and Texas Tech, and I'm now a Research Fellow at the University of Rome Tor Vergata. I
@@ -190,21 +203,23 @@ const Home: React.FC = () => {
         <Blurbs items={highlights} />
       </section>
 
-      <Preview path="research" heading="Selected publications">
-        <div className="rows">
-          {research.slice(0, 3).map((item) => (
-            <ProjectCard key={item.title} {...item} variant="row" level="h3" thumb={false} />
-          ))}
-        </div>
-      </Preview>
+      <div className="wrap preview-pair">
+        <Preview bare path="research" heading="Selected publications">
+          <div className="rows">
+            {research.slice(0, 3).map((item) => (
+              <ProjectCard key={item.title} {...item} variant="row" level="h3" thumb={false} />
+            ))}
+          </div>
+        </Preview>
 
-      <Preview path="teaching" heading="Current courses">
-        <div className="rows">
-          {teaching.slice(0, 2).map((item) => (
-            <ProjectCard key={item.title} {...item} variant="row" level="h3" />
-          ))}
-        </div>
-      </Preview>
+        <Preview bare path="teaching" heading="Current courses">
+          <div className="rows">
+            {teaching.slice(0, 2).map((item) => (
+              <ProjectCard key={item.title} {...item} variant="row" level="h3" />
+            ))}
+          </div>
+        </Preview>
+      </div>
 
       <Preview path="students" heading="Student projects">
         <div className="scroller" tabIndex={0} aria-label="Student projects, scrollable">

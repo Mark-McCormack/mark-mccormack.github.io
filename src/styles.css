@@ -276,21 +276,28 @@ a.navbar-item.active {
 /* ---------- Home hero (Warm Journal type) ---------- */
 .hero-ed {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px); /* photo capped so the text doesn't float in space */
   gap: 64px;
   align-items: center;
-  padding-block: 64px 48px;
+  padding-block: 56px 40px;
   position: relative;
 }
 .hero-ed::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 64px;
-  bottom: 48px;
+  top: 56px;
+  bottom: 40px;
   width: 8px;
   border-radius: 0 4px 4px 0;
   background: linear-gradient(#00d1b2 0 25%, #ffe08a 25% 50%, #d23d5a 50% 75%, #009fff 75%);
+}
+.hero-ed .name {
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+}
+.hero-ed .lede {
+  font-size: 1.3rem;
+  max-width: 52ch;
 }
 .name em {
   font-style: italic;
@@ -346,7 +353,19 @@ a.navbar-item.active {
   color: var(--muted);
 }
 .quote {
-  margin-block: 56px 0;
+  margin: 0;
+}
+/* Motto beside "About me", and two section previews side by side, use the full width. */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 56px;
+  align-items: start;
+}
+.preview-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
 }
 .quote blockquote {
   margin: 0;
@@ -836,6 +855,14 @@ html:has(dialog[open]) {
   .blurbs {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-grid,
+  .preview-pair {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about-grid .about {
+    padding-top: 32px;
+  }
   .facts {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -883,9 +910,7 @@ html:has(dialog[open]) {
   .home-section {
     padding-top: 40px;
   }
-  .quote {
-    margin-top: 40px;
-  }
+
   .facts div {
     padding-right: 1rem;
   }

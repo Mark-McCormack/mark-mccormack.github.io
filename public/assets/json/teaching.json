@@ -5,7 +5,9 @@
     "body": "Lecturer on the MSc in Physical Activity and Health Promotion, Faculty of Medicine and Surgery, University of Rome Tor Vergata (2026/27, taught in English). Fully teaching this combined course alongside Carlo De Medio, covering the pedagogy and psychology of education for health and physiotherapy professionals.",
     "img": "/assets/images/tor-vergata-logo.svg",
     "tags": "Teaching, Lecturing, Pedagogy, Psychology, Health Education",
-    "url": "https://didatticaweb.uniroma2.it/it/moduli/index/insegnamento/211984/"
+    "url": "https://didatticaweb.uniroma2.it/it/moduli/index/insegnamento/211984/",
+    "group": "University of Rome Tor Vergata",
+    "year": "2026/27"
   },
   {
     "title": "Ricerca Educativa e Valutativa (Educational and Evaluative Research)",
@@ -13,7 +15,9 @@
     "body": "Department of History, Cultural Heritage, Education and Society, University of Rome Tor Vergata (2026/27). Co-teaching with Prof. Antonella Poce and running classroom experiments with the students as part of ongoing educational research.",
     "img": "/assets/images/tor-vergata-logo.svg",
     "tags": "Teaching, Educational Research, Evaluation, Classroom Experiments",
-    "url": "https://didatticaweb.uniroma2.it/docenti/curriculum/20309-Antonella-Poce"
+    "url": "https://didatticaweb.uniroma2.it/docenti/curriculum/20309-Antonella-Poce",
+    "group": "University of Rome Tor Vergata",
+    "year": "2026/27"
   },
   {
     "title": "CS230: Web Information Processing",
@@ -21,7 +25,9 @@
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
     "tags": "Teaching, Lecturing, Courses",
-    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS230&YEAR=2025"
+    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS230&YEAR=2025",
+    "group": "Maynooth University",
+    "year": "2022–2025"
   },
   {
     "title": "CS615C: Internet Solutions Engineering",
@@ -29,7 +35,9 @@
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
     "tags": "Teaching, Lecturing, Courses",
-    "url": "https://www.maynoothuniversity.ie/computer-science"
+    "url": "https://www.maynoothuniversity.ie/computer-science",
+    "group": "Maynooth University",
+    "year": "2023–2025"
   },
   {
     "title": "CS264SS: Software Development",
@@ -37,7 +45,9 @@
     "body": "",
     "img": "https://www.datasciencedegreeprograms.net/wp-content/uploads/2019/10/texas-tech-university.jpg",
     "tags": "Teaching, Lecturing, Courses",
-    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS264&YEAR=2025"
+    "url": "https://apps.maynoothuniversity.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS264&YEAR=2025",
+    "group": "Texas Tech University",
+    "year": "2022"
   },
   {
     "title": "CS431FZ: Mobile Application Development",
@@ -45,7 +55,9 @@
     "body": "",
     "img": "https://www.fzu.edu.cn/images/logo.png",
     "tags": "Teaching, Lecturing, Courses",
-    "url": "http://apps.nuim.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS385&YEAR=2025"
+    "url": "http://apps.nuim.ie/courses/?TARGET=MODULE&MODE=VIEW&MODULE_CODE=CS385&YEAR=2025",
+    "group": "Fuzhou University",
+    "year": "2022"
   },
   {
     "title": "SDA[F]: Android Application Development",
@@ -53,111 +65,134 @@
     "body": "",
     "img": "https://www.dcu.ie/sites/default/files/styles/widescreen_television/public/media/2020/06/16/dcu_app.jpg.webp?itok=HwgQ-gWt",
     "tags": "Teaching, Lecturing, Courses",
-    "url": "https://www.dcu.ie/connected/software-development"
+    "url": "https://www.dcu.ie/connected/software-development",
+    "group": "Dublin City University",
+    "year": "2023–2025"
   },
   {
     "title": "CS385FZ: Machine Learning & Neural Nets.",
     "subtitle": "U.Grad Module @ MU & FU",
     "body": "",
     "img": "https://www.fzu.edu.cn/images/logo.png",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Fuzhou University",
+    "year": "2022"
   },
   {
     "title": "CS620C: Structured Programming",
     "subtitle": "H.Dip Module @ MU",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University",
+    "year": "2024–2026"
   },
   {
     "title": "CS161 & CS162: Intro. to Computer Science",
     "subtitle": "Head Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "CS230: Web Information Processing",
     "subtitle": "Head Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "CS240: Operating Systems & Networks",
     "subtitle": "Head Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "CS210 & CS211: Data Structs. and Algorithms",
     "subtitle": "Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "CS280: Introduction to UI and UX Design",
     "subtitle": "Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "CS353C: Team Project in Software Engineering",
     "subtitle": "Head Demonstrator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University",
+    "year": "2022"
   },
   {
     "title": "CS431FZ: Machine Learning & Neural Nets.",
     "subtitle": "Tutor",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Fuzhou University"
   },
   {
     "title": "CS355: Theory of Computation",
     "subtitle": "Tutor",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Maynooth University"
   },
   {
     "title": "Coderdojo Portarlington & Maynooth",
     "subtitle": "Teacher",
     "body": "",
     "img": "https://www.raspberrypi.org/app/uploads/2018/04/CoderDojo_Thumbnail_Homepage_V2.png",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Outreach",
+    "year": "2015–2017"
   },
   {
     "title": "Maynooth CS Summer Camp 2023",
     "subtitle": "Teacher",
     "body": "",
     "img": "https://i.ytimg.com/vi/HRSlmRkZk0g/maxresdefault.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Outreach",
+    "year": "2023"
   },
   {
     "title": "Maynooth CS Summer Camp 2026",
     "subtitle": "Teacher",
     "body": "",
     "img": "https://i.ytimg.com/vi/HRSlmRkZk0g/maxresdefault.jpg",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Outreach",
+    "year": "2026"
   },
   {
     "title": "BEBRAS FINALS Maynooth",
     "subtitle": "Supervisor & Invigilator",
     "body": "",
     "img": "https://www.stratfordcollege.ie/content/images/_495xAUTO_fit_center-center_80_none_ns/bebrasNatFinals.png?v=1695036226",
-    "tags": "Teaching, Lecturing, Courses"
+    "tags": "Teaching, Lecturing, Courses",
+    "group": "Outreach"
   },
   {
     "title": "Generative AI Course for CS162",
     "subtitle": "Course Coordinator",
     "body": "",
     "img": "https://www.simonewalsh.net/wp-content/uploads/2021/10/XL-Maynooth-Uni-Sml.jpg",
-    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI"
+    "tags": "Conference, Education, EduTech, Collaborative Education, Generative AI",
+    "group": "Maynooth University"
   }
 ]
