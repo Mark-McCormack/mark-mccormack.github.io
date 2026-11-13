@@ -70,6 +70,13 @@ const focusAreas: typeof highlights = [
   ],
 ];
 
+// Papers featured on the home page, in this order (matched by the start of the title).
+const selectedPapers = [
+  "Saved by the Bot!",
+  "Use of Collaborative Annotation Technology with Tutor AI",
+  "Application of Tutor AI Using Mastery Learning",
+];
+
 const Blurbs = ({ items }: { items: typeof highlights }) => (
   <div className="blurbs">
     {items.map(([color, title, body]) => (
@@ -206,9 +213,12 @@ const Home: React.FC = () => {
       <div className="wrap preview-pair">
         <Preview bare path="research" heading="Selected publications">
           <div className="rows">
-            {research.slice(0, 3).map((item) => (
-              <ProjectCard key={item.title} {...item} variant="row" level="h3" thumb={false} />
-            ))}
+            {selectedPapers
+              .map((start) => research.find((p) => p.title.startsWith(start)))
+              .filter((p): p is Item => !!p)
+              .map((item) => (
+                <ProjectCard key={item.title} {...item} variant="row" level="h3" thumb={false} />
+              ))}
           </div>
         </Preview>
 
